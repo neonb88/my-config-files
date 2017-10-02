@@ -90,7 +90,7 @@ fi
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
-alias l='ls -CFltr'
+alias l='ls -ltr'
 
 # some gcc aliases
 alias c='gcc -g -Wall'
@@ -104,8 +104,7 @@ alias ma='make all'
 alias rm='rm -i -v'
 alias mv='mv -i -n -v'
 
-# valgrind aliases
-alias v='valgrind --leak-check=yes'
+alias v='vim'
 
 # specialized: login to CLAC
 alias clac='ssh -X nxb2101@clac.cs.columbia.edu'
