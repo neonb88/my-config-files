@@ -92,6 +92,10 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -ltr'
 
+# python
+alias p3='python3'
+alias py='python'
+
 # some gcc aliases
 alias c='gcc -g -Wall'
 
@@ -104,7 +108,9 @@ alias ma='make all'
 alias rm='rm -i -v'
 alias mv='mv -i -n -v'
 
+# vim
 alias v='vim'
+
 
 # specialized: login to CLAC
 alias clac='ssh -X nxb2101@clac.cs.columbia.edu'
