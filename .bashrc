@@ -96,6 +96,10 @@ alias l='ls -ltr'
 alias p3='python3'
 alias py='python'
 
+# java
+alias jv='java'
+alias jc='javac'
+
 # some gcc aliases
 alias c='gcc -g -Wall'
 
@@ -107,6 +111,12 @@ alias ma='make all'
 # stupidity protection : overwrite
 alias rm='rm -i -v'
 alias mv='mv -i -n -v'
+
+# clear
+alias clr='clear'
+
+# make screen darker
+alias red='redshift'
 
 # vim
 alias v='vim'
@@ -139,4 +149,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export EDITOR=emacs
+export EDITOR=vim
