@@ -116,7 +116,7 @@ alias mv='mv -i -n -v'
 alias clr='clear'
 
 # make screen darker
-alias red='redshift'
+alias red='redshift -O 1000 -b 0.5'
 
 # vim
 alias v='vim'
