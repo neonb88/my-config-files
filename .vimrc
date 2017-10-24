@@ -36,6 +36,7 @@ set incsearch		" do incremental searching
 set hls             " highlights all matches
 set ic              " ignore case
 :imap jj <Esc>
+:imap JJ <Esc>
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
