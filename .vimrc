@@ -37,6 +37,8 @@ set hls             " highlights all matches
 set ic              " ignore case
 :imap jj <Esc>
 :imap JJ <Esc>
+:imap jJ <Esc>
+:imap Jj <Esc>
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
