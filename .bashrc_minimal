@@ -1,0 +1,6 @@
+alias l='ls -ltr'
+alias rm='rm -i -v'
+alias mv='mv -i -n -v'
+alias clr='clear'
+alias v='vim'
+export EDITOR=vim
