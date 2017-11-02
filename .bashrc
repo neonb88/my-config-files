@@ -93,6 +93,7 @@ alias la='ls -A'
 alias l='ls -ltr'
 
 # python
+alias ipy='ipython'
 alias p3='python3'
 alias py='python'
 
@@ -150,3 +151,7 @@ if ! shopt -oq posix; then
 fi
 
 export EDITOR=vim
+
+# virtualenv and virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=/home/n/.virtualenvs
