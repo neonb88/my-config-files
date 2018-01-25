@@ -1,0 +1,7 @@
+[user]
+	name = neonb88
+	email = nathanbendich@gmail.com
+[alias]
+    st = status
+    ci = commit -vm
+
