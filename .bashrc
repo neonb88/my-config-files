@@ -153,5 +153,5 @@ fi
 export EDITOR=vim
 
 # virtualenv and virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper.sh
-export WORKON_HOME=/home/n/.virtualenvs
+# source /usr/local/bin/virtualenvwrapper.sh
+# export WORKON_HOME=/home/n/.virtualenvs
