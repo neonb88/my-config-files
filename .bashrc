@@ -94,7 +94,8 @@ alias l='ls -ltr'
 
 # python
 alias ipy='ipython'
-alias p3='python3'
+alias p3='python3.6' #'python3'
+alias p2='python2'   #'python2'
 alias py='python'
 
 # java
@@ -155,3 +156,6 @@ export EDITOR=vim
 # virtualenv and virtualenvwrapper
 # source /usr/local/bin/virtualenvwrapper.sh
 # export WORKON_HOME=/home/n/.virtualenvs
+
+# added by Anaconda3 installer
+export PATH="/home/n/anaconda3/bin:$PATH"
