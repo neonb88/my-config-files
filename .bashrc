@@ -92,11 +92,18 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -ltr'
 
+# make screen darker
+alias red='redshift -O 1000 -b 0.5'
+
+# vim
+alias v='vim'
+
 # python
-alias ipy='ipython'
 alias p3='python3.6' #'python3'
 alias p2='python2'   #'python2'
 alias py='python'
+alias jn='jupyter notebook'
+alias ipy='ipython'
 
 # java
 alias jv='java'
@@ -116,13 +123,6 @@ alias mv='mv -i -n -v'
 
 # clear
 alias clr='clear'
-
-# make screen darker
-alias red='redshift -O 1000 -b 0.5'
-
-# vim
-alias v='vim'
-
 
 # specialized: login to CLAC
 alias clac='ssh -X nxb2101@clac.cs.columbia.edu'
