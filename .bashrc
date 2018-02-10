@@ -89,8 +89,8 @@ fi
 
 # some more ls aliases
 alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -ltr'
+alias l='ls -ltrA'
+alias lsize='ls -lS'
 
 # make screen darker
 alias red='redshift -O 1000 -b 0.5'
@@ -122,6 +122,7 @@ alias rm='rm -i -v'
 alias mv='mv -i -n -v'
 
 # clear
+alias cl='clear; ls -ltrA'
 alias clr='clear'
 
 # specialized: login to CLAC
@@ -159,3 +160,6 @@ export EDITOR=vim
 
 # added by Anaconda3 installer
 export PATH="/home/n/anaconda3/bin:$PATH"
+
+# added by me for proper Jupyter downloads?  I don't think it's necessary becuase this was already on my PATH"
+# export PATH="/usr/bin:$PATH"
