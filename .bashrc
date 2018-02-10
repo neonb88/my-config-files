@@ -125,6 +125,11 @@ alias mv='mv -i -n -v'
 alias cl='clear; ls -ltrA'
 alias clr='clear'
 
+# git
+alias gst='git status'
+alias gad='git add'
+alias gci='git commit -m'
+
 # specialized: login to CLAC
 alias clac='ssh -X nxb2101@clac.cs.columbia.edu'
 
