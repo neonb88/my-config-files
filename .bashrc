@@ -95,8 +95,13 @@ alias lsize='ls -lS'
 # make screen darker
 alias red='redshift -O 1000 -b 0.5'
 
+#    opening files
 # vim
 alias v='vim'
+
+# pdfs (evince)
+alias ev='evince'
+
 
 # python
 alias p3='python3.6' #'python3'
