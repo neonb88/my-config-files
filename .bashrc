@@ -127,8 +127,11 @@ alias rm='rm -i -v'
 alias mv='mv -i -n -v'
 
 # clear
-alias cl='clear; ls -ltrA'
 alias clr='clear'
+alias cl='clear; ls -ltrA'
+alias clpy='clear; ls -ltr *.py'
+alias clpng='clear; ls -ltr *.png'
+alias clsh='clear; ls -ltr *.sh'
 
 # git
 alias gst='git status'
@@ -173,6 +176,10 @@ export EDITOR=vim
 
 # added by Anaconda3 installer
 export PATH="/home/n/anaconda3/bin:$PATH"
+export PATH="/usr/bin/:$PATH"
 
 # added by me for proper Jupyter downloads?  I don't think it's necessary becuase this was already on my PATH"
 # export PATH="/usr/bin:$PATH"
+
+# added by Anaconda3 installer
+export PATH="/home/n/anaconda3/bin:$PATH"
