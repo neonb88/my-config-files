@@ -126,12 +126,17 @@ alias ma='make all'
 alias rm='rm -i -v'
 alias mv='mv -i -n -v'
 
+############## chaining cmds #############
+
 # clear
 alias clr='clear'
 alias cl='clear; ls -ltrA'
 alias clpy='clear; ls -ltr *.py'
 alias clpng='clear; ls -ltr *.png'
 alias clsh='clear; ls -ltr *.sh'
+
+# history: find old cmds
+alias hgn='history | grep -n'
 
 # git
 alias gst='git status'
