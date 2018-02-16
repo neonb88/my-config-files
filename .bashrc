@@ -136,7 +136,7 @@ alias clpng='clear; ls -ltr *.png'
 alias clsh='clear; ls -ltr *.sh'
 
 # history: find old cmds
-alias hgn='history | grep -n'
+alias hg='history | grep'
 
 # git
 alias gst='git status'
