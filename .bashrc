@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -129,14 +129,32 @@ alias mv='mv -i -n -v'
 ############## chaining cmds #############
 
 # clear
-alias clr='clear'
-alias cl='clear; ls -ltrA'
+alias clr='~/.clear.sh'  
+alias cl='clear &&  ls -ltrA'
 alias clpy='clear; ls -ltr *.py'
 alias clpng='clear; ls -ltr *.png'
 alias clsh='clear; ls -ltr *.sh'
 
 # history: find old cmds
 alias hg='history | grep'
+
+#  TODO:
+#    ht history | tail
+#    
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 
 # git
 alias gst='git status'
@@ -188,3 +206,13 @@ export PATH="/usr/bin/:$PATH"
 
 # added by Anaconda3 installer
 export PATH="/home/n/anaconda3/bin:$PATH"
+
+# Google Cloud
+CLOUDSDK_PYTHON="/home/<username>/miniconda//envs/gcloud/bin/python2.7"
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/n/google-cloud-sdk/path.bash.inc' ]; then source '/home/n/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/n/google-cloud-sdk/completion.bash.inc' ]; then source '/home/n/google-cloud-sdk/completion.bash.inc'; fi
