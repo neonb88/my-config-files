@@ -14,6 +14,5 @@ set backupdir^=~/.backup
 :command J j
 :command U u
 :command W w
-:command X x
 
 set rnu
