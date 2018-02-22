@@ -134,7 +134,7 @@ alias rmd='rmdir'
 alias f='find'
 
 # grep
-alias gr='grep'
+alias gr='grep -n'
 
 # history: find old cmds
 alias h='history'
