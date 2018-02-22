@@ -136,6 +136,9 @@ alias f='find'
 # grep
 alias gr='grep -n'
 
+alias users='who'
+alias user='whoami'
+
 # history: find old cmds
 alias h='history'
 alias hg='history | grep'
