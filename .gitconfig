@@ -2,6 +2,20 @@
 	name = neonb88
 	email = nathanbendich@gmail.com
 [alias]
+    ad = add
+    #############
+    b  = branch
+    #############
+    c  = commit
+    cm = commit -vm
+    ca = commit -vam
+    #############
+    cl = clone
+    #############
+    d  = diff
+    #############
+    o  = checkout
+    #############
+    pl = pull
+    ps = push
     st = status
-    ci = commit -vm
-

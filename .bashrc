@@ -72,6 +72,8 @@ xterm*|rxvt*)
     ;;
 esac
 
+PS1="hi"
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -87,21 +89,7 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-alias ll='ls -alF'
-alias l='ls -ltrA'
-alias lsize='ls -lS'
-
-# make screen darker
-alias red='redshift -O 1000 -b 0.5'
-
-#    opening files
-# vim
-alias v='vim'
-
-# pdfs (evince)
-alias ev='evince'
-
+######## code (compilation, running) #######
 
 # python
 alias p3='python3.6' #'python3'
@@ -114,17 +102,53 @@ alias ipy='ipython'
 alias jv='java'
 alias jc='javac'
 
-# some gcc aliases
+# gcc
 alias c='gcc -g -Wall'
 
-# make aliases (only valid if you've created a "make" file, unfortunately)
+# make (valid iff you've created a "make" file)
 alias m='make'
 alias mc='make clean'
 alias ma='make all'
 
+#chmod
+alias chmx='chmod +x'
+
+############## getting around the terminal #############
+
+# some more ls aliases
+alias ll='ls -alF'
+alias l='ls -ltrA'
+alias lsize='ls -lS'
+
 # stupidity protection : overwrite
 alias rm='rm -i -v'
 alias mv='mv -i -n -v'
+
+# dirs
+alias mkd='mkdir'
+alias rmd='rmdir'
+
+# find
+alias f='find'
+
+# grep
+alias gr='grep'
+
+# history: find old cmds
+alias h='history'
+alias hg='history | grep'
+alias ht='history | tail'
+
+# make screen darker
+alias reds='redshift -O 1000 -b 0.5'
+alias red='redshift'
+
+#    opening files
+# vim
+alias v='vim'
+
+# pdfs (evince)
+alias ev='evince'
 
 ############## chaining cmds #############
 
@@ -135,34 +159,17 @@ alias clpy='clear; ls -ltr *.py'
 alias clpng='clear; ls -ltr *.png'
 alias clsh='clear; ls -ltr *.sh'
 
-# history: find old cmds
-alias hg='history | grep'
-
-#  TODO:
-#    ht history | tail
-#    
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-
 # git
+alias g='git'
 alias gst='git status'
 alias gad='git add'
 alias gci='git commit -m'
 alias gca='git commit -am'  # -a flag  commits all modified files in one step
 alias gpus='git push'
 alias gpul='git pull'
+
+# gcloud
+alias gcl='gcloud compute'
 
 # specialized: login to CLAC
 alias clac='ssh -X nxb2101@clac.cs.columbia.edu'
