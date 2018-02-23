@@ -136,6 +136,9 @@ alias f='find'
 # grep
 alias gr='grep -n'
 
+# search filenames recursively
+alias fg='find | grep'
+
 # history: find old cmds
 alias h='history'
 alias hg='history | grep'
