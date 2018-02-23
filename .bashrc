@@ -136,6 +136,10 @@ alias f='find'
 # grep
 alias gr='grep -n'
 
+# recursive filename searching
+alias fg='find | grep'
+
+# see who's running
 alias users='who'
 alias user='whoami'
 
