@@ -65,8 +65,6 @@ else
 fi
 unset color_prompt force_color_prompt
 
-PROMPT_DIRTRIM=1
-
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
@@ -136,12 +134,8 @@ alias f='find'
 # grep
 alias gr='grep -n'
 
-# recursive filename searching
+# search filenames recursively
 alias fg='find | grep'
-
-# see who's running
-alias users='who'
-alias user='whoami'
 
 # history: find old cmds
 alias h='history'
