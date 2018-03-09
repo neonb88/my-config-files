@@ -19,6 +19,9 @@ shopt -s histappend
 HISTSIZE=10000
 HISTFILESIZE=20000
 
+#
+PROMPT_DIRTRIM=5
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
@@ -119,6 +122,7 @@ alias chmx='chmod +x'
 alias ll='ls -alF'
 alias l='ls -ltrA'
 alias lsize='ls -lS'
+alias ld='ls -ltrAd */'
 
 # stupidity protection : overwrite
 alias rm='rm -i -v'
@@ -126,7 +130,7 @@ alias mv='mv -i -n -v'
 
 # dirs
 alias mkd='mkdir'
-alias rmd='rmdir'
+alias rmd='rm -ri'
 
 # find
 alias f='find'
@@ -152,6 +156,11 @@ alias v='vim'
 
 # pdfs (evince)
 alias ev='evince'
+
+# more user-friendly, rememberable commands
+alias disk='df'
+alias user='whoami'
+alias explorer='nautilus --browser ./'
 
 ############## chaining cmds #############
 
@@ -219,6 +228,7 @@ export PATH="/home/n/anaconda3/bin:$PATH"
 
 # Google Cloud
 CLOUDSDK_PYTHON="/home/<username>/miniconda//envs/gcloud/bin/python2.7"
+GOOGLE_APPLICATION_CREDENTIALS="/home/n/Drori\ HW2-947582362a9b.json"
 
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -226,3 +236,6 @@ if [ -f '/home/n/google-cloud-sdk/path.bash.inc' ]; then source '/home/n/google-
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/n/google-cloud-sdk/completion.bash.inc' ]; then source '/home/n/google-cloud-sdk/completion.bash.inc'; fi
+
+#CUDA
+export LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH"
