@@ -94,6 +94,13 @@ fi
 
 ######## code (compilation, running) #######
 
+# lisp
+alias arc='/home/n/arc/arc-nu/arc'
+#alias arc='/home/n/racket/bin/racket -f /home/n/mz/tmp/arc3.1/as.scm'
+#alias arc='/home/n/arc/anarki/arc.sh -n'
+alias rac='/home/n/racket/bin/racket'
+alias racket='/home/n/racket/bin/racket'
+
 # python
 alias p3='python3.6' #'python3'
 alias p2='python2'   #'python2'
@@ -160,7 +167,7 @@ alias ev='evince'
 # more user-friendly, rememberable commands
 alias disk='df'
 alias user='whoami'
-alias explorer='nautilus --browser ./'
+alias files='nautilus --browser ./'
 
 ############## chaining cmds #############
 
@@ -173,6 +180,7 @@ alias clsh='clear; ls -ltr *.sh'
 
 # git
 alias g='git'
+alias galias='git config --get-regexp alias'  # technically incomplete, see https://stackoverflow.com/questions/7066325/list-git-aliases
 alias gst='git status'
 alias gad='git add'
 alias gci='git commit -m'
@@ -239,3 +247,5 @@ if [ -f '/home/n/google-cloud-sdk/completion.bash.inc' ]; then source '/home/n/g
 
 #CUDA
 export LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH"
+#PYTHONPATH is for StackGAN
+PYTHONPATH="/home/n/Documents/IMPORTANT/deep_learning/drori_2018/final_proj/Ryans_branch/StackGAN"

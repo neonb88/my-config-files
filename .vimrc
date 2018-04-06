@@ -4,6 +4,8 @@
 :imap JJ <Esc>
 
 set tabstop=4
+set shiftwidth=4
+set expandtab
 set expandtab
 autocmd FileType make setlocal noexpandtab
 set backupdir^=~/.backup

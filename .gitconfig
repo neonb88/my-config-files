@@ -17,6 +17,8 @@
     l = log
     lo = log --oneline --graph --decorate
     #############
+    mt = mergetool
+    ############# ^   mergetool is good for resolving merge conflicts; it pulls up a beyondCompare UI
     o  = checkout
     #############
     pl = pull
