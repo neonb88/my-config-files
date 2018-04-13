@@ -3,7 +3,7 @@
 
 
 
-bash ./install_cuda_and_conda.sh
+bash ./tmp/install_cuda_and_conda.sh
 conda create --name torch python=3
 source activate torch
 
