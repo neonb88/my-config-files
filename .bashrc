@@ -246,6 +246,9 @@ if [ -f '/home/n/google-cloud-sdk/path.bash.inc' ]; then source '/home/n/google-
 if [ -f '/home/n/google-cloud-sdk/completion.bash.inc' ]; then source '/home/n/google-cloud-sdk/completion.bash.inc'; fi
 
 #CUDA
-export LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
 #PYTHONPATH is for StackGAN
 PYTHONPATH="/home/n/Documents/IMPORTANT/deep_learning/drori_2018/final_proj/Ryans_branch/StackGAN"
+
+
+
