@@ -128,6 +128,7 @@ alias chmx='chmod +x'
 # some more ls aliases
 alias ll='ls -alF'
 alias l='ls -ltrA'
+alias lt='ls -ltA'
 alias lsize='ls -lS'
 alias ld='ls -ltrAd */'
 
@@ -249,3 +250,7 @@ if [ -f '/home/n/google-cloud-sdk/completion.bash.inc' ]; then source '/home/n/g
 export LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH"
 #PYTHONPATH is for StackGAN
 PYTHONPATH="/home/n/Documents/IMPORTANT/deep_learning/drori_2018/final_proj/Ryans_branch/StackGAN"
+
+
+
+export HISTTIMEFORMAT="%d/%m/%y %T "
