@@ -1,4 +1,8 @@
 
+# TODO:   vim "repeat any"
+# TODO:   vim command "undo any"
+# TODO:   auto-updating ls, l, pwd, etc. commands (variable gets updated every 10 seconds within python shell and automatically pretty-prints)
+
 def newline(f):
     f.write('\n')
 

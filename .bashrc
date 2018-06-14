@@ -102,9 +102,12 @@ alias rac='/home/n/racket/bin/racket'
 alias racket='/home/n/racket/bin/racket'
 
 # python
-alias p3='python3.6' #'python3'
+alias python='python2'
+alias py='python2'
+alias p='python2'
+alias p3='python3.5' #'python3'
+alias p36='python3.6'
 alias p2='python2'   #'python2'
-alias py='python'
 alias jn='jupyter notebook'
 alias ipy='ipython'
 
@@ -133,8 +136,8 @@ alias lsize='ls -lS'
 alias ld='ls -ltrAd */'
 
 # stupidity protection : overwrite
-alias rm='rm -i -v'
-alias mv='mv -i -n -v'
+alias rm='rm -iv'
+alias mv='mv -inv'
 
 # dirs
 alias mkd='mkdir'
@@ -161,6 +164,7 @@ alias red='redshift'
 #    opening files
 # vim
 alias v='vim'
+alias gv='gvim'
 
 # pdfs (evince)
 alias ev='evince'
@@ -248,9 +252,18 @@ if [ -f '/home/n/google-cloud-sdk/completion.bash.inc' ]; then source '/home/n/g
 
 #CUDA
 export LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH"
-#PYTHONPATH is for StackGAN
-PYTHONPATH="/home/n/Documents/IMPORTANT/deep_learning/drori_2018/final_proj/Ryans_branch/StackGAN"
+
+#PYTHONPATH is for SMPL
+SMPL_LOC=/home/n/Documents/IMPORTANT/business_work/cat/get_clothing_sizes_from_pix/cat_1st_demo/SMPL/py/smpl
+export PYTHONPATH=$PYTHONPATH:$SMPL_LOC
+
 
 
 
 export HISTTIMEFORMAT="%d/%m/%y %T "
+
+# OpenCV
+export LD_LIBRARY_PATH="/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
+
+
+
