@@ -1,4 +1,4 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
+h# ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -236,9 +236,6 @@ export PATH="/usr/bin/:$PATH"
 # added by me for proper Jupyter downloads?  I don't think it's necessary becuase this was already on my PATH"
 # export PATH="/usr/bin:$PATH"
 
-# added by Anaconda3 installer
-export PATH="/home/n/anaconda3/bin:$PATH"
-
 # Google Cloud
 CLOUDSDK_PYTHON="/home/<username>/miniconda//envs/gcloud/bin/python2.7"
 GOOGLE_APPLICATION_CREDENTIALS="/home/n/Drori\ HW2-947582362a9b.json"
@@ -267,3 +264,7 @@ export LD_LIBRARY_PATH="/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
 
 
 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
