@@ -1,4 +1,4 @@
-h# ~/.bashrc: executed by bash(1) for non-login shells.
+# ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -101,6 +101,9 @@ alias arc='/home/n/arc/arc-nu/arc'
 alias rac='/home/n/racket/bin/racket'
 alias racket='/home/n/racket/bin/racket'
 
+# node
+alias n='node'
+
 # python
 alias python='python2'
 alias py='python2'
@@ -137,7 +140,9 @@ alias ld='ls -ltrAd */'
 
 # stupidity protection : overwrite
 alias rm='rm -iv'
-alias mv='mv -inv'
+alias mv='mv -iv'
+alias cp='cp -iv'
+    # -inv always does "no clobber"
 
 # dirs
 alias mkd='mkdir'
