@@ -132,11 +132,12 @@ alias chmx='chmod +x'
 ############## getting around the terminal #############
 
 # some more ls aliases
-alias ll='ls -alF'
-alias l='ls -ltrA'
-alias lt='ls -ltA'
-alias lsize='ls -lS'
-alias ld='ls -ltrAd */'
+alias ll='ls -alFh'
+alias l='ls -ltrAh'
+alias lt='ls -ltAh'
+alias lpy='ls -ltrAh *.py'
+alias lsize='ls -lSh'
+alias ld='ls -ltrAdh */'
 
 # stupidity protection : overwrite
 alias rm='rm -iv'
