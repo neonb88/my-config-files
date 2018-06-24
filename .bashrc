@@ -1,7 +1,9 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+
 # TODO:  make bash prompt cycle through things I should remember (ie. python syntax, Lisp syntax, whatever else I'm working on at the moment. It could also link to a UNIX manpage)
+# TODO:  remove header in terminal (the one that shows you the curr dir
 
 # If not running interactively, don't do anything
 case $- in
@@ -106,9 +108,6 @@ alias arc='/home/n/arc/arc-nu/arc'
 alias rac='/home/n/racket/bin/racket'
 alias racket='/home/n/racket/bin/racket'
 
-# node
-alias n='node'
-
 # python
 alias python='python2'
 alias py='python2'
@@ -118,6 +117,9 @@ alias p36='python3.6'
 alias p2='python2'   #'python2'
 alias jn='jupyter notebook'
 alias ipy='ipython'
+
+# node
+alias n='node'
 
 # java
 alias jv='java'
@@ -134,6 +136,8 @@ alias ma='make all'
 #chmod
 alias chmx='chmod +x'
 
+#time
+alias t='time'
 ############## getting around the terminal #############
 
 # some more ls aliases
