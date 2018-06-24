@@ -61,11 +61,15 @@ fi
 
 ###    PROMPT
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\] Make a wish! \[\033[01;34m\] \[\033[00m\] '
+    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\] Make a wish! \[\033[01;34m\] \[\033[00m\] '
 #          colors, working dir
+    PS1=' ' # just a slight indent
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    #PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1=' ' # just a slight indent
 fi
+# if we need ANY information at all, we can get it.  This is better, even through it requires more effort, because there is less clutter on the screen.  Always always minimalism and cleanliness
+
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir

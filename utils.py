@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+import numpy as np
 
 # TODO:   vim "repeat any"
 # TODO:   vim command "undo any"
