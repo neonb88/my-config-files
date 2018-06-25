@@ -148,6 +148,8 @@ alias lpy='ls -ltrAh *.py'
 alias lnpy='ls -ltrAh *.npy'
 alias lsize='ls -lSh'
 alias ld='ls -ltrAdh */'
+alias ltail='ls -ltrAh | tail'
+alias lhead='ls -ltrAh | head'
 
 # stupidity protection : overwrite
 alias rm='rm -iv'
