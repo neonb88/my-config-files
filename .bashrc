@@ -145,6 +145,7 @@ alias ll='ls -alFh'
 alias l='ls -ltrAh'
 alias lt='ls -ltAh'
 alias lpy='ls -ltrAh *.py'
+alias lnpy='ls -ltrAh *.npy'
 alias lsize='ls -lSh'
 alias ld='ls -ltrAdh */'
 
@@ -202,6 +203,7 @@ alias clsh='clear; ls -ltr *.sh'
 alias g='git'
 alias galias='git config --get-regexp alias'  # technically incomplete, see https://stackoverflow.com/questions/7066325/list-git-aliases
 alias gst='git status'
+alias gsh='git status | head -n20'
 alias gad='git add'
 alias gci='git commit -m'
 alias gca='git commit -am'  # -a flag  commits all modified files in one step
