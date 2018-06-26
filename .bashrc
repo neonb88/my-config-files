@@ -3,7 +3,6 @@
 # for examples
 
 # TODO:  make bash prompt cycle through things I should remember (ie. python syntax, Lisp syntax, whatever else I'm working on at the moment. It could also link to a UNIX manpage)
-# TODO:  remove header in terminal (the one that shows you the curr dir
 
 # If not running interactively, don't do anything
 case $- in
@@ -141,17 +140,25 @@ alias t='time'
 ############## getting around the terminal #############
 
 # some more ls aliases
-alias ll='ls -alFh'
 alias l='ls -ltrAh'
-alias lt='ls -ltAh'
+alias ld='ls -ltrAdh */'
 alias lpy='ls -ltrAh *.py'
 alias lnpy='ls -ltrAh *.npy'
-alias lsize='ls -lSh'
-alias ld='ls -ltrAdh */'
+alias lpng='ls -ltrAh *.png'
+alias ltxt='ls -ltrAh *.txt'
+alias ljpg='ls -ltrAh *.jpg'
+alias lswp='ls -ltrAh .*.swp'
+alias lsh='ls -ltrAh *.sh'
+alias lpdf='ls -ltrAh *.pdf'
+alias lzip='ls -ltrAh *.zip'
+alias ldeb='ls -ltrAh *.deb'
+
 alias ltail='ls -ltrAh | tail'
 alias lhead='ls -ltrAh | head'
+alias lsize='ls -lSh'
+alias lt='ls -ltAh'  # oldest
 
-# stupidity protection : overwrite
+# stupidity protection against overwrites
 alias rm='rm -iv'
 alias mv='mv -iv'
 alias cp='cp -iv'
