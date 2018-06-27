@@ -137,10 +137,18 @@ alias chmx='chmod +x'
 
 #time
 alias t='time'
-############## getting around the terminal #############
+############################################################################################################################################  
+############################################        getting around the terminal         ####################################################
+############################################################################################################################################  
 
 # some more ls aliases
 alias l='ls -ltrAh'
+
+alias ltail='ls -ltrAh | tail'
+alias lhead='ls -ltrAh | head'
+alias lsize='ls -lSh'
+alias lt='ls -ltAh'  # oldest edits at bottom
+
 alias ld='ls -ltrAdh */'
 alias lpy='ls -ltrAh *.py'
 alias lnpy='ls -ltrAh *.npy'
@@ -211,11 +219,52 @@ alias lavi='ls -ltrAh *.avi'
 alias lmov='ls -ltrAh *.mov'
 alias ltex='ls -ltrAh *.tex'
 alias l7z='ls -ltrAh *.7z'
-
-alias ltail='ls -ltrAh | tail'
-alias lhead='ls -ltrAh | head'
-alias lsize='ls -lSh'
-alias lt='ls -ltAh'  # oldest
+alias lpyc='ls -ltrAh *.pyc'
+alias lmd='ls -ltrAh *.md'
+alias lexe='ls -ltrAh *.exe'
+alias lso='ls -ltrAh *.so'
+alias ltargz='ls -ltrAh *.tar.gz'
+alias lR='ls -ltrAh *.R'
+alias lmm='ls -ltrAh *.mm'
+alias lm='ls -ltrAh *.m'
+alias lM='ls -ltrAh *.M'
+alias lmat='ls -ltrAh *.mat'
+alias lts='ls -ltrAh *.ts'
+alias ltsx='ls -ltrAh *.tsx'
+alias lVBA='ls -ltrAh *.VBA'
+alias lkts='ls -ltrAh *.kts'
+alias lkt='ls -ltrAh *.kt'
+alias lgo='ls -ltrAh *.go'
+alias lrs='ls -ltrAh *.rs'
+alias lrlib='ls -ltrAh *.rlib'
+alias lhs='ls -ltrAh *.hs'
+alias llhs='ls -ltrAh *.lhs'
+alias lpp='ls -ltrAh *.pp'
+alias lpas='ls -ltrAh *.pas'
+alias linc='ls -ltrAh *.inc'
+alias lclj='ls -ltrAh *.clj'
+alias lcljs='ls -ltrAh *.cljs'
+alias lcljc='ls -ltrAh *.cljc'
+alias ledn='ls -ltrAh *.edn'
+alias lcl='ls -ltrAh *.cl'
+alias lfasl='ls -ltrAh *.fasl'
+alias lscm='ls -ltrAh *.scm'
+alias lss='ls -ltrAh *.ss'
+alias lhy='ls -ltrAh *.hy'
+alias llfe='ls -ltrAh *.lfe'
+alias lhrl='ls -ltrAh *.hrl'
+alias lerl='ls -ltrAh *.erl'
+alias lex='ls -ltrAh *.ex'
+alias lexs='ls -ltrAh *.exs'
+alias ljl='ls -ltrAh *.jl'
+alias lrkt='ls -ltrAh *.rkt'
+alias lrktl='ls -ltrAh *.rktl'
+alias lrktd='ls -ltrAh *.rktd'
+alias lscrbl='ls -ltrAh *.scrbl'
+alias lplt='ls -ltrAh *.plt'
+alias lcbl='ls -ltrAh *.cbl'
+alias lcob='ls -ltrAh *.cob'
+alias lcpy='ls -ltrAh *.cpy'
 
 # stupidity protection against overwrites
 alias rm='rm -iv'
