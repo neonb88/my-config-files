@@ -1,0 +1,5 @@
+
+'''
+   >>> something
+'''
+print 'something else'
