@@ -299,6 +299,9 @@ alias red='redshift'
 alias v='vim'
 alias gv='gvim'
 
+# diff
+alias d='diff'
+
 # pdfs (evince)
 alias ev='evince'
 
