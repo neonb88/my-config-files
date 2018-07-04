@@ -281,6 +281,7 @@ alias f='find'
 
 # grep
 alias gr='grep -n'
+# instance of grepping for actual periods:   grep '\.py
 
 # search filenames recursively
 alias fg='find | grep'
