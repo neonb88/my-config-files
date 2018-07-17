@@ -104,8 +104,9 @@ fi
 alias arc='/home/n/arc/arc-nu/arc'
 #alias arc='/home/n/racket/bin/racket -f /home/n/mz/tmp/arc3.1/as.scm'
 #alias arc='/home/n/arc/anarki/arc.sh -n'
-alias rac='/home/n/racket/bin/racket'
-alias racket='/home/n/racket/bin/racket'
+alias ra='/home/n/racket/bin/racket -il xrepl'
+alias rac='/home/n/racket/bin/racket -il xrepl'
+alias racket='/home/n/racket/bin/racket -il xrepl'
 
 # python
 alias python='python2'
@@ -281,7 +282,6 @@ alias f='find'
 
 # grep
 alias gr='grep -n'
-# instance of grepping for actual periods:   grep '\.py
 
 # search filenames recursively
 alias fg='find | grep'
@@ -291,6 +291,12 @@ alias h='history'
 alias hg='history | grep'
 alias ht='history | tail'
 
+# diff
+alias d='diff'
+
+############################################################################################################################################  
+###############   not just text and coding : other utils (Web, evince)                      ################################################  
+############################################################################################################################################  
 # make screen darker
 alias reds='redshift -O 1000 -b 0.5'
 alias red='redshift'
@@ -300,9 +306,6 @@ alias red='redshift'
 alias v='vim'
 alias gv='gvim'
 
-# diff
-alias d='diff'
-
 # pdfs (evince)
 alias ev='evince'
 
@@ -311,7 +314,13 @@ alias disk='df'
 alias user='whoami'
 alias files='nautilus --browser ./'
 
+# web
+alias w='w3m google.com'
+#alias w3m='w3m google.com'
+
+############################################################################################################################################  
 ############## chaining cmds #############
+############################################################################################################################################  
 
 # clear
 alias clr='~/.clear.sh'  
@@ -330,9 +339,6 @@ alias gci='git commit -m'
 alias gca='git commit -am'  # -a flag  commits all modified files in one step
 alias gpus='git push'
 alias gpul='git pull'
-
-# gcloud
-alias gcl='gcloud compute'
 
 # specialized: login to CLAC
 alias clac='ssh -X nxb2101@clac.cs.columbia.edu'
