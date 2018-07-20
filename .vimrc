@@ -1,7 +1,12 @@
-:imap jj <Esc>
-:imap jJ <Esc>
-:imap Jj <Esc>
-:imap JJ <Esc>
+:imap jk <Esc>
+:imap jK <Esc>
+:imap Jk <Esc>
+:imap JK <Esc>
+
+:imap kj <Esc>
+:imap kJ <Esc>
+:imap Kj <Esc>
+:imap KJ <Esc>
 
 set tabstop=4
 set shiftwidth=4
@@ -13,7 +18,6 @@ set backupdir^=~/.backup
 :command WQ wq
 :command Wq wq
 :command Q q
-:command J j
 :command U u
 :command W w
 
