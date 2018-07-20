@@ -1,3 +1,4 @@
+
 :imap jk <Esc>
 :imap jK <Esc>
 :imap Jk <Esc>
@@ -8,10 +9,15 @@
 :imap Kj <Esc>
 :imap KJ <Esc>
 
+:map <Return> i<Return><Esc>
+:map <Tab> EBi<Tab><Esc>l
+:map <Space> i<Space><Esc>h
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set expandtab
+set autoindent
+
 autocmd FileType make setlocal noexpandtab
 set backupdir^=~/.backup
 
@@ -21,4 +27,3 @@ set backupdir^=~/.backup
 :command U u
 :command W w
 
-set rnu
