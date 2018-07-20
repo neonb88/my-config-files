@@ -314,6 +314,12 @@ alias disk='df'
 alias user='whoami'
 alias files='nautilus --browser ./'
 
+# installs
+alias inst='sudo apt-get install'
+alias aptinst='sudo apt install'
+alias upd8='sudo apt-get update'
+alias upgr='sudo apt-get upgrade'
+
 # web
 alias w='w3m google.com'
 #alias w3m='w3m google.com'
