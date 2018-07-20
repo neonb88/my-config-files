@@ -298,7 +298,7 @@ alias d='diff'
 ###############   not just text and coding : other utils (Web, evince)                      ################################################  
 ############################################################################################################################################  
 # make screen darker
-alias reds='redshift -O 1000 -b 0.5'
+alias reds='redshift -O 1000'
 alias red='redshift'
 
 #    opening files
