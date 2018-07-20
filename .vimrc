@@ -11,7 +11,7 @@
 
 :map <Return> i<Return><Esc>
 :map <Tab> EBi<Tab><Esc>l
-:map <Space> i<Space><Esc>h
+:map <Space> i<Space><Esc>
 
 set tabstop=4
 set shiftwidth=4
