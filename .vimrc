@@ -10,11 +10,12 @@
 :imap KJ <Esc>
 
 :map <Return> i<Return><Esc>
-:map <Tab> EBi<Tab><Esc>l
+:map <Tab> i<Tab><Esc>l
+":map <Tab> EBi<Tab><Esc>l
 :map <Space> i<Space><Esc>
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=2 "4
+set shiftwidth=2 "4
 set expandtab
 set autoindent
 
