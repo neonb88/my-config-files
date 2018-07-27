@@ -147,13 +147,16 @@ alias t='time'
 
 # some more ls aliases
 alias l='ls -ltrAh'
+alias lt='ls -ltrAh | tail'
+
+# dirs
+alias ld='ls -ltrAdh */'
 
 alias ltail='ls -ltrAh | tail'
 alias lhead='ls -ltrAh | head'
 alias lsize='ls -lSh'
-alias lt='ls -ltAh'  # oldest edits at bottom
 
-alias ld='ls -ltrAdh */'
+# ls [type of file]
 alias lpy='ls -ltrAh *.py'
 alias lnpy='ls -ltrAh *.npy'
 alias lpng='ls -ltrAh *.png'
@@ -401,3 +404,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# blender
+export PATH="/opt/blender/:$PATH"
