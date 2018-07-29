@@ -13,6 +13,7 @@
 :map <Tab> i<Tab><Esc>l
 ":map <Tab> EBi<Tab><Esc>l
 :map <Space> i<Space><Esc>
+:map <Backspace> i<Backspace><Esc>l
 
 set tabstop=2 "4
 set shiftwidth=2 "4
