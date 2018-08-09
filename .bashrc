@@ -121,6 +121,8 @@ alias ipy='ipython'
 # virtual envs, conda
 alias ca='source activate cat'
 alias my='source activate my_cat'
+alias cinst='conda install'
+alias pinst='pip install'
 
 # node
 alias n='node'
