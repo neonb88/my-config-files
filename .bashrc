@@ -120,6 +120,7 @@ alias ipy='ipython'
 
 # virtual envs, conda
 alias ca='source activate cat'
+alias my='source activate my_cat'
 
 # node
 alias n='node'
