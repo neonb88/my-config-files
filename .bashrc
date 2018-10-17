@@ -151,6 +151,7 @@ alias t='time'
 # some more ls aliases
 alias l='ls -ltrAh'
 alias lt='ls -ltrAh | tail'
+alias lold='ls -ltAh | tail'
 
 # dirs
 alias ld='ls -ltrAdh */'
