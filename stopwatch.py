@@ -8,9 +8,9 @@ while True:
         secs = i  % 60
         mins = i // 60
         if secs < 10:
-            print(str(mins)+" mins and "+str(secs)+"  secs passed")
+            print(str(mins)+" mins and  "+str(secs)+" secs passed")
         else:
-            print(str(mins)+" mins and "+str(secs)+ " secs passed")
+            print(str(mins)+" mins and " +str(secs)+" secs passed")
     i += step
     time.sleep (step)
 
