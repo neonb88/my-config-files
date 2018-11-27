@@ -28,3 +28,5 @@
         # moves to the main head (throws away local commits)
     #############
     st = status
+[diff]
+	external = git-meld-diff
