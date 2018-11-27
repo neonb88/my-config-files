@@ -118,6 +118,13 @@ alias p2='python2'   #'python2'
 alias jn='jupyter notebook'
 alias ipy='ipython'
 
+# virtual envs, conda
+alias ca='source activate cat'
+alias my='source activate my_cat'
+alias cinst='conda install'
+alias pinst='pip install'
+alias de='source deactivate'
+
 # node
 alias n='node'
 
@@ -144,13 +151,17 @@ alias t='time'
 
 # some more ls aliases
 alias l='ls -ltrAh'
+alias lt='ls -ltrAh | tail'
+alias lold='ls -ltAh | tail'
+
+# dirs
+alias ld='ls -ltrAdh */'
 
 alias ltail='ls -ltrAh | tail'
 alias lhead='ls -ltrAh | head'
 alias lsize='ls -lSh'
-alias lt='ls -ltAh'  # oldest edits at bottom
 
-alias ld='ls -ltrAdh */'
+# ls [type of file]
 alias lpy='ls -ltrAh *.py'
 alias lnpy='ls -ltrAh *.npy'
 alias lpng='ls -ltrAh *.png'
@@ -266,6 +277,7 @@ alias lplt='ls -ltrAh *.plt'
 alias lcbl='ls -ltrAh *.cbl'
 alias lcob='ls -ltrAh *.cob'
 alias lcpy='ls -ltrAh *.cpy'
+alias lpkl='ls -ltrAh *.pkl'
 
 # stupidity protection against overwrites
 alias rm='rm -iv'
@@ -293,6 +305,10 @@ alias ht='history | tail'
 
 # diff
 alias d='diff'
+
+# date
+alias d8='date'
+alias da='date'
 
 ############################################################################################################################################  
 ###############   not just text and coding : other utils (Web, evince)                      ################################################  
@@ -346,9 +362,6 @@ alias gca='git commit -am'  # -a flag  commits all modified files in one step
 alias gpus='git push'
 alias gpul='git pull'
 
-# specialized: login to CLAC
-alias clac='ssh -X nxb2101@clac.cs.columbia.edu'
-
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -386,25 +399,6 @@ export PATH="/usr/bin/:$PATH"
 # added by me for proper Jupyter downloads?  I don't think it's necessary becuase this was already on my PATH"
 # export PATH="/usr/bin:$PATH"
 
-# Google Cloud
-CLOUDSDK_PYTHON="/home/<username>/miniconda//envs/gcloud/bin/python2.7"
-GOOGLE_APPLICATION_CREDENTIALS="/home/n/Drori\ HW2-947582362a9b.json"
-
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/n/google-cloud-sdk/path.bash.inc' ]; then source '/home/n/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/n/google-cloud-sdk/completion.bash.inc' ]; then source '/home/n/google-cloud-sdk/completion.bash.inc'; fi
-
-#CUDA
-export LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH"
-
-#PYTHONPATH is for SMPL
-SMPL_LOC=/home/n/Documents/IMPORTANT/business_work/cat/get_clothing_sizes_from_pix/cat_1st_demo/SMPL/py/smpl
-export PYTHONPATH=$PYTHONPATH:$SMPL_LOC
-
-
 
 
 export HISTTIMEFORMAT="%d/%m/%y %T "
@@ -418,10 +412,10 @@ export LD_LIBRARY_PATH="/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-export PATH=$PATH:/home/$USER/chomper/bin
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
 
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+# blender
+export PATH="/opt/blender/:$PATH"
+
+# SMPL
+SMPL_LOCATION=~/Downloads/smpl
+export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION
