@@ -159,6 +159,7 @@ alias lsize='ls -lSh'
 # ls [type of file]
 alias lpy='ls -ltrAh *.py'
 alias lnpy='ls -ltrAh *.npy'
+alias lipynb='ls -ltrAh *.ipynb'  # jupyter notebook
 alias lpng='ls -ltrAh *.png'
 alias ltxt='ls -ltrAh *.txt'
 alias ljpg='ls -ltrAh *.jpg'
