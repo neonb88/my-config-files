@@ -124,16 +124,11 @@ alias my='source activate my_cat'
 alias cinst='conda install'
 alias pinst='pip install'
 alias de='source deactivate'
-
-# node
-alias n='node'
+alias ac='source activate'
 
 # java
 alias jv='java'
 alias jc='javac'
-
-# gcc
-alias c='gcc -g -Wall'
 
 # make (valid iff you've created a "make" file)
 alias m='make'
