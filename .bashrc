@@ -3,6 +3,35 @@
 # for examples
 
 # TODO:  make bash prompt cycle through things I should remember (ie. python syntax, Lisp syntax, whatever else I'm working on at the moment. It could also link to a UNIX manpage)
+# TODO:  getting VIM script to auto-generate outlines (like MS Word does)
+: '
+    COMMENT START
+      outlines like so:
+        1)
+            a)
+            b)
+        2)
+            a)
+            b)
+        3)
+            a)
+            b)
+        4)
+            a)
+            b)
+        5)
+            a)
+            b)
+        6)
+            a)
+            b)
+        7)
+            a)
+            b)
+        8)
+        9)
+    COMMENT END
+'
 
 # If not running interactively, don't do anything
 case $- in
