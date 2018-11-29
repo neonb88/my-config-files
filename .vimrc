@@ -1,3 +1,13 @@
+"        _
+" __   _(_)_ __ ___  _ __ ___
+" \ \ / / | '_ ` _ \| '__/ __|
+"  \ V /| | | | | | | | | (__
+"   \_/ |_|_| |_| |_|_|  \___|
+
+let mapleader="U"
+map <leader>O o1.<Return>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
+" above is the precursor to my fancier general outline-producer.  It oughta work well enough for my current purposes
+
 " escape keys 
 :imap jk <Esc>
 :imap jK <Esc>
