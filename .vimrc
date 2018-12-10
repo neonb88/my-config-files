@@ -46,10 +46,10 @@ set backupdir^=~/.backup
   map <C-j> <C-w>j
   map <C-k> <C-w>k
   map <C-l> <C-w>l
-  map <C-p> <C-w>+
+  map <C-n> <C-w>+
   map <C-m> <C-w>-
-  map <C-b> <C-w>>
-  map <C-n> <C-w><
+  map <C-o> <C-w>>
+  map <C-p> <C-w><
 " TODO: do the same with resizes (<C-+>, <C->>)
 
 
