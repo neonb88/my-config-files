@@ -154,7 +154,7 @@ alias ld='ls -ltrAdh */'
 
 alias ltail='ls -ltrAh | tail'
 alias lhead='ls -ltrAh | head'
-alias lsize='ls -lSh'
+alias lsize='ls -lSrh'
 
 # ls [type of file]
 alias lpy='ls -ltrAh *.py'
