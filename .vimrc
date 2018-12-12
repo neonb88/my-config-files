@@ -46,10 +46,13 @@ set backupdir^=~/.backup
   map <C-j> <C-w>j
   map <C-k> <C-w>k
   map <C-l> <C-w>l
-  map <C-n> <C-w>+
-  map <C-m> <C-w>-
-  map <C-o> <C-w>>
-  map <C-p> <C-w><
-" TODO: do the same with resizes (<C-+>, <C->>)
+
+" Shortcutting split resizing, saving a keypress:
+  map <leader>P :res<Space>+1<Return>
+  map <leader>M <C-w>-
+  map <leader>L :vertical<Space>resize<Space>+1<Return>
+  map <leader>R :vertical<Space>resize<Space>-1<Return>
+" TODO: use leader instead of 'ctrl' b/c <C-o> is useful
+" TODO:   debug enter (used to work just fine, now doesn't).  Prob has something to do with these most recent additions
 
 
