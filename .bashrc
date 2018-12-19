@@ -315,7 +315,29 @@ alias red='redshift'
 #    opening files
 # vim
 alias v='vim'
-alias gv='gvim'
+
+# vim mode (Luke Smith tutorial: https://www.youtube.com/watch?v=GqoJQft5R2E):
+set -o vi
+bind '"jk":vi-movement-mode'
+bind '"jK":vi-movement-mode'
+bind '"Jk":vi-movement-mode'
+bind '"JK":vi-movement-mode'
+bind '"kj":vi-movement-mode'
+bind '"kJ":vi-movement-mode'
+bind '"Kj":vi-movement-mode'
+bind '"KJ":vi-movement-mode'
+
+bind -x '"\C-l": clear;'      # clear screen with ctrl+l
+
+#emacs-like bindings that come with bash
+bind "\C-a":beginning-of-line
+bind "\C-k":kill-line
+bind "\C-f":forward-char
+bind "\C-b":backward-char
+bind "\C-n":menu-complete
+bind "\C-p":menu-complete-backward
+# bind "\A-f":forward-word
+# bind "\C-d":delete-char
 
 # pdfs (evince)
 alias ev='evince'
