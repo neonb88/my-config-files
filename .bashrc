@@ -121,6 +121,7 @@ alias ipy='ipython'
 # virtual envs, conda
 alias ca='source activate cat'
 alias my='source activate my_cat'
+alias c3='source activate cat_opencv3'
 alias cinst='conda install'
 alias pinst='pip install'
 alias de='source deactivate'
@@ -332,8 +333,11 @@ bind -x '"\C-l": clear;'      # clear screen with ctrl+l
 #emacs-like bindings that come with bash
 bind "\C-a":beginning-of-line
 bind "\C-k":kill-line
+bind '"\ed":kill-word'  # \e means alt
 bind "\C-f":forward-char
+bind '"\ef":forward-word'
 bind "\C-b":backward-char
+bind '"\eb":backward-word'
 bind "\C-n":menu-complete
 bind "\C-p":menu-complete-backward
 # bind "\A-f":forward-word
