@@ -3,6 +3,7 @@
 # for examples
 
 # TODO:  make bash prompt cycle through things I should remember (ie. python syntax, Lisp syntax, whatever else I'm working on at the moment. It could also link to a UNIX manpage)
+  # TODO: make sure all the usual emacs shortcuts (ctrl+key) still work when we have vim mode active
 
 # If not running interactively, don't do anything
 case $- in
@@ -316,6 +317,7 @@ alias red='redshift'
 #    opening files
 # vim
 alias v='vim'
+alias sv='sudo vim'
 
 # vim mode (Luke Smith tutorial: https://www.youtube.com/watch?v=GqoJQft5R2E):
 set -o vi
@@ -342,6 +344,7 @@ bind "\C-n":menu-complete
 bind "\C-p":menu-complete-backward
 # bind "\A-f":forward-word
 # bind "\C-d":delete-char
+# bind "\C-t"         # swap-char?  idk what it's called
 
 # pdfs (evince)
 alias ev='evince'
