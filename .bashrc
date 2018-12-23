@@ -102,35 +102,36 @@ fi
 ######## code (compilation, running) #######
 
 # lisp
-alias arc='/home/n/arc/arc-nu/arc'
+alias arc='time /home/n/arc/arc-nu/arc'
 #alias arc='/home/n/racket/bin/racket -f /home/n/mz/tmp/arc3.1/as.scm'
 #alias arc='/home/n/arc/anarki/arc.sh -n'
-alias ra='/home/n/racket/bin/racket -il xrepl'
-alias rac='/home/n/racket/bin/racket -il xrepl'
-alias racket='/home/n/racket/bin/racket -il xrepl'
+alias ra='time /home/n/racket/bin/racket -il xrepl'
+alias rac='time /home/n/racket/bin/racket -il xrepl'
+alias racket='time /home/n/racket/bin/racket -il xrepl'
 
 # python
-alias python='python2'
-alias py='python2'
-alias p='python2'
-alias p3='python3.5' #'python3'
-alias p36='python3.6'
-alias p2='python2'   #'python2'
+alias p='time python2'
+alias p2='time python2'   #'python2'
+alias python='time python2'
+alias py='time python2'
+alias p3='time python3.5' #'python3'
+alias p36='time python3.6'
 alias jn='jupyter notebook'
 alias ipy='ipython'
 
 # virtual envs, conda
 alias ca='source activate cat'
-alias my='source activate my_cat'
+alias c2='source activate cat2'
 alias c3='source activate cat_opencv3'
+alias my='source activate my_cat'
 alias cinst='conda install'
 alias pinst='pip install'
 alias de='source deactivate'
 alias ac='source activate'
 
 # java
-alias jv='java'
-alias jc='javac'
+alias jv='time java'
+alias jc='time javac'
 
 # make (valid iff you've created a "make" file)
 alias m='make'
