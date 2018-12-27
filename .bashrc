@@ -110,12 +110,14 @@ alias rac='time /home/n/racket/bin/racket -il xrepl'
 alias racket='time /home/n/racket/bin/racket -il xrepl'
 
 # python
-alias p='time python2'
-alias p2='time python2'   #'python2'
-alias python='time python2'
-alias py='time python2'
-alias p3='time python3.5' #'python3'
+alias p='time python3'
+alias python='time python3'
+alias py='time python3'
+alias p3='time python3'
+alias p37='time python3.7'
 alias p36='time python3.6'
+alias p35='time python3.5'
+alias p2='time python2'
 alias jn='jupyter notebook'
 alias ipy='ipython'
 
@@ -438,4 +440,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # blender
 export PATH="/opt/blender/:$PATH"
+
+# conda
+export PATH="~/anaconda3/bin:$PATH"
+
 
