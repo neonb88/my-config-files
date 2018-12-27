@@ -2,6 +2,7 @@ import numpy as np
 import bpy
 from  math import sqrt
 
+#================================================================
 def make_list_of_tuples_from_nparr(arr):
     '''
         3-tuples contain (x, y, z) locations of the nonzero elements in arr
@@ -14,6 +15,53 @@ def make_list_of_tuples_from_nparr(arr):
                 if(arr[i][j][k]):
                     li.append((i,j,k))
     return li
+#================================================================
+def make_verts(verts_arr):
+  '''
+      output a list of tuples that blender can read, ie.:
+
+       (    x  ,    y  ,    z  ),
+
+      [(   0.0 ,   0.0 ,   0.0 ),
+       (  10.0 ,  10.0 ,   0.0 ),
+       (  10.0 ,   0.0 ,  10.0 ),
+       (   0.0 ,  10.0 ,  10.0 ),
+       ...
+       ]
+       
+
+      input format: np array of shape (large_num, 3)
+
+     pt:  [x  y, z]
+
+   array([[2, 1, 0]
+          [0, 3, 2],
+          [0, 1, 4]], dtype=int32)
+  '''
+  tups=[]
+  for vert in verts_arr:
+    tups.append(
+      (vert[0],vert[1],vert[2]))
+  return tups
+#================================================================
+def make_faces(faces_arr):
+  '''
+        input format: np array of shape (large_num, 3)
+           this face is made from verts 2, 1, and 0:
+     array([[2, 1, 0]
+            [0, 3, 2],
+            [0, 1, 4]], dtype=int32)
+
+        output format: list of tuples:
+        [ (2,1,0),
+          (0,3,2),
+          (0,1,4)]
+  '''
+  tups=[]
+  for face in faces_arr:
+    tups.append(face[0], face[1], face[2])
+  return tups
+#================================================================
 
 filename  = '/home/n/Documents/IMPORTANT/business_work/cat/get_clothing_sizes_from_pix/cat_1st_demo/model_3d_of_nathan___120_x_120__shell.npy'
 filename  = '/home/n/Documents/IMPORTANT/business_work/cat/get_clothing_sizes_from_pix/cat_1st_demo/model___built_from_masks_legs2018_06_19___12:58:36.npy'
