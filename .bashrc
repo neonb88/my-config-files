@@ -120,6 +120,7 @@ alias jn='jupyter notebook'
 alias ipy='ipython'
 
 # virtual envs, conda
+# TODO: prune after conda reinstall.  
 alias ca='source activate cat'
 alias c2='source activate cat2'
 alias c3='source activate cat_opencv3'
@@ -143,6 +144,7 @@ alias chmx='chmod +x'
 
 #time
 alias t='time'
+# TODO:   time for conda operations (downloads, installs, copying environments, all take lotsa time)
 ############################################################################################################################################  
 ############################################        getting around the terminal         ####################################################
 ############################################################################################################################################  
@@ -416,10 +418,6 @@ export EDITOR=vim
 # virtualenv and virtualenvwrapper
 # source /usr/local/bin/virtualenvwrapper.sh
 # export WORKON_HOME=/home/n/.virtualenvs
-
-# added by Anaconda3 installer
-export PATH="/home/n/anaconda3/bin:$PATH"
-export PATH="/usr/bin/:$PATH"
 
 # added by me for proper Jupyter downloads?  I don't think it's necessary becuase this was already on my PATH"
 # export PATH="/usr/bin:$PATH"
