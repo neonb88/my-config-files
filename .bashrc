@@ -426,7 +426,7 @@ export EDITOR=vim
 
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
-# OpenCV
+# OpenCV    TODO: get rid of?  Nah this is still here j fine?  Tho doesn't work so gr8 with conda
 export LD_LIBRARY_PATH="/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
 
 
@@ -439,6 +439,3 @@ export NVM_DIR="$HOME/.nvm"
 # blender
 export PATH="/opt/blender/:$PATH"
 
-# SMPL
-SMPL_LOCATION=~/Downloads/smpl
-export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION
