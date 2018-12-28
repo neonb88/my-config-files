@@ -20,3 +20,11 @@
 file_suffixes_arent_read_by_the_command_line.py
 .dmrc
 examples.desktop
+*~
+.gnuplot_history
+.sbclrc
+.slime-history.eld
+.sudo_as_admin_successful
+quicklisp.lisp
+quicklisp.lisp.asc
+
