@@ -23,5 +23,5 @@ for i in range(num_secs):
         print(str(i // 60) + ' minutes have passed')
     os.system('sleep 1')
 
-os.system('xdg-open CAPTIAN_JACK.mp3')
+os.system('xdg-open ~/CAPTIAN_JACK.mp3')
 
