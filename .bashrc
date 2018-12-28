@@ -335,6 +335,15 @@ bind '"kJ":vi-movement-mode'
 bind '"Kj":vi-movement-mode'
 bind '"KJ":vi-movement-mode'
 
+bind '"jj":vi-movement-mode'
+bind '"jJ":vi-movement-mode'
+bind '"Jj":vi-movement-mode'
+bind '"JJ":vi-movement-mode'
+bind '"kk":vi-movement-mode'
+bind '"kK":vi-movement-mode'
+bind '"Kk":vi-movement-mode'
+bind '"KK":vi-movement-mode'
+
 bind -x '"\C-l": clear;'      # clear screen with ctrl+l
 
 #emacs-like bindings that come with bash
@@ -421,8 +430,6 @@ export EDITOR=vim
 # source /usr/local/bin/virtualenvwrapper.sh
 # export WORKON_HOME=/home/n/.virtualenvs
 
-# added by me for proper Jupyter downloads?  I don't think it's necessary becuase this was already on my PATH"
-# export PATH="/usr/bin:$PATH"
 
 
 
@@ -443,5 +450,4 @@ export PATH="/opt/blender/:$PATH"
 
 # conda
 export PATH="~/anaconda3/bin:$PATH"
-
 

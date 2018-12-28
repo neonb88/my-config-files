@@ -4,6 +4,8 @@
 "  \ V /| | | | | | | | | (__
 "   \_/ |_|_| |_| |_|_|  \___|
 
+
+
 let mapleader="U"
 map <leader>O o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
 map <leader>o o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
@@ -20,6 +22,14 @@ map <leader>o o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return
 :imap kJ <Esc>
 :imap Kj <Esc>
 :imap KJ <Esc>
+:imap kk <Esc>
+:imap kK <Esc>
+:imap Kk <Esc>
+:imap KK <Esc>
+:imap jj <Esc>
+:imap jJ <Esc>
+:imap Jj <Esc>
+:imap JJ <Esc>
 
 :map <Return> i<Return><Esc>
 :map <Tab> i<Tab><Esc>l
