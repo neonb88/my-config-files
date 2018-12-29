@@ -22,6 +22,7 @@ map <leader>o o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return
 :imap kJ <Esc>
 :imap Kj <Esc>
 :imap KJ <Esc>
+" TODO:   figure out a way to easily type a single k or j quickly.  Maybe spacebar?
 :imap kk <Esc>
 :imap kK <Esc>
 :imap Kk <Esc>
