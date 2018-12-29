@@ -64,7 +64,7 @@ fi
 
 ###    PROMPT
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\] $ \[\033[01;34m\]\[\033[00m\]'
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\] =========================================== \[\033[01;34m\]\[\033[00m\] \n '
 #          colors, working dir
     #PS1=' ' # just a slight indent
 else
