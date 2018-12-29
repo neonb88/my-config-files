@@ -451,3 +451,6 @@ export PATH="/opt/blender/:$PATH"
 # conda
 export PATH="~/anaconda3/bin:$PATH"
 
+# CGAL
+#export CMAKE_BUILD_TYPE="Release"
+alias g++='g++ -Wall'
