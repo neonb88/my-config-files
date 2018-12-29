@@ -454,3 +454,5 @@ export PATH="~/anaconda3/bin:$PATH"
 # CGAL
 #export CMAKE_BUILD_TYPE="Release"
 alias g++='g++ -Wall'
+alias lynx='lynx -vikeys'
+alias lx='lynx -vikeys google.com'
