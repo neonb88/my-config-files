@@ -7,10 +7,6 @@
 
 
 let mapleader="U"
-map <leader>O o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
-map <leader>o o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
-" above is the precursor to my fancier general outline-producer.  It oughta work well enough for my current purposes
-" TODO:  add a semicolon to the end of a line and Jjoin it with the next line (or in racket, just join)
 
 " escape keys 
 :imap jk <Esc>
@@ -23,14 +19,14 @@ map <leader>o o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return
 :imap Kj <Esc>
 :imap KJ <Esc>
 " TODO:   figure out a way to easily type a single k or j quickly.  Maybe spacebar?
-:imap kk <Esc>
-:imap kK <Esc>
-:imap Kk <Esc>
-:imap KK <Esc>
-:imap jj <Esc>
-:imap jJ <Esc>
-:imap Jj <Esc>
-:imap JJ <Esc>
+":imap kk <Esc>
+":imap kK <Esc>
+":imap Kk <Esc>
+":imap KK <Esc>
+":imap jj <Esc>
+":imap jJ <Esc>
+":imap Jj <Esc>
+":imap JJ <Esc>
 
 :map <Return> i<Return><Esc>
 :map <Tab> i<Tab><Esc>l
@@ -67,3 +63,10 @@ set backupdir^=~/.backup
 " TODO:   debug enter (used to work just fine, now doesn't).  Prob has something to do with these most recent additions
 
 
+map <leader>O o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
+map <leader>o o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
+" above is the precursor to my fancier general outline-producer.  It oughta work well enough for my current purposes
+" TODO:  add a semicolon to the end of a line and Jjoin it with the next line (or in racket, just join)
+
+let @s = 'A;jkJ'
+let @m = 'iif __name__=="__main__":jko  '
