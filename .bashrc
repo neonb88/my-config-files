@@ -64,7 +64,7 @@ fi
 
 ###    PROMPT
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\] =========================================== \[\033[01;34m\]\[\033[00m\] \n '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]===========================================\n   \[\033[01;34m\]\[\033[00m\]'
 #          colors, working dir
     #PS1=' ' # just a slight indent
 else
@@ -118,6 +118,8 @@ alias p37='time python3.7'
 alias p36='time python3.6'
 alias p35='time python3.5'
 alias p2='time python2'
+alias python2='time python2'
+alias python3='time python3'
 alias jn='jupyter notebook'
 alias ipy='ipython'
 
@@ -454,5 +456,3 @@ export PATH="~/anaconda3/bin:$PATH"
 # CGAL
 #export CMAKE_BUILD_TYPE="Release"
 alias g++='g++ -Wall'
-alias lynx='lynx -vikeys'
-alias lx='lynx -vikeys google.com'
