@@ -110,8 +110,8 @@ alias rac='time /home/n/racket/bin/racket -il xrepl'
 alias racket='time /home/n/racket/bin/racket -il xrepl'
 
 # python
-alias p='time python3'
-alias python='time python3'
+alias p='time python2'
+alias python='time python2'
 alias py='time python3'
 alias p3='time python3'
 alias p37='time python3.7'
@@ -125,14 +125,14 @@ alias ipy='ipython'
 
 # virtual envs, conda
 # TODO: prune after conda reinstall.  
-alias ca='source activate cat'
-alias c2='source activate cat2'
-alias c3='source activate cat_opencv3'
-alias my='source activate my_cat'
+alias ca='conda activate cat' # 'source activate cat'
+alias c2='conda activate cat2' #'source activate cat2'
+alias c3='conda activate cat_opencv3' #'source activate cat_opencv3'
+alias my='conda activate my_cat' #'source activate my_cat'
 alias cinst='conda install'
 alias pinst='pip install'
-alias de='source deactivate'
-alias ac='source activate'
+alias de='conda deactivate' #'source deactivate'
+alias ac='conda activate'   #'source activate'
 
 # java
 alias jv='time java'
@@ -451,8 +451,28 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="/opt/blender/:$PATH"
 
 # conda
-export PATH="~/anaconda3/bin:$PATH"
+#export PATH="~/anaconda3/bin:$PATH"   # TODO: uncomment.  Was only commented out b/c openpose required us to remove conda
 
 # CGAL
 #export CMAKE_BUILD_TYPE="Release"
 alias g++='g++ -Wall'
+
+# hmr, BodyLabs / Tubingen
+alias hmr='source /home/n/Documents/code/hmr/venv_hmr/bin/activate'
+
+# added by Anaconda3 2018.12 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/n/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/home/n/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/n/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/home/n/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
