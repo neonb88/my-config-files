@@ -110,7 +110,8 @@ alias rac='time /home/n/racket/bin/racket -il xrepl'
 alias racket='time /home/n/racket/bin/racket -il xrepl'
 
 # python
-alias p='time python2'
+alias p='time python3.6' # 3.6 is for segmentation under conda.
+# NOTE: for some reason conda defaults to activating "base" in a new shell these days.  Sun Jan 27 19:53:31 EST 2019 
 alias python='time python2'
 alias py='time python3'
 alias p3='time python3'
@@ -476,3 +477,6 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
+SMPL_LOCATION=~/Downloads/smpl
+export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION
+
