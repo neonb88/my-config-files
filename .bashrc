@@ -477,6 +477,7 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
-SMPL_LOCATION=~/Downloads/smpl
+#SMPL_LOCATION=~/Downloads/smpl
+SMPL_LOCATION=/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smpl # NOTE: under git
 export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION
 
