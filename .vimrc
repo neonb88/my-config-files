@@ -70,3 +70,7 @@ map <leader>o o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return
 
 let @s = 'A;jkJ'
 let @m = 'iif __name__=="__main__":jko  '
+" TODO: if possible, change ':Res' to ====>  ':res'
+
+" :set paste  " lets us paste from the Ubuntu system clipboard with proper indentation   like we would in gedit
+" :set nopaste
