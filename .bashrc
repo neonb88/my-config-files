@@ -301,7 +301,7 @@ alias f='find'
 alias gr='grep -n'
 
 # search filenames recursively
-alias fg='find | grep'
+alias fgr='find | grep'
 
 # history: find old cmds
 alias h='history'
