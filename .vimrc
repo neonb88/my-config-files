@@ -63,14 +63,19 @@ set backupdir^=~/.backup
 " TODO:   debug enter (used to work just fine, now doesn't).  Prob has something to do with these most recent additions
 
 
-map <leader>O o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
-map <leader>o o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
+  map <leader>O o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
+  map <leader>o o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
 " above is the precursor to my fancier general outline-producer.  It oughta work well enough for my current purposes
 " TODO:  add a semicolon to the end of a line and Jjoin it with the next line (or in racket, just join)
 
+" Copy things from Ubuntu 16.04 system clipboard into vim with shift+insert   (or right click + 'paste')
+  map <leader>p :set paste
+  map <leader>n :set nopaste
+
+
 let @s = 'A;jkJ'
 let @m = 'iif __name__=="__main__":jko  '
-" TODO: if possible, change ':Res' to ====>  ':res'
+" TODO: find a way to change ':Res' to ====>  ':res'
 
 " :set paste  " lets us paste from the Ubuntu system clipboard with proper indentation   like we would in gedit
 " :set nopaste
