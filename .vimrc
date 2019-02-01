@@ -69,8 +69,10 @@ set backupdir^=~/.backup
 " TODO:  add a semicolon to the end of a line and Jjoin it with the next line (or in racket, just join)
 
 " Copy things from Ubuntu 16.04 system clipboard into vim with shift+insert   (or right click + 'paste')
-  map <leader>p :set paste
-  map <leader>n :set nopaste
+  map <leader>N :set nopaste
+  map <leader>p :set paste  
+" TODO: reconcile <leader>p for 'paste'    with <leader>P for 'plus' in vertical resizing.
+" TODO: automate the ENTIRE paste process from system clipboard; find a way to hit <Return> twice or three times or whatever, and automate the hitting of shift+insert as well.
 
 
 let @s = 'A;jkJ'
