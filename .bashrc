@@ -469,7 +469,7 @@ if [ $? -eq 0 ]; then
     \eval "$__conda_setup"
 else
     if [ -f "/home/n/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/n/anaconda3/etc/profile.d/conda.sh"
+# . "/home/n/anaconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
         CONDA_CHANGEPS1=false conda activate base
     else
         \export PATH="/home/n/anaconda3/bin:$PATH"
@@ -480,4 +480,24 @@ unset __conda_setup
 #SMPL_LOCATION=~/Downloads/smpl
 SMPL_LOCATION=/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smpl # NOTE: under git
 export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION
+
+alias OP="/home/n/Documents/code/openpose/build/examples/openpose/openpose.bin --help" # "OP" stands for: OpenPose
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/n/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/n/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/n/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/n/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+conda deactivate # b/c it goes in with "conda base" activated (Sun Feb  3 06:35:28 EST 2019)
 
