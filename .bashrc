@@ -305,7 +305,7 @@ alias fgr='find | grep'
 
 # history: find old cmds
 alias h='history'
-alias hg='history | grep'
+alias hgr='history | grep'
 alias ht='history | tail'
 
 # diff
@@ -501,3 +501,5 @@ unset __conda_setup
 
 conda deactivate # b/c it goes in with "conda base" activated (Sun Feb  3 06:35:28 EST 2019)
 
+alias body_viz='source /home/n/Documents/code/kivy_slider/venvs/body_viz/bin/activate'
+alias web='conda activate web'

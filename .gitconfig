@@ -2,31 +2,33 @@
 	name = neonb88
 	email = nathanbendich@gmail.com
 [alias]
-    ad = add
+    ad  = add
     #############
-    b  = branch
+    b   = branch
     #############
-    c  = commit
-    cm = commit -vm
-    ca = commit -vam
+    c   = commit
+    cm  = commit -vm
+    ca  = commit -vam
     #############
-    cl = clone
+    cl  = clone
     #############
-    d  = diff
+    d   = diff
     #############
-    l = log
-    lo = log --oneline --graph --decorate
+    l   = log
+    lo  = log --oneline --graph --decorate
     #############
-    mt = mergetool
+    mt  = mergetool
     ############# ^   mergetool is good for resolving merge conflicts; it pulls up a beyondCompare UI
-    o  = checkout
+    o   = checkout
     #############
-    pl = pull
-    ps = push
+    pl  = pull
+    ps  = push
     #############
     res = reset --hard origin/master
         # moves to the main head (throws away local commits)
     #############
-    st = status
+    st  = status
+    url = config --get remote.origin.url
+
 [diff]
 	external = git-meld-diff
