@@ -2,6 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+
+# TODO: generalize this .bashrc such that even when we're on the AWS ec2 instance we can still call /home/`whoami`/... as part of the path
+
 # TODO:  make bash prompt cycle through things I should remember (ie. python syntax, Lisp syntax, whatever else I'm working on at the moment. It could also link to a UNIX manpage)
   # TODO: make sure all the usual emacs shortcuts (ctrl+key) still work when we have vim mode active
 
@@ -503,3 +506,7 @@ conda deactivate # b/c it goes in with "conda base" activated (Sun Feb  3 06:35:
 
 alias body_viz='source /home/n/Documents/code/kivy_slider/venvs/body_viz/bin/activate'
 alias web='conda activate web'
+export FLASK_APP=~/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/src/web/grinberg_mega_tutorial/The-Complete-Flask-Mega-Tutorial/CODE/microblog-0.4/microblog.py
+alias gb='conda activate flask_mgrinberg'
+export PYTHONPATH=$PYTHONPATH:/home/`whoami`/Documents/code/old/hmr
+alias all='source /home/n/hmr___and_web/bin/activate' # TODO: figure out how to get `whoami` in there WITHIN a bash alias
