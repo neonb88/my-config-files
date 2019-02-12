@@ -142,11 +142,6 @@ alias ac='conda activate'   #'source activate'
 alias jv='time java'
 alias jc='time javac'
 
-# make (valid iff you've created a "make" file)
-alias m='make'
-alias mc='make clean'
-alias ma='make all'
-
 #chmod
 alias chmx='chmod +x'
 
@@ -511,3 +506,4 @@ alias gb='conda activate flask_mgrinberg'
 export PYTHONPATH=$PYTHONPATH:/home/`whoami`/Documents/code/old/hmr
 alias all='source /home/n/hmr___and_web/bin/activate' # TODO: figure out how to get `whoami` in there WITHIN a bash alias
 alias z='readlink -f'
+alias c='cd'
