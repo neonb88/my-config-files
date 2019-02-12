@@ -510,3 +510,4 @@ export FLASK_APP=~/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018
 alias gb='conda activate flask_mgrinberg'
 export PYTHONPATH=$PYTHONPATH:/home/`whoami`/Documents/code/old/hmr
 alias all='source /home/n/hmr___and_web/bin/activate' # TODO: figure out how to get `whoami` in there WITHIN a bash alias
+alias z='readlink -f'
