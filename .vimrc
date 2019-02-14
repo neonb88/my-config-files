@@ -61,12 +61,10 @@ set backupdir^=~/.backup
   map <leader>R :vertical<Space>resize<Space>-1<Return>
 " TODO: use leader instead of 'ctrl' b/c <C-o> is useful
 " TODO:   debug enter (used to work just fine, now doesn't).  Prob has something to do with these most recent additions
-
-
   map <leader>O o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
   " O for 'Outline'
-  map <leader>L oa.<Return><Space><Space>b.<Return><Backspace><Backspace>c.<Return>d.<Return>e.<Return>f.<Return>g.<Return>h.<Esc>
-  " L for 'Letters'
+  map <leader>I oa.<Return><Space><Space>b.<Return><Backspace><Backspace>c.<Return>d.<Return>e.<Return>f.<Return>g.<Return>h.<Esc>
+  " I just because it's close to 'U.'
 " above is the precursor to my fancier general outline-producer.  It oughta work well enough for my current purposes
 " TODO:  add a semicolon to the end of a line and Jjoin it with the next line (or in racket, just join)
 
