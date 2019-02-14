@@ -507,3 +507,4 @@ export PYTHONPATH=$PYTHONPATH:/home/`whoami`/Documents/code/old/hmr
 alias all='source /home/n/hmr___and_web/bin/activate' # TODO: figure out how to get `whoami` in there WITHIN a bash alias
 alias z='readlink -f'
 alias c='cd'
+alias k='ln -s' # NOTE: destination ("endpoint") of link 1st, then source (where the link should be).  Unfortunately, the thing I really always forget is which ORDER the arguments go in, not the `ln -s` part.  But I suppose the fastest way to fix this is to just rapidly try both orders and see which works.  Sometimes I forget whether it's -s or -S, though.

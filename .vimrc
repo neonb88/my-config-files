@@ -6,7 +6,7 @@
 
 
 
-let mapleader="U"
+let mapneader="U"
 
 " escape keys 
 :imap jk <Esc>
@@ -64,7 +64,9 @@ set backupdir^=~/.backup
 
 
   map <leader>O o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
-  map <leader>o o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Esc>
+  " O for 'Outline'
+  map <leader>L oa.<Return><Space><Space>b.<Return><Backspace><Backspace>c.<Return>d.<Return>e.<Return>f.<Return>g.<Return>h.<Esc>
+  " L for 'Letters'
 " above is the precursor to my fancier general outline-producer.  It oughta work well enough for my current purposes
 " TODO:  add a semicolon to the end of a line and Jjoin it with the next line (or in racket, just join)
 
