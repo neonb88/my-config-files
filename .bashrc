@@ -395,11 +395,12 @@ alias g='git'
 alias galias='git config --get-regexp alias'  # technically incomplete, see https://stackoverflow.com/questions/7066325/list-git-aliases
 alias gst='git status'
 alias gsh='git status | head -n20'
-alias gad='git add'
+alias gad='git add -f' # goes thru .gitignore
 alias gci='git commit -m'
 alias gca='git commit -am'  # -a flag  commits all modified files in one step
 alias gpus='git push'
 alias gpul='git pull'
+# TODO: make a shell script that somehow smoothly combines gad, gci, and gpus.
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -510,3 +511,6 @@ alias c='cd'
 alias k='ln -s' # NOTE: destination ("endpoint") of link 1st, then source (where the link should be).  Unfortunately, the thing I really always forget is which ORDER the arguments go in, not the `ln -s` part.  But I suppose the fastest way to fix this is to just rapidly try both orders and see which works.  Sometimes I forget whether it's -s or -S, though.
 alias sfi='sudo find'
 alias sg='sudo grep'
+alias pw='pwd'
+alias wd='pwd' # working dir
+# TODO: kill password entry for git push
