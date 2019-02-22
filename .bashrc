@@ -514,3 +514,4 @@ alias sg='sudo grep'
 alias pw='pwd'
 alias wd='pwd' # working dir
 # TODO: kill password entry for git push
+alias x='xclip'
