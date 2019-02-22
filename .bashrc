@@ -515,3 +515,4 @@ alias pw='pwd'
 alias wd='pwd' # working dir
 # TODO: kill password entry for git push
 alias x='xclip'
+alias lsln='find . -maxdepth 1 -type l -ls' # list all symbolic links  ("ln" because that's the command typed to make a link)
