@@ -305,6 +305,7 @@ alias fgr='find | grep'
 alias h='history'
 alias hgr='history | grep'
 alias ht='history | tail'
+#alias hp='' # plain; no times, numbers, etc.  TODO
 
 # diff
 alias d='diff'
@@ -516,3 +517,9 @@ alias wd='pwd' # working dir
 # TODO: kill password entry for git push
 alias x='xclip'
 alias lsln='find . -maxdepth 1 -type l -ls' # list all symbolic links  ("ln" because that's the command typed to make a link)
+alias lln='find . -maxdepth 1 -type l'
+#alias touch_link='touch -h -t 201301291810 symlink'
+#TODO : kill capslock  (it f**ks up commands, both in VIM and bash.)
+#TODO: disable caps lock on a Ubuntu-wide level
+alias e='echo'
+alias ldi='ls -ltrAdh */'  # ld is a different command that I was overwriting

@@ -81,3 +81,5 @@ let @m = 'iif __name__=="__main__":jko  '
 
 " :set paste  " lets us paste from the Ubuntu system clipboard with proper indentation   like we would in gedit
 " :set nopaste
+"make if __name__=="__main__": a leader cmd rather than a macro
+
