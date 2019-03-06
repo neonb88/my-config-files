@@ -129,7 +129,7 @@ alias ipy='ipython'
 
 # virtual envs, conda
 # TODO: prune after conda reinstall.  
-alias ca='conda activate cat' # 'source activate cat'
+alias ca='conda activate cat12' # 'source activate cat'   # 12,11, 4 are the working ones right now (Mon Mar  4 13:28:47 EST 2019)
 alias c2='conda activate cat2' #'source activate cat2'
 alias c3='conda activate cat_opencv3' #'source activate cat_opencv3'
 alias my='conda activate my_cat' #'source activate my_cat'
@@ -523,3 +523,6 @@ alias lln='find . -maxdepth 1 -type l'
 #TODO: disable caps lock on a Ubuntu-wide level
 alias e='echo'
 alias ldi='ls -ltrAdh */'  # ld is a different command that I was overwriting
+# sample command:
+# alias grr='grep -r -i --include \*.py import\   > tests/install_tests/imports.py'     #recursive grep in only files with .py endings
+alias grr='grep -r -i --include \*.py ' # grr for "recurs"
