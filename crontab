@@ -1,0 +1,76 @@
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+#===============================================================================
+# Documentation:
+  # https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job
+  # https://askubuntu.com/questions/1031552/re-create-default-crontab
+  # https://gist.githubusercontent.com/ellvtr/c9f804e277d8bd3683766115c68a7877/raw/e6bcdbea7e89b95b75252fe593046fb7cd82ec53/crontab
+#===============================================================================
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user  command
+17 *    * * *   root    cd / && run-parts --report /etc/cron.hourly
+25 6    * * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6    * * 7   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6    1 * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+
+
+
+
+
+
+#===============================================================================
+#   minute hour day-of-month month-of-year day-of-week user-to-run-as command
+#===============================================================================
+
+
+
+
+# every minute (11:00 P.M., 11:01 P.M., 11:02 P.M., etc.)
+
+#=====================================================================
+# re-allow internet
+#  6:00 P.M.  (6:00 P.M., 6:01 P.M., 6:02 P.M., ...,  etc.)
+*/1  6 * * * root iptables -P INPUT ACCEPT
+*/1  7 * * * root iptables -P INPUT ACCEPT
+# get started on work
+*/1  8 * * * root iptables -P INPUT DROP
+*/1  9 * * * root iptables -P INPUT DROP
+*/1 10 * * * root iptables -P INPUT ACCEPT
+*/1 11 * * * root iptables -P INPUT ACCEPT
+*/1 12 * * * root iptables -P INPUT ACCEPT
+*/1 13 * * * root iptables -P INPUT ACCEPT
+# mid-afternoon dip: discourage slacking
+*/1 14 * * * root iptables -P INPUT DROP
+*/1 15 * * * root iptables -P INPUT DROP
+# Tutoring (might be good to have the interwebs)
+*/1 16 * * * root iptables -P INPUT ACCEPT
+*/1 17 * * * root iptables -P INPUT ACCEPT
+*/1 18 * * * root iptables -P INPUT ACCEPT
+
+#=====================================================================
+# KILL internet
+#  7:00 P.M.  (7:00 P.M., 7:01 P.M., 7:02 P.M., ...,  etc.)
+#  8:00 P.M.  (8:00 P.M., 8:01 P.M., 8:02 P.M., ...,  etc.)
+#  9:00 P.M.  (9:00 P.M., 9:01 P.M., 9:02 P.M., ...,  etc.)
+# 10:00 P.M.  (10:00 P.M., 10:01 P.M., 10:02 P.M., ...,  etc.)
+# 11:00 P.M.  (11:00 P.M., 11:01 P.M., 11:02 P.M., ...,  etc.)
+*/1 19 * * * root iptables -P INPUT DROP
+*/1 20 * * * root iptables -P INPUT DROP
+*/1 21 * * * root iptables -P INPUT DROP
+*/1 22 * * * root iptables -P INPUT DROP
+*/1 23 * * * root iptables -P INPUT DROP
+
+
+
+
+
+
+
