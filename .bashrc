@@ -460,6 +460,7 @@ alias g++='g++ -Wall'
 
 # hmr, BodyLabs / Tubingen
 alias hmr='source /home/n/Documents/code/hmr/venv_hmr/bin/activate'
+alias hmr2='source /home/n/Documents/code/old/hmr/hmr_March_24_2019/bin/activate'
 
 # added by Anaconda3 2018.12 installer
 # >>> conda init >>>
@@ -506,6 +507,7 @@ alias web='conda activate web'
 export FLASK_APP=~/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/src/web/grinberg_mega_tutorial/The-Complete-Flask-Mega-Tutorial/CODE/microblog-0.4/microblog.py
 alias gb='conda activate flask_mgrinberg'
 export PYTHONPATH=$PYTHONPATH:/home/`whoami`/Documents/code/old/hmr
+export PYTHONPATH=$PYTHONPATH:/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/conda_+/lib/python3.6/site-packages
 alias all='source /home/n/hmr___and_web/bin/activate' # TODO: figure out how to get `whoami` in there WITHIN a bash alias
 alias z='readlink -f'
 alias c='cd'
@@ -525,4 +527,12 @@ alias e='echo'
 alias ldi='ls -ltrAdh */'  # ld is a different command that I was overwriting
 # sample command:
 # alias grr='grep -r -i --include \*.py import\   > tests/install_tests/imports.py'     #recursive grep in only files with .py endings
-alias grr='grep -r -i --include \*.py ' # grr for "recurs"
+alias grr='grep -nr -i --include \*.py ' # grr for "recurs"
+alias lobj='ls -ltrAh *.obj'
+alias listinternet='sudo iptables -L'  # list internet rules
+alias interneton='sudo iptables -P INPUT ACCEPT'
+alias internetoff='sudo iptables -P INPUT DROP'
+alias editcron='sudo vim /etc/crontab' # used to schedule internet on-off, among other automated (timed, regular, etc.) activities
+alias bigs='du -hs * | sort -h'
+alias dusort='du -hs * | sort -h'
+#
