@@ -508,8 +508,12 @@ alias body_viz='source /home/n/Documents/code/kivy_slider/venvs/body_viz/bin/act
 alias web='conda activate web'
 export FLASK_APP=~/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/src/web/grinberg_mega_tutorial/The-Complete-Flask-Mega-Tutorial/CODE/microblog-0.4/microblog.py
 alias gb='conda activate flask_mgrinberg'
+# HMR
 export PYTHONPATH=$PYTHONPATH:/home/`whoami`/Documents/code/old/hmr
+# chumpy
 export PYTHONPATH=$PYTHONPATH:/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/conda_+/lib/python3.6/site-packages
+# measure.py, mesh.py, Go.py
+export PYTHONPATH=$PYTHONPATH:/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018
 alias all='source /home/n/hmr___and_web/bin/activate' # TODO: figure out how to get `whoami` in there WITHIN a bash alias
 alias z='readlink -f'
 alias c='cd'
