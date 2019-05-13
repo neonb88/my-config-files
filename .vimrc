@@ -77,9 +77,11 @@ set backupdir^=~/.backup
 
 let @s = 'A;jkJ'
 let @m = 'iif __name__=="__main__":jko  '
+let @f = 'ifuncname=sys._getframe().f_code.co_namejkoprint("entered function ",funcname)'
 " TODO: find a way to change ':Res' to ====>  ':res'
 
 " :set paste  " lets us paste from the Ubuntu system clipboard with proper indentation   like we would in gedit
 " :set nopaste
 "make if __name__=="__main__": a leader cmd rather than a macro
 
+" TODO: python strings NOT IN PURPLE.  hard to read.

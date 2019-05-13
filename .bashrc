@@ -130,6 +130,8 @@ alias ipy='ipython'
 # virtual envs, conda
 # TODO: prune after conda reinstall.  
 alias ca='conda activate cat12' # 'source activate cat'   # 12,11, 4 are the working ones right now (Mon Mar  4 13:28:47 EST 2019)
+alias ca11='conda activate cat11'
+alias ca12='conda activate cat12'
 alias c2='conda activate cat2' #'source activate cat2'
 alias c3='conda activate cat_opencv3' #'source activate cat_opencv3'
 alias my='conda activate my_cat' #'source activate my_cat'
@@ -510,6 +512,8 @@ export FLASK_APP=~/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018
 alias gb='conda activate flask_mgrinberg'
 # HMR
 export PYTHONPATH=$PYTHONPATH:/home/`whoami`/Documents/code/old/hmr
+export PYTHONPATH_HMR=$PYTHONPATH # because HMR has its own python2 chumpy
+
 # chumpy
 export PYTHONPATH=$PYTHONPATH:/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/conda_+/lib/python3.6/site-packages
 # measure.py, mesh.py, Go.py
@@ -541,4 +545,77 @@ alias internetoff='sudo iptables -P INPUT DROP'
 alias editcron='sudo vim /etc/crontab' # used to schedule internet on-off, among other automated (timed, regular, etc.) activities
 alias bigs='du -hs * | sort -h'
 alias dusort='du -hs * | sort -h'
-#
+alias mouseoff='xinput --disable 11'
+alias tboard='tensorboard --logdir=summaries'
+# useful cmds
+# xinput --disable 11
+# tensorboard --logdir=summaries
+alias spaces='echo "Bash version: ${BASH_VERSION}...";for i in {1..49..1}; do echo ""; done' # TODO: how to change "49" to any N we want?   also NOTE the second "1" in the "for i in {1..49..1}" is the step size (ie. for i in range(1,9,2) in python. 
+#    for i in {1..49}; do echo ""; done
+# echo $LS_COLORS #bash prompt colors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

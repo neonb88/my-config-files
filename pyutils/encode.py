@@ -9,7 +9,7 @@ def encode(string):
       encoded+=chr(ord(char)+2)
     elif char in 'abcdefghijklmnopqrstuvwxyz':
       encoded+=chr(ord(char)-3)
-    else: # numb
+    else: # I meant for this just to be numbers, but a few other characters hit this block too.
       encoded+=chr(ord(char)+1)
   return encoded
 if __name__=="__main__":
