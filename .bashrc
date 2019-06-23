@@ -1,3 +1,4 @@
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -132,6 +133,7 @@ alias ipy='ipython'
 alias ca='conda activate cat12' # 'source activate cat'   # 12,11, 4 are the working ones right now (Mon Mar  4 13:28:47 EST 2019)
 alias ca11='conda activate cat11'
 alias ca12='conda activate cat12'
+alias ju='conda activate jupyter'
 alias c2='conda activate cat2' #'source activate cat2'
 alias c3='conda activate cat_opencv3' #'source activate cat_opencv3'
 alias my='conda activate my_cat' #'source activate my_cat'
@@ -379,7 +381,7 @@ alias upd8='sudo apt-get update'
 alias upgr='sudo apt-get upgrade'
 
 # web
-alias w='w3m google.com'
+alias w3='w3m google.com' # 'w' is a command in unix.  Who knew?
 #alias w3m='w3m google.com'
 
 ############################################################################################################################################  
@@ -555,6 +557,20 @@ alias spaces='echo "Bash version: ${BASH_VERSION}...";for i in {1..49..1}; do ec
 # echo $LS_COLORS #bash prompt colors
 
 
+
+# gcloud forwarding, login, etc.
+#export DISPLAY=localhost:0.0  # I think this only works if you know your IP address???
+
+export DISPLAY=:0.0 # TODO: did this IP address work?  (Wed Jun 19 20:35:44 EDT 2019 - nxb )
+alias cs231n='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-v' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
+alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-v' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
+
+# 1st argument is the tar.xz file name; 2nd argument is the directory.
+# Full cmd example: XZ_OPT=-e9 tar cJf cs231n_assn1___up_to_SVM_1st_draft.tar.xz /home/cat_macys_vr/assignment1
+alias compress='XZ_OPT=-e9 tar cJf'     
+
+# 1st argument is the tar.xz file name; 2nd argument is the directory.
+alias backup='XZ_OPT=-e9 tar cJf cs231n_assn1.tar.xz /home/cat_macys_vr/assignment1'
 
 
 
