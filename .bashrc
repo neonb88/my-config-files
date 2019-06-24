@@ -571,6 +571,7 @@ alias compress='XZ_OPT=-e9 tar cJf'
 
 # 1st argument is the tar.xz file name; 2nd argument is the directory.
 alias backup='XZ_OPT=-e9 tar cJf cs231n_assn1.tar.xz /home/cat_macys_vr/assignment1'
+alias bounce_CIFAR_data='mv ~/assignment1/cs231n/datasets/cifar-10-batches-py/ ~/Downloads/ && sleep 600 && mv ~/Downloads/cifar-10-batches-py/  ~/assignment1/cs231n/datasets/'
 
 
 
