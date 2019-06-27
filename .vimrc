@@ -88,7 +88,7 @@ let @f = 'ifuncname=sys._getframe().f_code.co_namejkoprint("entered function ",f
 
 " save/recover vim screen setup in 1 (2) keystrokes: https://stackoverflow.com/questions/1416572/vi-vim-restore-opened-files
 " Quick write session with F2
-map <F2> :mksession! ~/vim_session <cr>
+map <F2> :mksession! ~/.vim_session <cr>
 " And load session with F3
-map <F3> :source ~/vim_session <cr>
+map <F3> :source ~/.vim_session <cr>
 
