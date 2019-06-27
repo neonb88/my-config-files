@@ -91,4 +91,5 @@ let @f = 'ifuncname=sys._getframe().f_code.co_namejkoprint("entered function ",f
 map <F2> :mksession! ~/.vim_session <cr>
 " And load session with F3
 map <F3> :source ~/.vim_session <cr>
+" This line (source ~/.vim_session) is giving me problems on a GCloud Compute Instance.  (the HIDDEN file version, not the visible file one)
 
