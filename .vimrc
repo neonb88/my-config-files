@@ -85,3 +85,8 @@ let @f = 'ifuncname=sys._getframe().f_code.co_namejkoprint("entered function ",f
 "make if __name__=="__main__": a leader cmd rather than a macro
 
 " TODO: python strings NOT IN PURPLE.  hard to read.
+
+" save/recover vim screen setup in 1 (2) keystrokes: https://stackoverflow.com/questions/1416572/vi-vim-restore-opened-files
+map <F2> :mksession! ~/vim_session <cr> " Quick write session with F2
+map <F3> :source ~/vim_session <cr>     " And load session with F3
+
