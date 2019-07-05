@@ -563,7 +563,8 @@ alias spaces='echo "Bash version: ${BASH_VERSION}...";for i in {1..49..1}; do ec
 
 export DISPLAY=:0.0 # TODO: did this IP address work?  (Wed Jun 19 20:35:44 EDT 2019 - nxb )
 alias cs231n='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-v' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
-alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-v' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
+alias cs231_CPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-v' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n-no-gpu-0-vm"'
+alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-v' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
 
 # 1st argument is the tar.xz file name; 2nd argument is the directory.
 # Full cmd example: XZ_OPT=-e9 tar cJf cs231n_assn1___up_to_SVM_1st_draft.tar.xz /home/cat_macys_vr/assignment1
