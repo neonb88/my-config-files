@@ -566,23 +566,44 @@ alias cs231n='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-v'
 alias cs231_CPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-v' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n-no-gpu-0-vm"'
 alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-v' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
 
+#===================================================================================================
 # 1st argument is the tar.xz file name; 2nd argument is the directory.
 # Full cmd example: XZ_OPT=-e9 tar cJf cs231n_assn1___up_to_SVM_1st_draft.tar.xz /home/cat_macys_vr/assignment1
 alias compress='XZ_OPT=-e9 tar cJf'     
 
+
 # 1st argument is the tar.xz file name; 2nd argument is the directory.
-alias backup='XZ_OPT=-e9 tar cJf cs231n_assn1.tar.xz /home/cat_macys_vr/assignment1'
-alias bounce_CIFAR_data='mv ~/assignment1/cs231n/datasets/cifar-10-batches-py/ ~/Downloads/ && sleep 600 && mv ~/Downloads/cifar-10-batches-py/  ~/assignment1/cs231n/datasets/'
+
+# cs231n assignment 1:
+alias backup1='XZ_OPT=-e9 tar cJf cs231n_assn1.tar.xz /home/cat_macys_vr/assignment1'   # was true for assignment1.
+# assignment 2:
+alias backup2='XZ_OPT=-e9 tar cJf cs231n_assn2.tar.xz /home/cat_macys_vr/assignment2'
+alias backup='backup2'
+
+#alias bounce_CIFAR_data='mv ~/assignment1/cs231n/datasets/cifar-10-batches-py/ ~/Downloads/ && sleep 600 && mv ~/Downloads/cifar-10-batches-py/  ~/assignment1/cs231n/datasets/'
 
 
 
 
 alias bounce_CIFAR_data='mv ~/assignment1/cs231n/datasets/cifar-10-batches-py/ ~/Downloads/ && sleep 600 && mv ~/Downloads/cifar-10-batches-py/  ~/assignment1/cs231n/datasets/'
 alias mv_pkls='mv /home/cat_macys_vr/assignment1/*.pkl ~/Downloads/'
-alias bounce='mv_pkls && bounce_CIFAR_data && mv /home/cat_macys_vr/Downloads/*.pkl /home/cat_macys_vr/assignment1/'
+alias bounce1='mv_pkls && bounce_CIFAR_data && mv /home/cat_macys_vr/Downloads/*.pkl /home/cat_macys_vr/assignment1/'
 
 
 
+#===================================================================================================
+# cs231n: assignment 2:
+#===================================================================================================
+alias bounce_cython='mv /home/cat_macys_vr/assignment2/cs231n/build /home/cat_macys_vr/Downloads/ &&\
+mv /home/cat_macys_vr/assignment2/cs231n/im2col_cython.cpython-35m-x86_64-linux-gnu.so /home/cat_macys_vr/Downloads/ &&\
+mv /home/cat_macys_vr/assignment2/cs231n/im2col_cython.c /home/cat_macys_vr/Downloads/ &&\
+sleep 600 && \
+mv /home/cat_macys_vr/Downloads/build /home/cat_macys_vr/assignment2/cs231n/ &&\
+mv /home/cat_macys_vr/Downloads/im2col_cython.cpython-35m-x86_64-linux-gnu.so  /home/cat_macys_vr/assignment2/cs231n/  &&\
+mv /home/cat_macys_vr/Downloads/im2col_cython.c /home/cat_macys_vr/assignment2/cs231n/'
+
+alias bounce2='bounce_cython'
+alias bounce='bounce2'
 
 
 
