@@ -592,19 +592,19 @@ alias bounce1='mv_pkls && bounce_CIFAR_data && mv /home/cat_macys_vr/Downloads/*
 
 
 #===================================================================================================
-# cs231n: assignment 2:
+# cs231n: assignment 2:                             CPU, NOT GPU.
 #===================================================================================================
 alias bounce_cython='mv /home/cat_macys_vr/assignment2/cs231n/build /home/cat_macys_vr/Downloads/ &&\
 mv /home/cat_macys_vr/assignment2/cs231n/im2col_cython.cpython-35m-x86_64-linux-gnu.so /home/cat_macys_vr/Downloads/ &&\
 mv /home/cat_macys_vr/assignment2/cs231n/im2col_cython.c /home/cat_macys_vr/Downloads/ &&\
-mv /home/cat_macys_vr/assignment2/cs231n/*.pkl /home/cat_macys_vr/Downloads/ &&\
+mv /home/cat_macys_vr/assignment2/*.pkl /home/cat_macys_vr/Downloads/ &&\
 sleep 600 && \
 mv /home/cat_macys_vr/Downloads/build /home/cat_macys_vr/assignment2/cs231n/ &&\
 mv /home/cat_macys_vr/Downloads/im2col_cython.cpython-35m-x86_64-linux-gnu.so  /home/cat_macys_vr/assignment2/cs231n/  &&\
 mv /home/cat_macys_vr/Downloads/im2col_cython.c /home/cat_macys_vr/assignment2/cs231n/ &&\
 mv /home/cat_macys_vr/Downloads/*.pkl /home/cat_macys_vr/assignment2/cs231n/ '
 
-alias mvback2='mv /home/cat_macys_vr/Downloads/*.pkl /home/cat_macys_vr/assignment2/cs231n/ &&\
+alias mvback2='mv /home/cat_macys_vr/Downloads/*.pkl /home/cat_macys_vr/assignment2/ &&\
 mv /home/cat_macys_vr/Downloads/im2col_cython.c /home/cat_macys_vr/assignment2/cs231n/ &&\
 mv /home/cat_macys_vr/Downloads/im2col_cython.cpython-35m-x86_64-linux-gnu.so  /home/cat_macys_vr/assignment2/cs231n/  &&\
 mv /home/cat_macys_vr/Downloads/build /home/cat_macys_vr/assignment2/cs231n/ &&\ '
