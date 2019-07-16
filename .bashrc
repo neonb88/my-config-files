@@ -604,6 +604,11 @@ mv /home/cat_macys_vr/Downloads/im2col_cython.cpython-35m-x86_64-linux-gnu.so  /
 mv /home/cat_macys_vr/Downloads/im2col_cython.c /home/cat_macys_vr/assignment2/cs231n/ &&\
 mv /home/cat_macys_vr/Downloads/*.pkl /home/cat_macys_vr/assignment2/cs231n/ '
 
+alias mvback2='mv /home/cat_macys_vr/Downloads/*.pkl /home/cat_macys_vr/assignment2/cs231n/ &&\
+mv /home/cat_macys_vr/Downloads/im2col_cython.c /home/cat_macys_vr/assignment2/cs231n/ &&\
+mv /home/cat_macys_vr/Downloads/im2col_cython.cpython-35m-x86_64-linux-gnu.so  /home/cat_macys_vr/assignment2/cs231n/  &&\
+mv /home/cat_macys_vr/Downloads/build /home/cat_macys_vr/assignment2/cs231n/ &&\ '
+
 alias bounce2='bounce_cython'
 alias bounce='bounce2'
 
