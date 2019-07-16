@@ -161,7 +161,8 @@ alias lt='ls -ltrAh | tail'
 alias lold='ls -ltAh | tail'
 
 # dirs
-alias ldir='ls -ltrAdh */'  # ld is a different command that I was overwriting
+alias ldir='ls -ltrAdh */ .*/'  # ld is a different command (a "REAL" UNIX command) that I was overwriting
+
 
 alias ltail='ls -ltrAh | tail'
 alias lhead='ls -ltrAh | head'
