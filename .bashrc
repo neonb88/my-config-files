@@ -161,12 +161,12 @@ alias lt='ls -ltrAh | tail'
 alias lold='ls -ltAh | tail'
 
 # dirs
-alias ldir='ls -ltrAdh */ .*/'  # ld is a different command (a "REAL" UNIX command) that I was overwriting
+alias ldir  = 'ls -ltrAdh */'  # ld is a different command (a "REAL" UNIX command) that I was overwriting
+alias ldi   = 'ls -ltrAdh */ .*/'  # ld is a different command that I was overwriting
 
-
-alias ltail='ls -ltrAh | tail'
-alias lhead='ls -ltrAh | head'
-alias lsize='ls -lSrh'
+alias ltail = 'ls -ltrAh | tail'
+alias lhead = 'ls -ltrAh | head'
+alias lsize = 'ls -lSrh'
 
 # ls [type of file]
 alias lpy='ls -ltrAh *.py'
@@ -285,6 +285,7 @@ alias lcbl='ls -ltrAh *.cbl'
 alias lcob='ls -ltrAh *.cob'
 alias lcpy='ls -ltrAh *.cpy'
 alias lpkl='ls -ltrAh *.pkl'
+alias lobj='ls -ltrAh *.obj'
 
 # stupidity protection against overwrites
 alias rm='rm -iv'
@@ -536,11 +537,9 @@ alias lln='find . -maxdepth 1 -type l'
 #TODO : kill capslock  (it f**ks up commands, both in VIM and bash.)
 #TODO: disable caps lock on a Ubuntu-wide level
 alias e='echo'
-alias ldi='ls -ltrAdh */'  # ld is a different command that I was overwriting
 # sample command:
 # alias grr='grep -r -i --include \*.py import\   > tests/install_tests/imports.py'     #recursive grep in only files with .py endings
 alias grr='grep -nr -i --include \*.py ' # grr for "recurs"
-alias lobj='ls -ltrAh *.obj'
 alias listinternet='sudo iptables -L'  # list internet rules
 alias interneton='sudo iptables -P INPUT ACCEPT'
 alias internetoff='sudo iptables -P INPUT DROP'
