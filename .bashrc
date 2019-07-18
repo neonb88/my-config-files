@@ -161,12 +161,12 @@ alias lt='ls -ltrAh | tail'
 alias lold='ls -ltAh | tail'
 
 # dirs
-alias ldir  = 'ls -ltrAdh */'  # ld is a different command (a "REAL" UNIX command) that I was overwriting
-alias ldi   = 'ls -ltrAdh */ .*/'  # ld is a different command that I was overwriting
+alias ldir='ls -ltrAdh */'  # ld is a different command (a "REAL" UNIX command) that I was overwriting
+alias ldi='ls -ltrAdh */ .*/'  # ld is a different command that I was overwriting
 
-alias ltail = 'ls -ltrAh | tail'
-alias lhead = 'ls -ltrAh | head'
-alias lsize = 'ls -lSrh'
+alias ltail='ls -ltrAh | tail'
+alias lhead='ls -ltrAh | head'
+alias lsize='ls -lSrh'
 
 # ls [type of file]
 alias lpy='ls -ltrAh *.py'
