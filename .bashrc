@@ -286,6 +286,8 @@ alias lcob='ls -ltrAh *.cob'
 alias lcpy='ls -ltrAh *.cpy'
 alias lpkl='ls -ltrAh *.pkl'
 alias lobj='ls -ltrAh *.obj'
+alias lipynb='l *ipynb'
+alias ljn='l *ipynb'
 
 # stupidity protection against overwrites
 alias rm='rm -iv'
@@ -562,7 +564,8 @@ alias spaces='echo "Bash version: ${BASH_VERSION}...";for i in {1..49..1}; do ec
 
 export DISPLAY=:0.0 # TODO: did this IP address work?  (Wed Jun 19 20:35:44 EDT 2019 - nxb )
 alias cs231n='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
-alias cs231_CPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n-no-gpu-0-vm"'
+#alias cs231_CPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n-no-gpu-0-vm"'   # This is my old CPU VM instance, not the one I accidentally stumbled into on August 7, 2019   -nxb
+alias cs231_CPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-west1-b" "cat_macys_vr@cs231n-tensorflow-0-vm"'
 alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
 
 #===================================================================================================
@@ -582,6 +585,105 @@ alias backup3='XZ_OPT=-e9 tar cJf cs231n_assn3.tar.xz /home/cat_macys_vr/assignm
 alias backup='backup2'
 
 #alias bounce_CIFAR_data='mv ~/assignment1/cs231n/datasets/cifar-10-batches-py/ ~/Downloads/ && sleep 600 && mv ~/Downloads/cifar-10-batches-py/  ~/assignment1/cs231n/datasets/'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
