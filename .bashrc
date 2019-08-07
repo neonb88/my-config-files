@@ -577,6 +577,8 @@ alias compress='XZ_OPT=-e9 tar cJf'
 alias backup1='XZ_OPT=-e9 tar cJf cs231n_assn1.tar.xz /home/cat_macys_vr/assignment1'   # was true for assignment1.
 # assignment 2:
 alias backup2='XZ_OPT=-e9 tar cJf cs231n_assn2.tar.xz /home/cat_macys_vr/assignment2'
+# assn 3:
+alias backup3='XZ_OPT=-e9 tar cJf cs231n_assn3.tar.xz /home/cat_macys_vr/assignment3'
 alias backup='backup2'
 
 #alias bounce_CIFAR_data='mv ~/assignment1/cs231n/datasets/cifar-10-batches-py/ ~/Downloads/ && sleep 600 && mv ~/Downloads/cifar-10-batches-py/  ~/assignment1/cs231n/datasets/'
