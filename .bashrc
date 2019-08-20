@@ -485,11 +485,22 @@ else
 fi
 unset __conda_setup
 # <<< conda init <<<
+
+
+
+
 #SMPL_LOCATION=~/Downloads/smpl
 SMPL_LOCATION=/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smpl # NOTE: under git
 export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION
 SMPL_LOCATION2=/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smpl/smpl_webuser
 export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION2
+
+# For more details, see https://github.com/vchoutas/smplx .
+SMPLX_LOC=/home/n/Downloads/smplx/models
+SMPLX_FOLDER=$SMPLX_LOC
+
+
+
 
 alias OP="/home/n/Documents/code/openpose/build/examples/openpose/openpose.bin --help" # "OP" stands for: OpenPose
 
