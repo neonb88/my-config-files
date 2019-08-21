@@ -164,6 +164,7 @@ alias lold='ls -ltAh | tail'
 alias ldir='ls -ltrAdh */'  # ld is a different command (a "REAL" UNIX command) that I was overwriting
 alias ldi='ls -ltrAdh */ .*/'  # ld is a different command that I was overwriting
 
+alias lwc='l|wc'
 alias ltail='ls -ltrAh | tail'
 alias lhead='ls -ltrAh | head'
 alias lsize='ls -lSrh'
@@ -288,6 +289,7 @@ alias lpkl='ls -ltrAh *.pkl'
 alias lobj='ls -ltrAh *.obj'
 alias lipynb='l *ipynb'
 alias ljn='l *ipynb'
+alias lnpz='l *npz .*npz'
 
 # stupidity protection against overwrites
 alias rm='rm -iv'
@@ -445,6 +447,28 @@ export EDITOR=vim
 
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
+
+# added by Anaconda3 2018.12 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/n/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/home/n/anaconda3/etc/profile.d/conda.sh" ]; then
+# . "/home/n/anaconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/home/n/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+
+
+#===================================================================================================
+#========================================= "Cat" stuff: ============================================
+#===================================================================================================
 # OpenCV    TODO: get rid of?  Nah this is still here j fine?  Tho doesn't work so gr8 with conda
 export LD_LIBRARY_PATH="/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
 
@@ -468,26 +492,9 @@ alias g++='g++ -Wall'
 # hmr, BodyLabs / Tubingen
 alias hmr='source /home/n/Documents/code/hmr/venv_hmr/bin/activate'
 alias hmr2='source /home/n/Documents/code/old/hmr/hmr_March_24_2019/bin/activate'
-
-# added by Anaconda3 2018.12 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/n/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/home/n/anaconda3/etc/profile.d/conda.sh" ]; then
-# . "/home/n/anaconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/home/n/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
-
-
-
+alias SMPLX='conda deactivate && conda activate cat11 && python3 /home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smplx/examples/demo.py --model-folder $SMPLX_FOLDER --plot-joints=True --gender="female"'
+alias homogenus='cd /home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smplx/_homogenus_____CLICKME/homogenus && conda deactivate && conda activate cat11 && python3 -m homogenus.tf.homogenus_infer -ii ./samples/images/ -io ./samples/images_gendered/ -oi ./samples/openpose_keypoints/ -oo ./samples/openpose_keypoints_gendered/ -tm /home/n/Downloads/homogenus_v1_0/trained_models/tf/'
+alias SMPLifyX='python3 smplifyx/main.py --config cfg_files/fit_smplx.yaml --data_folder $DATA_FOLDER --output_folder $OUTPUT_FOLDER --visualize="True"  --model_folder $MODEL_FOLDER --vposer_ckpt $VPOSER_FOLDER --part_segm_fn smplx_parts_segm.pkl --use_cuda False --interpenetration False'
 
 #SMPL_LOCATION=~/Downloads/smpl
 SMPL_LOCATION=/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smpl # NOTE: under git
