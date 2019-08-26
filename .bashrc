@@ -156,7 +156,7 @@ alias t='time'
 ############################################################################################################################################  
 
 # some more ls aliases
-alias l='ls -ltrAh'
+alias l='pwd && ls -ltrAh'
 alias lt='ls -ltrAh | tail'
 alias lold='ls -ltAh | tail'
 
