@@ -565,7 +565,7 @@ alias interneton='sudo iptables -P INPUT ACCEPT'
 alias internetoff='sudo iptables -P INPUT DROP'
 alias editcron='sudo vim /etc/crontab' # used to schedule internet on-off, among other automated (timed, regular, etc.) activities
 alias bigs='du -hs * | sort -h'
-alias dusort='du -hs * | sort -h'
+alias dusort='du -hs * .* | sort -h'
 alias mouseoff='xinput --disable 11'
 alias tboard='tensorboard --logdir=summaries'
 # useful cmds
