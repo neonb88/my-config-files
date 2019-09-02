@@ -589,10 +589,37 @@ alias spaces='echo "Bash version: ${BASH_VERSION}...";for i in {1..49..1}; do ec
 
 export DISPLAY=:0.0 # TODO: did this IP address work?  (Wed Jun 19 20:35:44 EDT 2019 - nxb )
 
+
+
+
+# NOTE: TODO:   More variants & useful docker commands at:
+# 1.  https://stackoverflow.com/questions/44480740/how-to-save-a-docker-container-state
+#   a.
+# 2.  https://stackoverflow.com/questions/23735149/what-is-the-difference-between-a-docker-image-and-a-container
+# 3.
+# 4.
+# 5.
+# 6.
+# 7.
+# 8.
+
+
+
+
+
+
+
+
+
+# This 'dock1' alias is also helpful for    copying and doing variants
+alias dock1='docker run -it --rm --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 nxb/1'
 # I called this alias "OPV"   b/c the whole reason I made it was to use OpenPose (OP) on a Virtual (V) machine.
 alias OPV='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-central1-a" "cat_macys_vr@openpose-ubuntu-1"'
 alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-east1-d" "cat_macys_vr@cuda-version-test-0-vm"'
 #alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-east1-d" "cat_macys_vr@torch-smplx-vm"'
+
+
+
 
 #'gcloud compute  ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-east1-d" "cat_macys_vr@torch-5-vm"'
 #'gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@pytorch-1-vm"'
