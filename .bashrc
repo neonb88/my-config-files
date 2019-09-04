@@ -618,6 +618,7 @@ export DISPLAY=:0.0 # TODO: did this IP address work?  (Wed Jun 19 20:35:44 EDT 
 alias dock1='docker run -it --rm --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 nxb/1'
 # I called this alias "OPV"   b/c the whole reason I made it was to use OpenPose (OP) on a Virtual (V) machine.
 alias OPV='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-central1-a" "cat_macys_vr@openpose-ubuntu-1"'
+alias OP2='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-central1-a" "cat_macys_vr@openpose-ubuntu16-1"'
 alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-east1-d" "cat_macys_vr@cuda-version-test-0-vm"'
 #alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-east1-d" "cat_macys_vr@torch-smplx-vm"'
 
