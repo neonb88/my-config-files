@@ -628,7 +628,10 @@ export DISPLAY=:0.0 # TODO: did this IP address work?  (Wed Jun 19 20:35:44 EDT 
 
 
 # This 'dock1' alias is also helpful for    copying and doing variants
-alias dock1='docker run -it --rm --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 nxb/1'
+alias dock1='docker run -it --rm --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 nxb_working2'
+#    docker commit 46947b43d681 nxb_working2
+#   sha256:94e035b8d4c6f3dd35b609be61fdf843151f589029265ad3761d610eb5c70c4f
+
 # I called this alias "OPV"   b/c the whole reason I made it was to use OpenPose (OP) on a Virtual (V) machine.
 alias b4w='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-east4-c" "cat_macys_vr@blend4web-server-ubuntu14"'
 alias OPV='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-central1-a" "cat_macys_vr@openpose-ubuntu-1"'
