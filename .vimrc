@@ -4,6 +4,8 @@
 "  \ V /| | | | | | | | | (__
 "   \_/ |_|_| |_| |_|_|  \___|
 
+" http://vimdoc.sourceforge.net/htmldoc/starting.html#vimrc
+
 
 
 let mapleader="U"
@@ -32,12 +34,14 @@ let mapleader="U"
 :map <Tab> i<Tab><Esc>l
 ":map <Tab> EBi<Tab><Esc>l
 :map <Space> i<Space><Esc>
+" set backspace=indent,eol,start  " make that backspace key work the way it should
 :map <Backspace> i<Backspace><Esc>l
 
 set tabstop=2    "4
 set shiftwidth=2 "4
 set expandtab    " should I use tabs instead of spaces?  See: Richard Hendricks of 'Silicon Valley' fame
-set autoindent
+set ai "autoindent
+set ruler
 
 autocmd FileType make setlocal noexpandtab
 set backupdir^=~/.backup
@@ -100,5 +104,24 @@ map <F3> :source ~/.vim_session <cr>
 
 
 
+set scrolloff=5         " keep 5 lines when scrolling
 " TODO:  bp    (prev buffer)
 " TODO: python strings NOT IN PURPLE.  hard to read.
+set showcmd
+set hlsearch            " highlight searches
+set incsearch           " do incremental searching
+set showmatch           " jump to matches when entering regexp
+set ignorecase          " ignore case when searching
+
+"set visualbell t_vb=    " turn off error beep/flash
+"set novisualbell        " turn off visual bell
+
+
+
+
+
+
+syntax on               " turn syntax highlighting on by default
+
+filetype on             " detect type of file
+
