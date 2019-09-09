@@ -124,4 +124,5 @@ set ignorecase          " ignore case when searching
 syntax on               " turn syntax highlighting on by default
 
 filetype on             " detect type of file
-
+:map K :wa<Return>
+:map <leader>I :xa<Return>
