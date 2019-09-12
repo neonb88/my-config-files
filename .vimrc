@@ -125,4 +125,5 @@ syntax on               " turn syntax highlighting on by default
 
 filetype on             " detect type of file
 :map K :wa<Return>
-:map <leader>U :xa<Return>
+:map <leader>Y :xa<Return>
+:map <leader><leader>Y :qa<Return> "
