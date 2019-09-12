@@ -77,8 +77,8 @@ set backupdir^=~/.backup
 " above is the precursor to my fancier general outline-producer.  It oughta work well enough for my current purposes
 
 " Copy things from Ubuntu 16.04 system clipboard into vim with shift+insert   (or right click + 'paste')
-" map <leader>N :set nopaste<Return>   
-" map <leader>p :set paste  
+map <leader>N :set nopaste<Return>
+map <leader>M :set paste<Return>
 
 
 let @s = 'A;jkJ'
@@ -116,14 +116,23 @@ set ignorecase          " ignore case when searching
 "set visualbell t_vb=    " turn off error beep/flash
 "set novisualbell        " turn off visual bell
 
-
-
-
-
-
 syntax on               " turn syntax highlighting on by default
-
 filetype on             " detect type of file
+
+
+
+
+
+
+
+
+" Save / quit different types of files:
 :map K :wa<Return>
 :map <leader>Y :xa<Return>
-:map <leader><leader>Y :qa<Return> "
+:map <leader><leader>Y :qa<Return>
+:map Q :qa<Return>
+" To exit ex mode (if you accidentally type ':i'), type just a single dot:  '.'       
+"   src: https://www.google.com/search?q=enter+ex+mode&oq=enter+ex+mode&aqs=chrome..69i57.1836j0j0&client=ubuntu&sourceid=chrome&ie=UTF-8
+:map <leader>V :vertical resize<Return>
+:map <leader>F :res<Return>
+:map <leader>T :res<Return>:vertical resize<Return>
