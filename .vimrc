@@ -134,7 +134,7 @@ filetype on             " detect type of file
 :map <leader>V :vertical resize<Return>
 :map <leader>F :res<Return>
 :map <leader>T :res<Return>:vertical resize<Return>
-:map <leader>S :sp
-:map <leader>D :vs
+:map <leader>S :sp<Return>
+:map <leader>D :vs<Return>
 :map <leader>N :set nopaste<Return>
 :map <leader>B :set paste<Return>

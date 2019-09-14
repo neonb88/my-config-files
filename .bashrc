@@ -636,7 +636,9 @@ alias dock1='docker run -it --rm --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 nx
 alias b4w='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-east4-c" "cat_macys_vr@blend4web-server-ubuntu14"'
 alias OPV='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-central1-a" "cat_macys_vr@openpose-ubuntu-1"'
 alias OP2='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-central1-a" "cat_macys_vr@openpose-ubuntu16-1"'
+alias S='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-east4-c" "cat_macys_vr@upload-nodejs-smplifyx-2"' # 'S' stands for "SMPLify-X."
 alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-east1-d" "cat_macys_vr@cuda-version-test-0-vm"'
+alias VM_SMPLifyX='cs231'
 #alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-east1-d" "cat_macys_vr@torch-smplx-vm"'
 
 
