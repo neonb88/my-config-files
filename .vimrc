@@ -66,7 +66,7 @@ set backupdir^=~/.backup
 
 " Shortcutting split resizing, saving a keypress:
   map <leader>P :res<Space>+1<Return>
-  map <leader>M <C-w>-
+  map <leader>M :res<Space>-1<Return>
   map <leader>L :vertical<Space>resize<Space>+1<Return>
   map <leader>R :vertical<Space>resize<Space>-1<Return>
 " I used leader instead of 'ctrl' b/c <C-o> is useful
@@ -77,8 +77,6 @@ set backupdir^=~/.backup
 " above is the precursor to my fancier general outline-producer.  It oughta work well enough for my current purposes
 
 " Copy things from Ubuntu 16.04 system clipboard into vim with shift+insert   (or right click + 'paste')
-map <leader>N :set nopaste<Return>
-map <leader>M :set paste<Return>
 
 
 let @s = 'A;jkJ'
@@ -136,3 +134,7 @@ filetype on             " detect type of file
 :map <leader>V :vertical resize<Return>
 :map <leader>F :res<Return>
 :map <leader>T :res<Return>:vertical resize<Return>
+:map <leader>S :sp
+:map <leader>D :vs
+:map <leader>N :set nopaste<Return>
+:map <leader>B :set paste<Return>
