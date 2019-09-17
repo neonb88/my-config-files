@@ -868,3 +868,4 @@ alias bounce='bounce2'
 
 
 
+export PATH=$PATH:/home/n/Downloads/node-v10.8.0-linux-x64/bin

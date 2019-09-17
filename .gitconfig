@@ -32,3 +32,5 @@
 
 [diff]
 	external = git-meld-diff
+[core]
+  editor=vim

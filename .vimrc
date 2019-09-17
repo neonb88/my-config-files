@@ -122,6 +122,8 @@ filetype on             " detect type of file
 
 
 
+" highlighting:
+:syntax on " highlighting
 
 
 " Save / quit different types of files:
