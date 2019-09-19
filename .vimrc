@@ -131,6 +131,8 @@ filetype on             " detect type of file
 :map <leader>Y :xa<Return>
 :map <leader><leader>Y :qa<Return>
 :map Q :qa<Return>
+:map <leader>Z :bp<Return>
+:map <leader>X :bp<Return>
 " To exit ex mode (if you accidentally type ':i'), type just a single dot:  '.'       
 "   src: https://www.google.com/search?q=enter+ex+mode&oq=enter+ex+mode&aqs=chrome..69i57.1836j0j0&client=ubuntu&sourceid=chrome&ie=UTF-8
 :map <leader>V :vertical resize<Return>
