@@ -870,3 +870,5 @@ alias bounce='bounce2'
 
 
 export PATH=$PATH:/home/n/Downloads/node-v10.8.0-linux-x64/bin
+alias cmake='/home/n/Downloads/cmake-3.16.2-Linux-x86_64/bin/cmake'
+alias cx='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@clothx-mgn-tensorflow-0-vm'

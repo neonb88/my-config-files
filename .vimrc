@@ -15,26 +15,18 @@ let mapleader="U"
 :imap jK <Esc>
 :imap Jk <Esc>
 :imap JK <Esc>
-" more escape keys 
 :imap kj <Esc>
 :imap kJ <Esc>
 :imap Kj <Esc>
 :imap KJ <Esc>
 " TODO:   figure out a way to easily type a single k or j quickly.  Maybe spacebar?
-":imap kk <Esc>
-":imap kK <Esc>
-":imap Kk <Esc>
-":imap KK <Esc>
-":imap jj <Esc>
-":imap jJ <Esc>
-":imap Jj <Esc>
-":imap JJ <Esc>
+" NOTE: my reply, after many months/years of 'vim-ing' is to do kkj or jjk
 
+":nmap <Return> i<Return><Esc>  " this also works (':nmap')
 :map <Return> i<Return><Esc>
 :map <Tab> i<Tab><Esc>l
 ":map <Tab> EBi<Tab><Esc>l
 :map <Space> i<Space><Esc>
-" set backspace=indent,eol,start  " make that backspace key work the way it should
 :map <Backspace> i<Backspace><Esc>l
 
 set tabstop=2    "4
@@ -126,15 +118,18 @@ filetype on             " detect type of file
 :syntax on " highlighting
 
 
-" Save / quit different types of files:
+" Save and/or quit different types of files:
 :map K :wa<Return>
 :map <leader>Y :xa<Return>
 :map <leader><leader>Y :qa<Return>
 :map Q :qa<Return>
 :map <leader>Z :bp<Return>
 :map <leader>X :bp<Return>
-" To exit ex mode (if you accidentally type ':i'), type just a single dot:  '.'       
+" To exit ex mode (if you accidentally type ':i'), type just a single dot:  '.'
 "   src: https://www.google.com/search?q=enter+ex+mode&oq=enter+ex+mode&aqs=chrome..69i57.1836j0j0&client=ubuntu&sourceid=chrome&ie=UTF-8
+
+
+
 :map <leader>V :vertical resize<Return>
 :map <leader>F :res<Return>
 :map <leader>T :res<Return>:vertical resize<Return>
@@ -142,3 +137,72 @@ filetype on             " detect type of file
 :map <leader>D :vs<Return>
 :map <leader>N :set nopaste<Return>
 :map <leader>B :set paste<Return>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
