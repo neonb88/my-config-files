@@ -127,10 +127,10 @@ alias rac='time /home/n/racket/bin/racket -il xrepl'
 alias racket='time /home/n/racket/bin/racket -il xrepl'
 
 # python
-alias p='time python3.6' # 3.6 is for segmentation under conda.
-# NOTE: for some reason conda defaults to activating "base" in a new shell these days.  Sun Jan 27 19:53:31 EST 2019 
+alias p='time python'
 alias py='time python3'
 alias p3='time python3'
+alias p38='time python3.8'
 alias p37='time python3.7'
 alias p36='time python3.6'
 alias p35='time python3.5'
@@ -871,4 +871,13 @@ alias bounce='bounce2'
 
 export PATH=$PATH:/home/n/Downloads/node-v10.8.0-linux-x64/bin
 alias cmake='/home/n/Downloads/cmake-3.16.2-Linux-x86_64/bin/cmake'
-alias cx='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@clothx-mgn-tensorflow-0-vm'
+alias cx='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-3'
+alias cx3='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-3'
+alias cx2='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-2'
+alias cx_old1='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-2'
+alias cx_old0='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@clothx-mgn-tensorflow-0-vm'
+alias ClothX='cx'
+
+
+# How to docker:
+alias dock='sudo docker run -it --net=host -e DISPLAY 32a767127c27'       # I think DISPLAY is the thing I wanted???  (Tue Jan 14 21:58:07 EST 2020)             where "32..." is the image (container?) ID.
