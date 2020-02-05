@@ -12,6 +12,7 @@
 *.mp4
 *.mp3
 *.pdf
+.*_history
 .bash_history
 .bash_logout
 .*.swp
@@ -129,3 +130,13 @@ answers_to_Muppala_NodeJS_course
 faces
 TODO
 YC_application_video_nxb_____Winter_2019_parsed.txt
+.vim_session
+.vim_session_edit_pyrender
+.vim_session_openpose
+.vim_session_reference_view
+.vim_session_run.sh
+.vim_session______SMPL-X_Aug_19_2019_
+.octave*
+n8_*.json
+*.ogv
+*.webm
