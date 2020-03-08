@@ -22,6 +22,17 @@ let mapleader="U"
 " TODO:   figure out a way to easily type a single k or j quickly.  Maybe spacebar?
 " NOTE: my reply, after many months/years of 'vim-ing' is to do kkj or jjk
 
+" Save and/or quit different types of files:
+:map K :wa<Return>
+:map <leader>Y :xa<Return>
+:map <leader><leader>Y :qa<Return>
+:map Q :qa<Return>
+:map <leader>Z :bp<Return>
+:map <leader>X :bp<Return>
+" To exit ex mode (if you accidentally type ':i'), type just a single dot:  '.'
+"   src: https://www.google.com/search?q=enter+ex+mode&oq=enter+ex+mode&aqs=chrome..69i57.1836j0j0&client=ubuntu&sourceid=chrome&ie=UTF-8
+
+
 ":nmap <Return> i<Return><Esc>  " this also works (':nmap')
 :map <Return> i<Return><Esc>
 :map <Tab> i<Tab><Esc>l
@@ -117,16 +128,6 @@ filetype on             " detect type of file
 " highlighting:
 :syntax on " highlighting
 
-
-" Save and/or quit different types of files:
-:map K :wa<Return>
-:map <leader>Y :xa<Return>
-:map <leader><leader>Y :qa<Return>
-:map Q :qa<Return>
-:map <leader>Z :bp<Return>
-:map <leader>X :bp<Return>
-" To exit ex mode (if you accidentally type ':i'), type just a single dot:  '.'
-"   src: https://www.google.com/search?q=enter+ex+mode&oq=enter+ex+mode&aqs=chrome..69i57.1836j0j0&client=ubuntu&sourceid=chrome&ie=UTF-8
 
 
 
