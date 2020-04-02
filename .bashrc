@@ -576,6 +576,7 @@ alias e='echo'
 # sample command:
 # alias grr='grep -r -i --include \*.py import\   > tests/install_tests/imports.py'     #recursive grep in only files with .py endings
 alias grr='grep -nr -i --include \*.py ' # grr for "recurs"
+alias gn='grep -v'
 alias listinternet='sudo iptables -L'  # list internet rules
 alias interneton='sudo iptables -P INPUT ACCEPT'
 alias internetoff='sudo iptables -P INPUT DROP'
