@@ -1,0 +1,25 @@
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+#===============================================================================
+# Documentation:
+  # https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job
+  # https://askubuntu.com/questions/1031552/re-create-default-crontab
+  # https://gist.githubusercontent.com/ellvtr/c9f804e277d8bd3683766115c68a7877/raw/e6bcdbea7e89b95b75252fe593046fb7cd82ec53/crontab
+#===============================================================================
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+#===============================================================================
+#   minute hour day-of-month month-of-year day-of-week user-to-run-as command
+#===============================================================================
+# m h dom mon dow user  command
+17 *    * * *   root    cd / && run-parts --report /etc/cron.hourly
+25 6    * * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6    * * 7   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6    1 * *   root    test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+

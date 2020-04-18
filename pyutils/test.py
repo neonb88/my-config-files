@@ -1,5 +1,0 @@
-
-'''
-   >>> something
-'''
-print 'something else'

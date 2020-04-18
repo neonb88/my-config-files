@@ -1,7 +1,10 @@
+from pprint import pprint as p
 
 with open('/home/n/GPA_calculation__python_input.txt', 'r') as fp:
   lines=fp.readlines()
-lines=lines[1:]
+lines=lines[1:]   # header info ("pts   GPA")
+lines=lines[:-2]  # comments ("These are my Computer Science classes only.  (for major GPA calculation)")
+p(lines)
 tot=0
 tot_pts=0
 

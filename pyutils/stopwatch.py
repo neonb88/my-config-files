@@ -1,8 +1,14 @@
+import sys
 import time
+
 
 i           = 0
 step        = 1
-granularity = int(input("please input an integer step size for the timer:  "))
+if len(sys.argv) == 1:
+  granularity = int(input("please input an integer step size for the timer:  "))
+else:
+  granularity = int(sys.argv[1])
+
 while True:
     if i % granularity == 0:
         secs = i  % 60
