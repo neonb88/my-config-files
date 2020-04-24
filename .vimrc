@@ -134,11 +134,16 @@ filetype on             " detect type of file
 :map <leader>V :vertical resize<Return>
 :map <leader>F :res<Return>
 :map <leader>T :res<Return>:vertical resize<Return>
+
 :map <leader>S :sp<Return>
 :map <leader>D :vs<Return>
+
 :map <leader>N :set nopaste<Return>
 :map <leader>B :set paste<Return>
 
+" E for 'end of prev word' :
+:map <leader>E gE
+" https://stackoverflow.com/questions/5125270/in-vim-vi-how-do-you-move-the-cursor-to-the-end-of-the-previous-word
 
 
 
