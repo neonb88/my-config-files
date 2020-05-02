@@ -169,6 +169,7 @@ alias t='time'
 ############################################################################################################################################  
 
 alias up='cd ..'
+alias down='c `ls -dt */ |head -n1`'
 
 # some more ls aliases
 alias l='pwd && ls -ltrAh'
@@ -874,13 +875,16 @@ alias bounce='bounce2'
 export PATH=$PATH:/home/n/Downloads/node-v10.8.0-linux-x64/bin
 alias cmake='/home/n/Downloads/cmake-3.16.2-Linux-x86_64/bin/cmake'
 alias cx='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-3'
-alias cx3='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-3'
-alias cx2='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-2'
-alias cx_old1='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-2'
-alias cx_old0='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@clothx-mgn-tensorflow-0-vm'
 alias ClothX='cx'
+alias cxc='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-3---zone-west1-b'
+
+alias sta='gcloud compute instances start mgn-3'
+alias sta2='gcloud compute instances start mgn-3---zone-west1-b'
+alias sto='gcloud compute instances stop mgn-3'
+alias sto2='gcloud compute instances stop mgn-3---zone-west1-b'
 
 
 # How to docker:
 alias dock='sudo docker run -it --net=host -e DISPLAY 32a767127c27'       # I think DISPLAY is the thing I wanted???  (Tue Jan 14 21:58:07 EST 2020)             where "32..." is the image (container?) ID.
 # can also do "sudo docker attach [container_num]"
+
