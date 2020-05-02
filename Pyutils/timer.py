@@ -27,7 +27,7 @@ if __name__=="__main__":
 
   for i in range(num_secs):
       if i % 60 == 0:
-          print('{:4d} minutes have passed'.format(i//60 ) ) 
+          print(str(i // 60) + ' minutes have passed')
       os.system('sleep 1')
 
   vid="/home/n/Music/Shia_1_hr.mp4"
