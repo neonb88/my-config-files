@@ -118,27 +118,22 @@ fi
 
 ######## code (compilation, running) #######
 
-# lisp
-alias arc='time /home/n/arc/arc-nu/arc'
-#alias arc='/home/n/racket/bin/racket -f /home/n/mz/tmp/arc3.1/as.scm'
-#alias arc='/home/n/arc/anarki/arc.sh -n'
-alias ra='time /home/n/racket/bin/racket -il xrepl'
-alias rac='time /home/n/racket/bin/racket -il xrepl'
-alias racket='time /home/n/racket/bin/racket -il xrepl'
-
 # python
-alias p='time python'
+alias python='date && time python'
+alias python2='date && time python2'
+alias python3='date && time python3'
+alias p='time python' # adaptive to the designated conda environment (if you made the conda env to run python2, "python" actually runs "python2")
+# NOTE: for some reason conda defaults to activating "base" in a new shell these days.  Sun Jan 27 19:53:31 EST 2019 
 alias py='time python3'
 alias p3='time python3'
-alias p38='time python3.8'
-alias p37='time python3.7'
-alias p36='time python3.6'
-alias p35='time python3.5'
+alias p38='date && time python3.8'
+alias p37='date && time python3.7'
+alias p36='date && time python3.6'
+alias p35='date && time python3.5'
 alias p2='time python2'
-alias python2='time python2'
-alias python3='time python3'
 alias jn='jupyter notebook'
 alias ipy='ipython'
+
 
 # virtual envs, conda
 # TODO: prune after conda reinstall.  
@@ -154,10 +149,6 @@ alias pinst='pip install'
 alias de='conda deactivate' #'source deactivate'
 alias ac='conda activate'   #'source activate'
 
-# java
-alias jv='time java'
-alias jc='time javac'
-
 #chmod
 alias chmx='chmod +x'
 
@@ -169,6 +160,7 @@ alias t='time'
 ############################################################################################################################################  
 
 alias up='cd ..'
+alias down='c `ls -dt */ |head -n1`'
 
 # some more ls aliases
 alias l='pwd && ls -ltrAh'
@@ -463,22 +455,6 @@ export EDITOR=vim
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
 
-# added by Anaconda3 2018.12 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/n/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/home/n/anaconda3/etc/profile.d/conda.sh" ]; then
-# . "/home/n/anaconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/home/n/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
 
 
 #===================================================================================================
@@ -494,74 +470,24 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# blender
-export PATH="/opt/blender/:$PATH"
-
 # conda
 #export PATH="~/anaconda3/bin:$PATH"   # TODO: uncomment.  Was only commented out b/c openpose required us to remove conda
 
-# CGAL
-#export CMAKE_BUILD_TYPE="Release"
+#alias cmake='/home/nathanbendich/Downloads/cmake-3.16.2-Linux-x86_64/bin/cmake'
 alias g++='g++ -Wall'
 
-# hmr, BodyLabs / Tubingen
-alias hmr='source /home/n/Documents/code/hmr/venv_hmr/bin/activate'
-alias hmr2='source /home/n/Documents/code/old/hmr/hmr_March_24_2019/bin/activate'
-alias SMPLX='conda deactivate && conda activate cat11 && python3 /home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smplx/examples/demo.py --model-folder $SMPLX_FOLDER --plot-joints=True --gender="female"'
-alias homogenus='cd /home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smplx/_homogenus_____CLICKME/homogenus && conda deactivate && conda activate cat11 && python3 -m homogenus.tf.homogenus_infer -ii ./samples/images/ -io ./samples/images_gendered/ -oi ./samples/openpose_keypoints/ -oo ./samples/openpose_keypoints_gendered/ -tm /home/n/Downloads/homogenus_v1_0/trained_models/tf/'
-alias SMPLifyX='python3 smplifyx/main.py --config cfg_files/fit_smplx.yaml --data_folder $DATA_FOLDER --output_folder $OUTPUT_FOLDER --visualize="True"  --model_folder $MODEL_FOLDER --vposer_ckpt $VPOSER_FOLDER --part_segm_fn smplx_parts_segm.pkl --use_cuda False --interpenetration False'
+#conda init bash
 
-#SMPL_LOCATION=~/Downloads/smpl
-SMPL_LOCATION=/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smpl # NOTE: under git
-export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION
-SMPL_LOCATION2=/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smpl/smpl_webuser
-export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION2
-
-# For more details, see https://github.com/vchoutas/smplx .
-SMPLX_LOC=/home/n/Downloads/smplx/models
-SMPLX_FOLDER=$SMPLX_LOC
-
-
-
-
-alias OP="/home/n/Documents/code/openpose/build/examples/openpose/openpose.bin --help" # "OP" stands for: OpenPose
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/n/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/n/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/n/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/n/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
-conda deactivate # b/c it goes in with "conda base" activated (Sun Feb  3 06:35:28 EST 2019)
 
 alias body_viz='source /home/n/Documents/code/kivy_slider/venvs/body_viz/bin/activate'
 alias web='conda activate web'
 export FLASK_APP=~/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/src/web/grinberg_mega_tutorial/The-Complete-Flask-Mega-Tutorial/CODE/microblog-0.4/microblog.py
 alias gb='conda activate flask_mgrinberg'
-# HMR
-export PYTHONPATH=$PYTHONPATH:/home/`whoami`/Documents/code/old/hmr
-export PYTHONPATH_HMR=$PYTHONPATH # because HMR has its own python2 chumpy
-
-# chumpy
-export PYTHONPATH=$PYTHONPATH:/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/conda_+/lib/python3.6/site-packages
-# measure.py, mesh.py, Go.py
-export PYTHONPATH=$PYTHONPATH:/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018
 alias all='source /home/n/hmr___and_web/bin/activate' # TODO: figure out how to get `whoami` in there WITHIN a bash alias
 alias z='readlink -f'
 alias c='cd'
 alias k='ln -s' # NOTE: destination ("endpoint") of link 1st, then source (where the link should be).  Unfortunately, the thing I really always forget is which ORDER the arguments go in, not the `ln -s` part.  But I suppose the fastest way to fix this is to just rapidly try both orders and see which works.  Sometimes I forget whether it's -s or -S, though.
 alias sfi='sudo find'
-alias fr='find . -printf "%T@ %Tc %p\n" | sort -n' # fr == "find recent."   https://superuser.com/questions/294161/unix-linux-find-and-sort-by-date-modified
 alias sg='sudo grep'
 alias pw='pwd'
 alias wd='pwd' # working dir
@@ -576,7 +502,6 @@ alias e='echo'
 # sample command:
 # alias grr='grep -r -i --include \*.py import\   > tests/install_tests/imports.py'     #recursive grep in only files with .py endings
 alias grr='grep -nr -i --include \*.py ' # grr for "recurs"
-alias gn='grep -v'
 alias listinternet='sudo iptables -L'  # list internet rules
 alias interneton='sudo iptables -P INPUT ACCEPT'
 alias internetoff='sudo iptables -P INPUT DROP'
@@ -607,7 +532,7 @@ bind -x '"\C-l": spaces; l; fewer_spaces'
 
 #export DISPLAY=localhost:0.0  # I think this only works if you know your IP address???
 
-export DISPLAY=:0.0 # TODO: did this IP address work?  (Wed Jun 19 20:35:44 EDT 2019 - nxb )
+#export DISPLAY=:0.0 # TODO: did this IP address work?  (Wed Jun 19 20:35:44 EDT 2019 - nxb )
 
 
 
@@ -631,256 +556,59 @@ export DISPLAY=:0.0 # TODO: did this IP address work?  (Wed Jun 19 20:35:44 EDT 
 
 
 
-# This 'dock1' alias is also helpful for    copying and doing variants
-alias dock1='docker run -it --rm --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 nxb_working2'
-#    docker commit 46947b43d681 nxb_working2
-#   sha256:94e035b8d4c6f3dd35b609be61fdf843151f589029265ad3761d610eb5c70c4f
-
-#alias b4w='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-east4-c" "cat_macys_vr@blend4web-server-ubuntu14"'
-# I called this alias "OPV"   b/c the whole reason I made it was to use OpenPose (OP) on a Virtual (V) machine.
-#alias OPV='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-central1-a" "cat_macys_vr@openpose-ubuntu-1"'
-alias OP2='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-central1-a" "cat_macys_vr@openpose-ubuntu16-1"'
-#alias S='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-east4-c" "cat_macys_vr@upload-nodejs-smplifyx-2"' # 'S' stands for "SMPLify-X."
-alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-east1-d" "cat_macys_vr@cuda-version-test-0-vm"'
-alias cs='cs231'
-alias VM_SMPLifyX='cs231'
-#alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-east1-d" "cat_macys_vr@torch-smplx-vm"'
-
-
-
-
+#====================================
+# EXAMPLE gcloud compute ssh cmds:
+#====================================
 #'gcloud compute  ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-east1-d" "cat_macys_vr@torch-5-vm"'
 #'gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@pytorch-1-vm"'
-alias cs231n='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@pytorch-1-vm"'
-#alias cs231n='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
-#alias cs231_CPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n-no-gpu-0-vm"'   # This is my old CPU VM instance, not the one I accidentally stumbled into on August 7, 2019   -nxb
 
-alias cs231_CPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-west1-b" "cat_macys_vr@cs231n-tensorflow-0-vm"'
 
-#alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
-#alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
-alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@pytorch-1-vm"'
 
 
 
-
-
-
-
-
-
-
-#===================================================================================================
-# 1st argument is the tar.xz file name; 2nd argument is the directory.
-# Full cmd example: XZ_OPT=-e9 tar cJf cs231n_assn1___up_to_SVM_1st_draft.tar.xz /home/cat_macys_vr/assignment1
-alias compress='XZ_OPT=-e9 tar cJf'     
-
-
-# 1st argument is the tar.xz file name; 2nd argument is the directory.
-
-# cs231n assignment 1:
-alias backup1='XZ_OPT=-e9 tar cJf cs231n_assn1.tar.xz /home/cat_macys_vr/assignment1'   # was true for assignment1.
-# assignment 2:
-alias backup2='XZ_OPT=-e9 tar cJf cs231n_assn2.tar.xz /home/cat_macys_vr/assignment2'
-# assn 3:
-alias backup3='XZ_OPT=-e9 tar cJf cs231n_assn3.tar.xz /home/cat_macys_vr/assignment3'
-alias backup='backup2'
-
-#alias bounce_CIFAR_data='mv ~/assignment1/cs231n/datasets/cifar-10-batches-py/ ~/Downloads/ && sleep 600 && mv ~/Downloads/cifar-10-batches-py/  ~/assignment1/cs231n/datasets/'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-alias bounce_CIFAR_data='mv ~/assignment1/cs231n/datasets/cifar-10-batches-py/ ~/Downloads/ && sleep 600 && mv ~/Downloads/cifar-10-batches-py/  ~/assignment1/cs231n/datasets/'
-alias mv_pkls='mv /home/cat_macys_vr/assignment1/*.pkl ~/Downloads/'
-alias bounce1='mv_pkls && bounce_CIFAR_data && mv /home/cat_macys_vr/Downloads/*.pkl /home/cat_macys_vr/assignment1/'
-
-
-
-#===================================================================================================
-# cs231n: assignment 2:                             CPU, NOT GPU.
-#===================================================================================================
-alias bounce_cython='mv /home/cat_macys_vr/assignment2/cs231n/build /home/cat_macys_vr/Downloads/ &&\
-mv /home/cat_macys_vr/assignment2/cs231n/im2col_cython.cpython-35m-x86_64-linux-gnu.so /home/cat_macys_vr/Downloads/ &&\
-mv /home/cat_macys_vr/assignment2/cs231n/im2col_cython.c /home/cat_macys_vr/Downloads/ &&\
-mv /home/cat_macys_vr/assignment2/*.pkl /home/cat_macys_vr/Downloads/ &&\
-sleep 600 && \
-mv /home/cat_macys_vr/Downloads/build /home/cat_macys_vr/assignment2/cs231n/ &&\
-mv /home/cat_macys_vr/Downloads/im2col_cython.cpython-35m-x86_64-linux-gnu.so  /home/cat_macys_vr/assignment2/cs231n/  &&\
-mv /home/cat_macys_vr/Downloads/im2col_cython.c /home/cat_macys_vr/assignment2/cs231n/ &&\
-mv /home/cat_macys_vr/Downloads/*.pkl /home/cat_macys_vr/assignment2/cs231n/ '
-
-alias mvback2='mv /home/cat_macys_vr/Downloads/*.pkl /home/cat_macys_vr/assignment2/ &&\
-mv /home/cat_macys_vr/Downloads/im2col_cython.c /home/cat_macys_vr/assignment2/cs231n/ &&\
-mv /home/cat_macys_vr/Downloads/im2col_cython.cpython-35m-x86_64-linux-gnu.so  /home/cat_macys_vr/assignment2/cs231n/  &&\
-mv /home/cat_macys_vr/Downloads/build /home/cat_macys_vr/assignment2/cs231n/ '
-
-alias bounce2='bounce_cython'
-alias bounce='bounce2'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export PATH=$PATH:/home/n/Downloads/node-v10.8.0-linux-x64/bin
-alias cmake='/home/n/Downloads/cmake-3.16.2-Linux-x86_64/bin/cmake'
-alias cx='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-3'
-alias cx3='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-3'
-alias cx2='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-2'
-alias cx_old1='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-2'
-alias cx_old0='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@clothx-mgn-tensorflow-0-vm'
-alias ClothX='cx'
-
-
-# How to docker:
-alias dock='sudo docker run -it --net=host -e DISPLAY 32a767127c27'       # I think DISPLAY is the thing I wanted???  (Tue Jan 14 21:58:07 EST 2020)             where "32..." is the image (container?) ID.
-# can also do "sudo docker attach [container_num]"
+#alias cmake='/home/n/Downloads/cmake-3.16.2-Linux-x86_64/bin/cmake'
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/nathanbendich/anaconda2/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/nathanbendich/anaconda2/etc/profile.d/conda.sh" ]; then
+        . "/home/nathanbendich/anaconda2/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/nathanbendich/anaconda2/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
+# DIRT:
+#export PYTHONPATH=$PYTHONPATH:/home/nathanbendich/dirt
+export PYTHONPATH=$PYTHONPATH:$HOME/dirt
+export PYTHONPATH=$PYTHONPATH:$HOME/mesh
+#export PYTHONPATH=$PYTHONPATH:$HOME/MultiGarmentNetwork
+export PYTHONPATH=$PYTHONPATH:$HOME/MultiGarmentNetwork/render
+export PYTHONPATH=$PYTHONPATH:$HOME/MultiGarmentNetwork/smpl
+export PYTHONPATH=$PYTHONPATH:$HOME/MultiGarmentNetwork/network
+
+alias 2='ac mgn1'
+alias 3='ac mgn_py37'
+export PYTHONPATH=$PYTHONPATH:$HOME/lib #cx.py
+
+alias fr='find . -printf "%T@ %Tc %p\n" | sort -n' # fr == "find recent."   https://superuser.com/questions/294161/unix-linux-find-and-sort-by-date-modified
+alias star='sudo docker start 77f72f9855ad'
+alias s='star'
+alias start2='sudo docker start 77f72f9855ad'
+alias s2='start2'
+alias attach='sudo docker attach 77f72f9855ad'
+alias a='attach'
+alias attach2='sudo docker attach 5b1c347bf448'
+alias a2='attach2'
+
+alias gsu='gsutil ls gs://*'
+alias lis='gcloud compute instances list'
+alias sto='gcloud compute instances stop  mgn-3'   # easier to remember is "always the 1st 3 letters for a TLA"
