@@ -30,7 +30,7 @@
     st  = status
     url = config --get remote.origin.url
 
-[diff]
-	external = git-meld-diff
+#[diff]
+	#external = git-meld-diff
 [core]
   editor=vim

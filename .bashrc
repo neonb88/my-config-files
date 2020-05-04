@@ -602,7 +602,7 @@ export PYTHONPATH=$PYTHONPATH:$HOME/lib #cx.py
 alias fr='find . -printf "%T@ %Tc %p\n" | sort -n' # fr == "find recent."   https://superuser.com/questions/294161/unix-linux-find-and-sort-by-date-modified
 alias star='sudo docker start 77f72f9855ad'
 alias s='star'
-alias start2='sudo docker start 77f72f9855ad'
+alias start2='sudo docker start 5b1c347bf448'
 alias s2='start2'
 alias attach='sudo docker attach 77f72f9855ad'
 alias a='attach'
