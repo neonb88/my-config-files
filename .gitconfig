@@ -29,10 +29,12 @@
     res = reset --hard origin/master
         # moves to the main head (throws away local commits)
     #############
+    s   = stash
     st  = status
+    #############
     url = config --get remote.origin.url
 
-#[diff]
-	#external = git-meld-diff
+[diff]
+	external = git-meld-diff
 [core]
   editor=vim
