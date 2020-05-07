@@ -878,10 +878,14 @@ alias cx='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-3'
 alias ClothX='cx'
 alias cxc='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-3---zone-west1-b'
 
+alias lis='gcloud compute instances list'
 alias sta='gcloud compute instances start mgn-3'
 alias sta2='gcloud compute instances start mgn-3---zone-west1-b'
 alias sto='gcloud compute instances stop mgn-3'
 alias sto2='gcloud compute instances stop mgn-3---zone-west1-b'
+
+alias gsu='gsutil ls gs://*'
+alias gsls='gsutil ls'
 
 
 # How to docker:

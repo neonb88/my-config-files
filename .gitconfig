@@ -14,6 +14,8 @@
     #############
     d   = diff
     #############
+    f   = fetch
+    #############
     l   = log
     lo  = log --oneline --graph --decorate
     #############
