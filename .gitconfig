@@ -32,6 +32,7 @@
     s   = stash
     st  = status
     #############
+    u   = config --get remote.origin.url
     url = config --get remote.origin.url
 
 [diff]

@@ -879,6 +879,7 @@ alias ClothX='cx'
 alias cxc='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-3---zone-west1-b'
 # NOTE: how to  use a new name easily enough: `alias cx | cut -c11- | cut -c-63`mgn-0-0-0       here I uas the new instance name "mgn-0-0-0"
 alias cxt='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@cx-0-0-0' # "cxt" stands for for "CX Temp".
+alias cx1='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@cx-0-0-1' # "cx1" stands for for "CX Temp 1".
 
 alias lis='gcloud compute instances list'
 alias sta='gcloud compute instances start mgn-3'
