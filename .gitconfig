@@ -32,9 +32,11 @@
     s   = stash
     st  = status
     #############
+    u   = config --get remote.origin.url
+    ur  = config --get remote.origin.url
     url = config --get remote.origin.url
 
-[diff]
-	external = git-meld-diff
+#[diff]
+	#external = git-meld-diff
 [core]
   editor=vim
