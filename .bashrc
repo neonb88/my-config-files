@@ -169,7 +169,7 @@ alias t='time'
 ############################################################################################################################################  
 
 alias up='cd ..'
-alias down='c `ls -dt */ |head -n1`'
+alias down='c `ls -dt */ |head -n1`' # NOTE: doesn't go down .git dirs, just like we'd like.  Also doesn't go down other "hidden" dirs like `~/.vim`, however.
 
 # some more ls aliases
 alias l='pwd && ls -ltrAh'

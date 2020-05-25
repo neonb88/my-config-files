@@ -33,6 +33,7 @@
     st  = status
     #############
     u   = config --get remote.origin.url
+    ur  = config --get remote.origin.url
     url = config --get remote.origin.url
 
 [diff]

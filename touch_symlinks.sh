@@ -14,6 +14,10 @@ touch -h  /home/n/Di_instructions_April_2_2020
 touch -h  /home/n/save_smpl_obj_file.py
 touch -h  /home/n/SMPL_sandbox.py
 touch -h  /home/n/Multi-Garment_dataset
+touch -h  /home/n/handy_SMPL_utility.py 
+touch -h  /home/n/Power_of_Habit.pdf
+#`touch -h  /home/n/handy_SMPL_utility.py ` is    similar to /home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smpl/smpl_webuser/hello_world/save_smpl_obj_file.py.
+touch -h  /home/n/Make_it_stick.pdf
 
 # temporary symlinks:
 touch -h  /home/n/Documents/papers/grep.sh
@@ -46,8 +50,6 @@ touch     /home/n/3rd.txt
 
 
 # temporary:
-touch     /home/n/.vim_session_measure_py_____April_24_2020_____debugging_measure_inseam
-touch     /home/n/.vim_session_____test_network_MGN_____April_24_2020
 touch     /home/n/Documents/papers/grep.sh
 
 #=========================================================================================================
