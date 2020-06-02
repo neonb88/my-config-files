@@ -637,30 +637,30 @@ alias dock1='docker run -it --rm --runtime=nvidia -e NVIDIA_VISIBLE_DEVICES=0 nx
 #    docker commit 46947b43d681 nxb_working2
 #   sha256:94e035b8d4c6f3dd35b609be61fdf843151f589029265ad3761d610eb5c70c4f
 
-#alias b4w='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-east4-c" "cat_macys_vr@blend4web-server-ubuntu14"'
+#alias b4w='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-X --zone "us-east4-c" "cat_macys_vr@blend4web-server-ubuntu14"'
 # I called this alias "OPV"   b/c the whole reason I made it was to use OpenPose (OP) on a Virtual (V) machine.
-#alias OPV='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-central1-a" "cat_macys_vr@openpose-ubuntu-1"'
-alias OP2='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-central1-a" "cat_macys_vr@openpose-ubuntu16-1"'
-#alias S='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-east4-c" "cat_macys_vr@upload-nodejs-smplifyx-2"' # 'S' stands for "SMPLify-X."
-alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-east1-d" "cat_macys_vr@cuda-version-test-0-vm"'
+#alias OPV='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-X --zone "us-central1-a" "cat_macys_vr@openpose-ubuntu-1"'
+alias OP2='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-X --zone "us-central1-a" "cat_macys_vr@openpose-ubuntu16-1"'
+#alias S='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-X --zone "us-east4-c" "cat_macys_vr@upload-nodejs-smplifyx-2"' # 'S' stands for "SMPLify-X."
+alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-X' --zone "us-east1-d" "cat_macys_vr@cuda-version-test-0-vm"'
 alias cs='cs231'
 alias VM_SMPLifyX='cs231'
-#alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-east1-d" "cat_macys_vr@torch-smplx-vm"'
+#alias cs231='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-X' --zone "us-east1-d" "cat_macys_vr@torch-smplx-vm"'
 
 
 
 
-#'gcloud compute  ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-east1-d" "cat_macys_vr@torch-5-vm"'
-#'gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@pytorch-1-vm"'
-alias cs231n='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@pytorch-1-vm"'
-#alias cs231n='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
-#alias cs231_CPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n-no-gpu-0-vm"'   # This is my old CPU VM instance, not the one I accidentally stumbled into on August 7, 2019   -nxb
+#'gcloud compute  ssh --ssh-flag=-X --zone "us-east1-d" "cat_macys_vr@torch-5-vm"'
+#'gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@pytorch-1-vm"'
+alias cs231n='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@pytorch-1-vm"'
+#alias cs231n='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
+#alias cs231_CPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n-no-gpu-0-vm"'   # This is my old CPU VM instance, not the one I accidentally stumbled into on August 7, 2019   -nxb
 
-alias cs231_CPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-vvv --ssh-flag=-X --zone "us-west1-b" "cat_macys_vr@cs231n-tensorflow-0-vm"'
+alias cs231_CPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-X --zone "us-west1-b" "cat_macys_vr@cs231n-tensorflow-0-vm"'
 
-#alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
-#alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
-alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-vvv' --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@pytorch-1-vm"'
+#alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
+#alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
+alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@pytorch-1-vm"'
 
 
 
@@ -874,12 +874,12 @@ alias bounce='bounce2'
 
 export PATH=$PATH:/home/n/Downloads/node-v10.8.0-linux-x64/bin
 alias cmake='/home/n/Downloads/cmake-3.16.2-Linux-x86_64/bin/cmake'
-alias cx='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-3'
+alias cx='gcloud compute ssh --ssh-flag=-X nathanbendich@mgn-3'
 alias ClothX='cx'
-alias cxc='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@mgn-3---zone-west1-b'
+alias cxc='gcloud compute ssh --ssh-flag=-X nathanbendich@mgn-3---zone-west1-b'
 # NOTE: how to  use a new name easily enough: `alias cx | cut -c11- | cut -c-63`mgn-0-0-0       here I uas the new instance name "mgn-0-0-0"
-alias cxt='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@cx-0-0-0' # "cxt" stands for for "CX Temp".
-alias cx1='gcloud compute ssh --ssh-flag=-vvv --ssh-flag=-X nathanbendich@cx-0-0-1' # "cx1" stands for for "CX Temp 1".
+alias cxt='gcloud compute ssh --ssh-flag=-X nathanbendich@cx-0-0-0' # "cxt" stands for for "CX Temp".
+alias cx1='gcloud compute ssh --ssh-flag=-X nathanbendich@cx-0-0-1' # "cx1" stands for for "CX Temp 1".
 
 alias lis='gcloud compute instances list'
 alias sta='gcloud compute instances start mgn-3'
