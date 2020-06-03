@@ -36,7 +36,30 @@ set ai "autoindent
 set ruler
 
 autocmd FileType make setlocal noexpandtab
-set backupdir^=~/.backup
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"set backupdir^=~/.backup
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" vim backups 'howto' in https://gist.github.com/nepsilon/003dd7cfefc20ce1e894db9c94749755
+"Turn on backup option
+set backup
+
+"Where to store backups
+set backupdir=~/.vim/backup//
+
+"Make backup before overwriting the current buffer
+set writebackup
+
+"Overwrite the original backup file
+set backupcopy=yes
+
+"Meaningful backup name, ex: filename@2015-04-05.14:59:00
+"au BufWritePre * let &bex = '@' . strftime("%F.%H:%M:%S")
+"Meaningful backup name, ex: filename@2015-04-05.14:59
+au BufWritePre * let &bex = '@' . strftime("%F.%H:%M")
+" More on 'strftime' : http://www.cplusplus.com/reference/ctime/strftime/
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 " Prevents problems with caps lock / shift-causing-weird-capitalization
 :command WQ wq
