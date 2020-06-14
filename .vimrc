@@ -23,7 +23,7 @@ let mapleader="U"
 " NOTE: my reply, after many months/years of 'vim-ing' is to do kkj or jjk
 
 " mouse
-set mouse=a
+"set mouse=a
 
 " Save and/or quit different types of files:
 :map K :wa<Return>

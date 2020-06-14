@@ -14,6 +14,8 @@ if __name__=="__main__":
       print()
       os.system('sleep 0.01')
 
+  print("will go off after")
+  print(num_secs); print("="*99)
   print('for your convenience:')
   print('conversions: 1  hr    =   3600')
   print('             3  hrs   =  10800')
