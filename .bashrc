@@ -348,7 +348,8 @@ alias red='redshift'
 
 #    opening files
 # vim
-alias v='vim'
+#alias v='vim'
+alias v='nvim'
 alias sv='sudo vim'
 
 # vim mode (Luke Smith tutorial: https://www.youtube.com/watch?v=GqoJQft5R2E):
@@ -360,7 +361,7 @@ bind '"JK":vi-movement-mode'
 bind '"kj":vi-movement-mode'
 bind '"kJ":vi-movement-mode'
 bind '"Kj":vi-movement-mode'
-bind '"KJ":vi-movement-mode'
+#   bind '"KJ":vi-movement-mode'
 
 bind '"jj":vi-movement-mode'
 bind '"jJ":vi-movement-mode'
@@ -874,8 +875,9 @@ alias bounce='bounce2'
 
 export PATH=$PATH:/home/n/Downloads/node-v10.8.0-linux-x64/bin
 alias cmake='/home/n/Downloads/cmake-3.16.2-Linux-x86_64/bin/cmake'
-alias cx='gcloud compute ssh --ssh-flag=-X nathanbendich@mgn-3'
-alias cxf='gcloud compute ssh --ssh-flag=-X nathanbendich@startup-survey-0-0-1'   # the 'f' in "cxf" => frontEnd   -nxb, on      June 13, 2020; at      10:59 P.M. EDT.
+alias cx='gcloud compute ssh --ssh-flag=-X nathanbendich@startup-survey-0-0-1'
+alias cxb='gcloud compute ssh --ssh-flag=-X nathanbendich@mgn-3' # the 'b' in "cxb" => BackEnd   -nxb, on      June 13, 2020; at      10:59 P.M. EDT.
+#alias cxf='gcloud compute ssh --ssh-flag=-X nathanbendich@startup-survey-0-0-1'   # the 'f' in "cxf" => frontEnd   -nxb, on      June 13, 2020; at      10:59 P.M. EDT.
 alias ClothX='cx'
 alias cxc='gcloud compute ssh --ssh-flag=-X nathanbendich@mgn-3---zone-west1-b'
 # NOTE: how to  use a new name easily enough: `alias cx | cut -c11- | cut -c-63`mgn-0-0-0       here I uas the new instance name "mgn-0-0-0"
@@ -883,10 +885,10 @@ alias cxt='gcloud compute ssh --ssh-flag=-X nathanbendich@cx-0-0-0' # "cxt" stan
 alias cx1='gcloud compute ssh --ssh-flag=-X nathanbendich@cx-0-0-1' # "cx1" stands for for "CX Temp 1".
 
 alias lis='gcloud compute instances list'
-alias sta='gcloud compute instances start mgn-3'
-alias sta2='gcloud compute instances start mgn-3---zone-west1-b'
-alias sto='gcloud compute instances stop mgn-3'
-alias sto2='gcloud compute instances stop mgn-3---zone-west1-b'
+alias sta='gcloud compute instances start startup-survey-0-0-1'
+alias sta2='gcloud compute instances start mgn-3'
+alias sto='gcloud compute instances stop startup-survey-0-0-1'
+alias sto2='gcloud compute instances stop mgn-3'
 
 alias gsu='gsutil ls gs://*'
 alias gsls='gsutil ls'

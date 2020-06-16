@@ -165,6 +165,18 @@ filetype on             " detect type of file
 
 
 
+" These cmds should copy to / paste from  system clipboard :  
+" 1.  https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard    
+" 2.  https://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
+:map <Leader>y "*y
+:map <Leader>p "*p
+:map <Leader>d "*d
+
+" This will get in the way of my mapping UY => :xa
+:map <Leader>Y "+y  
+:map <Leader>D "*D
+:map <Leader>P "+p
+"  It's probably better to just remember how to use the registers.  -nxb, June 16, 2020
 
 
 
