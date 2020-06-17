@@ -173,8 +173,8 @@ filetype on             " detect type of file
 :map <Leader>d "*d
 
 " This will get in the way of my mapping UY => :xa
-:map <Leader>Y "+y  
-:map <Leader>D "*D
+" :map <Leader>Y "+y
+:map <Leader>D "*d
 :map <Leader>P "+p
 "  It's probably better to just remember how to use the registers.  -nxb, June 16, 2020
 

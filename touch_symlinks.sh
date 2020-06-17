@@ -3,6 +3,13 @@
 #=========================================================================================================
 
 # update the symblinks:
+touch -h  /home/n/pyutils/timer.py_____actually_time_cx_vid.sh
+# NOTE: why are all these here?  write brief notes so "future you" can tell why we care.   -nxb; June 17, 2020.
+# NOTE: why are all these here?  write brief notes so "future you" can tell why we care.   -nxb; June 17, 2020.
+# NOTE: why are all these here?  write brief notes so "future you" can tell why we care.   -nxb; June 17, 2020.
+# NOTE: why are all these here?  write brief notes so "future you" can tell why we care.   -nxb; June 17, 2020.
+# NOTE: why are all these here?  write brief notes so "future you" can tell why we care.   -nxb; June 17, 2020.
+# NOTE: why are all these here?  write brief notes so "future you" can tell why we care.   -nxb; June 17, 2020.
 touch -h  /home/n/obj_2_png
 touch -h  /home/n/V
 touch -h  /home/n/OpenPose_json
@@ -47,6 +54,9 @@ touch     /home/n/BLB/MultiGarmentNetwork/python3_port_to_BLB/SMPL_sandbox.py
 touch     /home/n/Downloads/Multi-Garment_dataset
 touch     /home/n/2nd.txt
 touch     /home/n/3rd.txt
+#=========================================================================================================
+touch   /home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/time_cx_vid.sh
+#=========================================================================================================
 
 
 # temporary:
