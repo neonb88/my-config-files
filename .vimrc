@@ -174,7 +174,7 @@ filetype on             " detect type of file
 
 " This will get in the way of my mapping UY => :xa
 " :map <Leader>Y "+y
-:map <Leader>D "*d
+":map <Leader>D "*d  # vertical split
 :map <Leader>P "+p
 "  It's probably better to just remember how to use the registers.  -nxb, June 16, 2020
 

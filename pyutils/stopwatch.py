@@ -11,7 +11,7 @@ elif len(sys.argv) == 2:
   granularity = int(sys.argv[1])
 elif len(sys.argv) == 3:
   granularity = int(sys.argv[1])
-  i           = int(sys.argv[2]) 
+  i           = int(sys.argv[2])  # I didn't document what this 'i' does;       -nxb, June 17, 2020    at 7:05 P.M. EDT.
 
 
 

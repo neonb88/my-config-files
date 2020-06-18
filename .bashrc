@@ -17,7 +17,7 @@ esac
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
-HISTCONTROL=ignoreboth
+#HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -25,6 +25,7 @@ shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 #HISTSIZE=10000
 #HISTFILESIZE=20000
+
 # Eternal bash history.
 # ---------------------
 # Undocumented feature which sets the size to "unlimited".
@@ -462,7 +463,7 @@ export EDITOR=vim
 
 
 
-export HISTTIMEFORMAT="%d/%m/%y %T "
+#export HISTTIMEFORMAT="%d/%m/%y %T "
 
 
 # added by Anaconda3 2018.12 installer
@@ -898,3 +899,6 @@ alias gsls='gsutil ls'
 alias dock='sudo docker run -it --net=host -e DISPLAY 32a767127c27'       # I think DISPLAY is the thing I wanted???  (Tue Jan 14 21:58:07 EST 2020)             where "32..." is the image (container?) ID.
 # can also do "sudo docker attach [container_num]"
 
+# `sox` can be used to cut video.
+#   ie.  `sox 22_secs_silence.mp3 9.97_secs_silence.mp3 trim 0 9.93`
+#   For mp3 support, run `sudo apt-get install libsox-fmt-mp3` .
