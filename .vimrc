@@ -28,7 +28,6 @@ let mapleader="U"
 " Save and/or quit different types of files:
 :map K :wa<Return>
 :map <leader>Y :xa<Return>
-:map <leader><leader>Y :qa<Return>
 :map Q :qa<Return>
 :map <leader>Z :bp<Return>
 :map <leader>X :bp<Return>
@@ -71,18 +70,6 @@ set backupcopy=yes
 au BufWritePre * let &bex = '@' . strftime("%F.%H:%M")
 " More on 'strftime' : http://www.cplusplus.com/reference/ctime/strftime/
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Prevents problems with caps lock / shift-causing-weird-capitalization
-:command WQ wq
-:command Wq wq
-:command Q q
-:command U u
-:command W w
-
-:command Resize res
-:command RESIZE res
-:command Res res
-:command RES res
 
 " Shortcutting split navigation, saving a keypress:
   map <C-h> <C-w>h
@@ -155,6 +142,7 @@ filetype on             " detect type of file
 
 
 :map <leader>V :vertical resize<Return>
+:map <leader>G :res1<Return>
 :map <leader>F :res<Return>
 :map <leader>T :res<Return>:vertical resize<Return>
 :map <leader>S :sp<Return>
@@ -174,8 +162,10 @@ filetype on             " detect type of file
 
 " This will get in the way of my mapping UY => :xa
 " :map <Leader>Y "+y
-":map <Leader>D "*d  # vertical split
-:map <Leader>P "+p
+" This will get in the way of my mapping UD => :vs<Return>
+":map <Leader>D "*d
+" This will get in the way of my mapping UP;    (<leader>P :res<Space>+1<Return>)
+":map <Leader>P "+p
 "  It's probably better to just remember how to use the registers.  -nxb, June 16, 2020
 
 
