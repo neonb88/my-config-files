@@ -1,0 +1,248 @@
+
+
+  0. "Buy" button
+  1. Input boxes ("quantity: [____]")
+  2. Rudimentary payment info
+    Customer
+  3. Change "root" "`~/cust_data/"  filenames
+    NXB (present)
+  4. Add more clothes
+    Customer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Input box for first and last name.      (probably should go in "email.html").
+    customer
+  Better rm_all.sh (/home/nathanbendich/survey/util/clean.sh)   on this VM ("startup-survey-0-0-1").
+    NXB (present)
+  Edit out the "cx`"   from "`recommend.py`"
+    I think I finished this?
+  Set up snapshot backups for startup-survey-0-0-1.
+    NXB (present.)   Unlikely to be important...,  but maybe?
+      For now we probably don't need to worry;  I think this was MAINLY an issue because of the GPU attached to "`mgn-3`"  .
+
+  crontab:  `git push`  (`sudo crontab -e`)
+    NXB (future)
+
+
+
+
+
+
+
+
+
+
+
+
+
+  8.  Better measurement instructions         images, )?
+    a.  Nicole can (and should) do this part.
+  9.  Easier input box  (1. ft   2. inches)
+    a.  Nicole can (and should) do this part.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -1.  Dropbox on NV's VM instance    so NXB has access.
+    Or just plain crontab.
+    crontab:  `git push`  (`sudo crontab -e`)
+
+
+  0.   input box for first and last name.      (probably should go in "email.html").
+  1.  "`mkdir()`" in JScript
+
+  2.  change filenames
+  3.  rm_all.sh on this VM ("startup-survey-0-0-1").
+    STARTED
+  4.  edit out the "cx`"   from "`recommend.py`"
+  5.  set up snapshot backups for startup-survey-0-0-1.
+  6.
+  7.
+
+
+
+
+
+
+
+  8.  Better measurement instructions         images, )?
+    a.  Nicole can (and should) do this part.
+  9.  Easier input box  (1. ft   2. inches)
+    a.  Nicole can (and should) do this part.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Align the fnames (~/curr_cust/...) of curr_measurements in both 
+    1. app.js and    
+    2. recommend.py.
+
+
+
+
+
+
+
+  1. Python spawn_script (make_html() )
+    Customer
+    DONE.

@@ -902,3 +902,5 @@ alias dock='sudo docker run -it --net=host -e DISPLAY 32a767127c27'       # I th
 # `sox` can be used to cut video.
 #   ie.  `sox 22_secs_silence.mp3 9.97_secs_silence.mp3 trim 0 9.93`
 #   For mp3 support, run `sudo apt-get install libsox-fmt-mp3` .
+
+#alias chomp='perl -pi -e \'chomp if eof\''
