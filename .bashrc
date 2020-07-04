@@ -349,8 +349,8 @@ alias red='redshift'
 
 #    opening files
 # vim
-#alias v='vim'
-alias v='nvim'
+alias v='vim'
+#alias v='nvim' #nvim crashed.  Idek why I'd use it over tmux, anyway.
 alias sv='sudo vim'
 
 # vim mode (Luke Smith tutorial: https://www.youtube.com/watch?v=GqoJQft5R2E):
