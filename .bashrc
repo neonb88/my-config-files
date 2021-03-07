@@ -346,6 +346,7 @@ alias da='date'
 # make screen darker
 alias reds='redshift -O 1000'
 alias red='redshift'
+alias redx='redshift -x'
 
 #    opening files
 # vim
@@ -531,14 +532,14 @@ alias OP="/home/n/Documents/code/openpose/build/examples/openpose/openpose.bin -
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/nathan_bendich/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/n/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/nathan_bendich/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/nathan_bendich/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/n/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/n/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/nathan_bendich/anaconda3/bin:$PATH"
+        export PATH="/home/n/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -910,13 +911,14 @@ alias dock='sudo docker run -it --net=host -e DISPLAY 32a767127c27'       # I th
 
 #alias chomp='perl -pi -e \'chomp if eof\''
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/nathan_bendich/Downloads/google-cloud-sdk/path.bash.inc' ]; then . '/home/nathan_bendich/Downloads/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/nathan_bendich/Downloads/google-cloud-sdk/completion.bash.inc' ]; then . '/home/nathan_bendich/Downloads/google-cloud-sdk/completion.bash.inc'; fi
-
 #export PATH=$PATH:/home/n/Downloads/node-v10.8.0-linux-x64/bin   # could do this for env var "CLOUDSDK_CORE_PROJECT" as mentioned [here](https://stackoverflow.com/questions/46770900/how-to-change-the-project-in-gcp-using-cli-commands).
 export SMPLX_MODEL_FOLDER=/home/nathan_bendich/Downloads/SMPL-X_Models/models/
 
 alias listgroups='cut -d: -f1 /etc/group | sort'
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/n/google-cloud-sdk/path.bash.inc' ]; then . '/home/n/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/n/google-cloud-sdk/completion.bash.inc' ]; then . '/home/n/google-cloud-sdk/completion.bash.inc'; fi
