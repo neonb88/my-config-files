@@ -881,7 +881,6 @@ alias bounce='bounce2'
 
 
 export PATH=$PATH:/home/n/Downloads/node-v10.8.0-linux-x64/bin
-alias cmake='/home/n/Downloads/cmake-3.16.2-Linux-x86_64/bin/cmake'
 alias cx='gcloud compute ssh --ssh-flag=-X nathanbendich@startup-survey-0-0-1'
 alias cxb='gcloud compute ssh --ssh-flag=-X nathanbendich@mgn-3' # the 'b' in "cxb" => BackEnd   -nxb, on      June 13, 2020; at      10:59 P.M. EDT.
 #alias cxf='gcloud compute ssh --ssh-flag=-X nathanbendich@startup-survey-0-0-1'   # the 'f' in "cxf" => frontEnd   -nxb, on      June 13, 2020; at      10:59 P.M. EDT.
@@ -922,3 +921,7 @@ if [ -f '/home/n/google-cloud-sdk/path.bash.inc' ]; then . '/home/n/google-cloud
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/n/google-cloud-sdk/completion.bash.inc' ]; then . '/home/n/google-cloud-sdk/completion.bash.inc'; fi
+
+alias runelite="java -jar /usr/local/bin/RuneLite.jar"
+#alias ttr="/home/n/Downalods/"
+alias ttr="/home/n/Downloads/Toontown\ Rwritten/Launcher"
