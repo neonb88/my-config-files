@@ -169,12 +169,12 @@ alias t='time'
 ############################################        getting around the terminal         ####################################################
 ############################################################################################################################################  
 
-alias up='cd ..'
+alias up='c ..'
 alias down='c `ls -dt */ |head -n1`' # NOTE: doesn't go down .git dirs, just like we'd like.  Also doesn't go down other "hidden" dirs like `~/.vim`, however.
 
 # some more ls aliases
-alias l='pwd && ls -ltrAh'
-alias lt='ls -ltrAh | tail'
+alias l='date && pwd && ls -ltrAh'
+alias lt='l | tail'
 alias lold='ls -ltAh | tail'
 
 # dirs
@@ -328,9 +328,9 @@ alias gr='grep -n'
 alias fgr='find | grep'
 
 # history: find old cmds
-alias h='history'
-alias hgr='history | grep'
-alias ht='history | tail'
+alias h='history && printf "======================\n" && date'
+alias hgr='date && printf "======================\n" && history | grep'
+alias ht='date && printf "======================\n" && history | tail'
 #alias hp='' # plain; no times, numbers, etc.  TODO
 
 # diff
@@ -350,7 +350,7 @@ alias redx='redshift -x'
 
 #    opening files
 # vim
-alias v='vim'
+alias v='date && printf "===============\n" && vim'
 #alias v='nvim' #nvim crashed.  Idek why I'd use it over tmux, anyway.
 alias sv='sudo vim'
 
@@ -562,7 +562,7 @@ export PYTHONPATH=$PYTHONPATH:/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____
 export PYTHONPATH=$PYTHONPATH:/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018
 alias all='source /home/n/hmr___and_web/bin/activate' # TODO: figure out how to get `whoami` in there WITHIN a bash alias
 alias z='readlink -f'
-alias c='cd'
+alias c='date && printf "=====================\n" && cd'
 alias k='ln -s' # NOTE: destination ("endpoint") of link 1st, then source (where the link should be).  Unfortunately, the thing I really always forget is which ORDER the arguments go in, not the `ln -s` part.  But I suppose the fastest way to fix this is to just rapidly try both orders and see which works.  Sometimes I forget whether it's -s or -S, though.
 alias sfi='sudo find'
 alias fr='find . -printf "%T@ %Tc %p\n" | sort -n' # fr == "find recent."   https://superuser.com/questions/294161/unix-linux-find-and-sort-by-date-modified
