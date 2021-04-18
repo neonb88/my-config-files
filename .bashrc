@@ -506,7 +506,7 @@ export PATH="/opt/blender/:$PATH"
 
 # CGAL
 #export CMAKE_BUILD_TYPE="Release"
-alias g++='g++ -Wall'
+alias g++='date && printf "=================\n" && g++ -Wall'
 
 # hmr, BodyLabs / Tubingen
 alias hmr='source /home/n/Documents/code/hmr/venv_hmr/bin/activate'
