@@ -306,6 +306,8 @@ alias lpkl='ls -ltrAh *.pkl'
 alias lobj='ls -ltrAh *.obj'
 alias lipynb='l *ipynb'
 alias ljn='l *ipynb'
+alias lblend='l *blend'
+
 alias lnpz='l *npz .*npz'
 
 # stupidity protection against overwrites
