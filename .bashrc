@@ -136,13 +136,15 @@ alias p37='date && time python3.7'
 alias p36='date && time python3.6'
 alias p35='date && time python3.5'
 alias p2='date && time python2'
-alias python2='date && time python2'
-alias python3='date && time python3'
+alias python2='python2'
+alias python3='python3'
 alias jn='jupyter notebook'
 alias ipy='ipython'
 
 # virtual envs, conda
 # TODO: prune after conda reinstall.  
+alias mag='conda activate magicke___March_5_2021_'
+
 alias ca='conda activate cat12' # 'source activate cat'   # 12,11, 4 are the working ones right now (Mon Mar  4 13:28:47 EST 2019)
 alias ca11='conda activate cat11'
 alias ca12='conda activate cat12'
@@ -307,8 +309,8 @@ alias lobj='ls -ltrAh *.obj'
 alias lipynb='l *ipynb'
 alias ljn='l *ipynb'
 alias lblend='l *blend'
-
 alias lnpz='l *npz .*npz'
+alias lsb3='l *sb3'
 
 # stupidity protection against overwrites
 alias rm='rm -iv'
