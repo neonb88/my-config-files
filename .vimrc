@@ -26,7 +26,7 @@ let mapleader="U"
 "set mouse=a
 
 " Save and/or quit different types of files:
-:map K :wa<Return>
+:map K :wa!<Return>
 :map <leader>Y :xa<Return>
 :map Q :qa<Return>
 :map <leader>Z :bp<Return>
