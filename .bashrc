@@ -929,3 +929,4 @@ if [ -f '/home/n/google-cloud-sdk/completion.bash.inc' ]; then . '/home/n/google
 alias runelite="java -jar /usr/local/bin/RuneLite.jar"
 #alias ttr="/home/n/Downalods/"
 alias ttr="/home/n/Downloads/Toontown\ Rwritten/Launcher"
+export PATH=$PATH:/home/n/Downloads/jdk-17.0.1/jdk-17.0.1/bin
