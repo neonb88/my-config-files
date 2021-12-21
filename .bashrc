@@ -582,6 +582,7 @@ alias lsgrp='cut -d: -f1 /etc/group | sort'
 alias lsgroup='cut -d: -f1 /etc/group | sort'
 alias listgroup='cut -d: -f1 /etc/group | sort'
 alias listgroups='cut -d: -f1 /etc/group | sort'
+alias ts='touch -h'  # TODO: replace this if something you use more should replace it
 #alias touch_link='touch -h -t 201301291810 symlink'
 #TODO : kill capslock  (it f**ks up commands, both in VIM and bash.)
 #TODO: disable caps lock on a Ubuntu-wide level
