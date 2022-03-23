@@ -103,7 +103,8 @@ let @f = 'ifuncname=sys._getframe().f_code.co_namejkoprint("entered function ",f
 
 " save/recover vim screen setup in 1 (2) keystrokes: https://stackoverflow.com/questions/1416572/vi-vim-restore-opened-files
 " Quick write session with F8
-map <F8> :mksession! ~/.vim_session <cr>
+map <F2> :mksession! ~/.vim_session <cr>
+"map <F8> :mksession! ~/.vim_session <cr>
 " And load session with F3
 map <F3> :source ~/.vim_session <cr>
 " This line (source ~/.vim_session) is giving me problems on a GCloud Compute Instance.  (the HIDDEN file version, not the visible file one)
