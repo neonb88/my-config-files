@@ -171,6 +171,10 @@ alias t='time'
 ############################################        getting around the terminal         ####################################################
 ############################################################################################################################################  
 
+alias grnot='grep -v'   # grep negative    (grep exclude [queryName])
+alias excludelonglines='grep "^.\{0,300\}$"'
+#alias cut='cut -n9-19'   Here's how to cut (ie. `cat fname.txt | cut -n9-19` cuts out chars 9 to 19)
+
 alias up='c ..'
 alias down='c `ls -dt */ |head -n1`' # NOTE: doesn't go down .git dirs, just like we'd like.  Also doesn't go down other "hidden" dirs like `~/.vim`, however.
 
@@ -590,7 +594,10 @@ alias e='echo'
 # sample command:
 # alias grr='grep -r -i --include \*.py import\   > tests/install_tests/imports.py'     #recursive grep in only files with .py endings
 alias grr='grep -nr -i --include \*.py ' # grr for "recurs"
-alias gn='grep -v'
+alias grrjs='grep -nr -i --include \*.js ' # grr for "recurs"
+alias gn='grep -v'      # grep negative
+alias grnot='grep -v'   # grep negative    (grep exclude [queryName])
+alias excludelonglines='grep "^.\{0,300\}$"'
 alias listinternet='sudo iptables -L'  # list internet rules
 alias interneton='sudo iptables -P INPUT ACCEPT'
 alias internetoff='sudo iptables -P INPUT DROP'
@@ -930,3 +937,4 @@ if [ -f '/home/n/google-cloud-sdk/completion.bash.inc' ]; then . '/home/n/google
 alias runelite="java -jar /usr/local/bin/RuneLite.jar"
 alias ttr="/home/n/Downloads/Toontown\ Rwritten/Launcher"
 export PATH=$PATH:/home/n/Downloads/jdk-17.0.1/jdk-17.0.1/bin
+
