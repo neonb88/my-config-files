@@ -612,6 +612,7 @@ alias tboard='tensorboard --logdir=summaries'
 alias spaces='echo "Bash version: ${BASH_VERSION}...";for i in {1..49..1}; do echo ""; done' # TODO: how to change "49" to any N we want?   also NOTE the second "1" in the "for i in {1..49..1}" is the step size (ie. for i in range(1,9,2) in python. 
 alias fewer_spaces='for i in {1..29..1}; do echo ""; done'
 alias fewer_fewer_spaces='for i in {1..15..1}; do echo ""; done'
+alias 10='for i in {1..10..1}; do echo ""; done'
 #    for i in {1..49}; do echo ""; done
 # echo $LS_COLORS #bash prompt colors
 bind -x '"\C-l": spaces; l; fewer_spaces'
