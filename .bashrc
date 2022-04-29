@@ -613,6 +613,7 @@ alias spaces='echo "Bash version: ${BASH_VERSION}...";for i in {1..49..1}; do ec
 alias fewer_spaces='for i in {1..29..1}; do echo ""; done'
 alias fewer_fewer_spaces='for i in {1..15..1}; do echo ""; done'
 alias 10='for i in {1..10..1}; do echo ""; done'
+alias 5='for i in {1..5..1}; do echo ""; done'
 #    for i in {1..49}; do echo ""; done
 # echo $LS_COLORS #bash prompt colors
 bind -x '"\C-l": spaces; l; fewer_spaces'
