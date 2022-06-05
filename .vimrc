@@ -30,7 +30,7 @@ let mapleader="U"
 :map <leader>Y :xa<Return>
 :map Q :qa<Return>
 :map <leader>Z :bp<Return>
-:map <leader>X :bp<Return>
+:map <leader>X :bn<Return>
 " To exit ex mode (if you accidentally type ':i'), type just a single dot:  '.'
 "   src: https://www.google.com/search?q=enter+ex+mode&oq=enter+ex+mode&aqs=chrome..69i57.1836j0j0&client=ubuntu&sourceid=chrome&ie=UTF-8
 
@@ -102,9 +102,8 @@ let @f = 'ifuncname=sys._getframe().f_code.co_namejkoprint("entered function ",f
 
 
 " save/recover vim screen setup in 1 (2) keystrokes: https://stackoverflow.com/questions/1416572/vi-vim-restore-opened-files
-" Quick write session with F8
+" Quick write session with F2
 map <F2> :mksession! ~/.vim_session <cr>
-"map <F8> :mksession! ~/.vim_session <cr>
 " And load session with F3
 map <F3> :source ~/.vim_session <cr>
 " This line (source ~/.vim_session) is giving me problems on a GCloud Compute Instance.  (the HIDDEN file version, not the visible file one)
@@ -150,6 +149,9 @@ filetype on             " detect type of file
 :map <leader>D :vs<Return>
 :map <leader>N :set nopaste<Return>
 :map <leader>B :set paste<Return>
+:map <leader>O :bp<Return>
+:map <leader>P :bn<Return>
+" O and P are right next to each other.  after 
 
 
 
