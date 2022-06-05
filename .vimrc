@@ -149,9 +149,9 @@ filetype on             " detect type of file
 :map <leader>D :vs<Return>
 :map <leader>N :set nopaste<Return>
 :map <leader>B :set paste<Return>
-:map <leader>O :bp<Return>
-:map <leader>P :bn<Return>
-" O and P are right next to each other.  after 
+:map <leader>I :bp<Return>
+:map <leader>O :bn<Return>
+" I and O are right next to each other.  after 
 
 
 
