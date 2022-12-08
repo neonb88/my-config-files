@@ -1129,7 +1129,7 @@ def pe(n=89):       print('='*n)
 
 #===================================================================================================
 # TODO: history | grep,   history | tail
-def hist():
+def hist(print_line_numbers=True):
     '''
         print python history
         TODO:  hg() == UNIX hg
@@ -1137,23 +1137,29 @@ def hist():
     import readline
     pe(39)
     for i in range(readline.get_current_history_length()):
-        print (i, readline.get_history_item(i + 1))
+        if print_line_numbers:
+            print (i, readline.get_history_item(i + 1))
+        else:
+            print (readline.get_history_item(i + 1))
     pe(39)
 
 
 h=hist
 H=h
 #===================================================================================================
-def ht(n=10):
+def ht(n=10,print_line_numbers=True):
   import readline
   pe(39)
   for i in range(readline.get_current_history_length()):
     if i > readline.get_current_history_length()-n:
-      print (i,readline.get_history_item(i + 1))
+      if print_line_numbers:
+        print (i,readline.get_history_item(i + 1))
+      else:
+        print (readline.get_history_item(i + 1))
   pe(39)
 #===================================================================================================
 
-def hgr(s='print', n=0):
+def hgr(s='print', n=0, print_line_numbers=True):
   # grep through my python history
   import readline
   pn(); pe(39)
@@ -1166,14 +1172,23 @@ def hgr(s='print', n=0):
       future_lines.append(line)
       if len(future_lines) == n:
         for j,future_line in enumerate(future_lines):
-          print(i-n+j, future_line)
+          if print_line_numbers:
+            print(i-n+j, future_line)
+          else:
+            print( future_line)
         future_lines=[]
         print()
       found=False
     if s in line:
       for j,past_line in enumerate(past_lines):
-        print(i-n+j,past_line)
-      print(i,line)
+        if print_line_numbers:
+          print(i-n+j,past_line)
+        else:
+          print(past_line)
+      if print_line_numbers:
+        print(i,line)
+      else:
+        print(line)
       future_lines=[]
       found=True
     past_lines.append(line)
