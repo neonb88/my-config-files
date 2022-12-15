@@ -178,8 +178,19 @@ alias excludelonglines='grep "^.\{0,300\}$"'
 alias up='c ..'
 alias down='c `ls -dt */ |head -n1`' # NOTE: doesn't go down .git dirs, just like we'd like.  Also doesn't go down other "hidden" dirs like `~/.vim`, however.
 
+alias spaces='echo "Bash version: ${BASH_VERSION}...";for i in {1..49..1}; do echo ""; done' # TODO: how to change "49" to any N we want?   also NOTE the second "1" in the "for i in {1..49..1}" is the step size (ie. for i in range(1,9,2) in python. 
+alias fewer_spaces='for i in {1..29..1}; do echo ""; done'
+alias fewer_fewer_spaces='for i in {1..15..1}; do echo ""; done'
+alias 20='for i in {1..20..1}; do echo ""; done'
+alias 10='for i in {1..10..1}; do echo ""; done'
+alias 9='for i in {1..9..1}; do echo ""; done'
+alias 5='for i in {1..5..1}; do echo ""; done'
+alias 2='for i in {1..2..1}; do echo ""; done'
+
+#    for i in {1..49}; do echo ""; done
 # some more ls aliases
-alias l='date && pwd && ls -ltrAh'
+#alias l='date && pwd && ls -ltrAh && 2'  # <==   doesn't work for `l filename`
+alias l='2 && date && pwd && ls -ltrAh' #     old:   alias l='date && pwd && ls -ltrAh   && 2'     <==   doesn't work for `l filename`
 alias lt='l | tail'
 alias lold='ls -ltAh | tail'
 
@@ -575,8 +586,8 @@ alias k='ln -s' # NOTE: destination ("endpoint") of link 1st, then source (where
 alias sfi='sudo find'
 alias fr='find . -printf "%T@ %Tc %p\n" | sort -n' # fr == "find recent."   https://superuser.com/questions/294161/unix-linux-find-and-sort-by-date-modified
 alias sg='sudo grep'
-alias pw='pwd'
-alias wd='pwd' # working dir
+alias pw='2;pwd;2'
+alias wd='2;pwd;2' # working dir
 # TODO: kill password entry for git push
 alias x='xclip'
 alias lsln='find . -maxdepth 1 -type l -ls' # list all symbolic links  ("ln" because that's the command typed to make a link)
@@ -593,8 +604,8 @@ alias ts='touch -h'  # TODO: replace this if something you use more should repla
 alias e='echo'
 # sample command:
 # alias grr='grep -r -i --include \*.py import\   > tests/install_tests/imports.py'     #recursive grep in only files with .py endings
-alias grr='grep -nr -i --include \*.py ' # grr for "recurs"
-alias grrjs='grep -nr -i --include \*.js ' # grr for "recurs"
+alias grr='grep -nr -i --include \*.py ' # grr stands for "grep recursively (in .py files)"
+alias grrjs='grep -nr -i --include \*.js ' # grrjs stands for "grep recursively (all .js files)"
 alias gn='grep -v'      # grep negative
 alias grnot='grep -v'   # grep negative    (grep exclude [queryName])
 alias excludelonglines='grep "^.\{0,300\}$"'
@@ -609,12 +620,6 @@ alias tboard='tensorboard --logdir=summaries'
 # useful cmds
 # xinput --disable 11
 # tensorboard --logdir=summaries
-alias spaces='echo "Bash version: ${BASH_VERSION}...";for i in {1..49..1}; do echo ""; done' # TODO: how to change "49" to any N we want?   also NOTE the second "1" in the "for i in {1..49..1}" is the step size (ie. for i in range(1,9,2) in python. 
-alias fewer_spaces='for i in {1..29..1}; do echo ""; done'
-alias fewer_fewer_spaces='for i in {1..15..1}; do echo ""; done'
-alias 10='for i in {1..10..1}; do echo ""; done'
-alias 5='for i in {1..5..1}; do echo ""; done'
-#    for i in {1..49}; do echo ""; done
 # echo $LS_COLORS #bash prompt colors
 bind -x '"\C-l": spaces; l; fewer_spaces'
 
@@ -685,6 +690,7 @@ alias cs231_CPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag=-
 #alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@cs231n---pytorch-1-vm"'
 alias cs231_GPU='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@pytorch-1-vm"'
 
+#alias majic='gcloud compute --project "secret-voice-243500" ssh --ssh-flag='-X' --zone "us-west1-b" "cat_macys_vr@pytorch-1-vm"'
 
 
 
@@ -716,7 +722,8 @@ alias backup='backup2'
 
 
 
-
+alias gcloud='gcloud.cmd'
+alias gc='gcloud.cmd'
 
 
 
@@ -896,6 +903,9 @@ alias bounce='bounce2'
 
 
 export PATH=$PATH:/home/n/Downloads/node-v10.8.0-linux-x64/bin
+#alias m='gcloud compute ssh --ssh-flag=-X nathanbendich@majic-vr-slash-ar-airbnb-1'
+alias m='gcloud compute --project "helpful-valve-195602" ssh --ssh-flag='-X' --zone "us-central1-a" "nathanbendich@majic-vr-slash-ar-airbnb-1"'
+alias majic='m'
 alias cx='gcloud compute ssh --ssh-flag=-X nathanbendich@startup-survey-0-0-1'
 alias cxb='gcloud compute ssh --ssh-flag=-X nathanbendich@mgn-3' # the 'b' in "cxb" => BackEnd   -nxb, on      June 13, 2020; at      10:59 P.M. EDT.
 #alias cxf='gcloud compute ssh --ssh-flag=-X nathanbendich@startup-survey-0-0-1'   # the 'f' in "cxf" => frontEnd   -nxb, on      June 13, 2020; at      10:59 P.M. EDT.
@@ -940,5 +950,7 @@ if [ -f '/home/n/google-cloud-sdk/completion.bash.inc' ]; then . '/home/n/google
 alias runelite="java -jar /usr/local/bin/RuneLite.jar"
 alias ttr="/home/n/Downloads/Toontown\ Rwritten/Launcher"
 export PATH=$PATH:/home/n/Downloads/jdk-17.0.1/jdk-17.0.1/bin
-> alias 20='for i in {1..20..1}; do echo ""; done'
-> alias 2='for i in {1..2..1}; do echo ""; done'
+
+# Stripe:
+export PATH=$PATH:/c/Users/natha/Downloads/stripe_1.11.3_windows_x86_64 # ThinkPad x1 Carbon
+alias stripe="/c/Users/natha/Downloads/stripe_1.11.3_windows_x86_64/stripe.exe" # ThinkPad x1 Carbon
