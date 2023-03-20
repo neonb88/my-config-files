@@ -593,7 +593,7 @@ alias ts='touch -h'  # TODO: replace this if something you use more should repla
 alias e='echo'
 # sample command:
 # `grre import\  . > tests/install_tests/imports.py`     #recursive grep in all file endings for the word "import"
-alias grre='grep -Rifn3'    # https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories?rq=1
+alias grre='grep -RiFn3'    # https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories?rq=1
 
 # sample command:
 # alias grr='grep -r -i --include \*.py import\   > tests/install_tests/imports.py'     #recursive grep in only files with .py endings
