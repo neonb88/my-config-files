@@ -592,12 +592,18 @@ alias ts='touch -h'  # TODO: replace this if something you use more should repla
 #TODO: disable caps lock on a Ubuntu-wide level
 alias e='echo'
 # sample command:
+# `grre import\  . > tests/install_tests/imports.py`     #recursive grep in all file endings for the word "import"
+alias grre='grep -Rifn3'    # https://stackoverflow.com/questions/1987926/how-do-i-recursively-grep-all-directories-and-subdirectories?rq=1
+
+# sample command:
 # alias grr='grep -r -i --include \*.py import\   > tests/install_tests/imports.py'     #recursive grep in only files with .py endings
 alias grr='grep -nr -i --include \*.py ' # grr for "recurs"
 alias grrjs='grep -nr -i --include \*.js ' # grr for "recurs"
 alias gn='grep -v'      # grep negative
 alias grnot='grep -v'   # grep negative    (grep exclude [queryName])
+
 alias excludelonglines='grep "^.\{0,300\}$"'
+
 alias listinternet='sudo iptables -L'  # list internet rules
 alias interneton='sudo iptables -P INPUT ACCEPT'
 alias internetoff='sudo iptables -P INPUT DROP'
