@@ -28,7 +28,7 @@ let mapleader="U"
 " Save and/or quit different types of files:
 :map K :wa!<Return>
 :map <leader>Y :xa<Return>
-:map Q :qa<Return>
+":map QQ :qa<Return>
 :map <leader>Z :bp<Return>
 :map <leader>X :bn<Return>
 " To exit ex mode (if you accidentally type ':i'), type just a single dot:  '.'
@@ -79,7 +79,8 @@ au BufWritePre * let &bex = '@' . strftime("%F.%H:%M")
   map <C-l> <C-w>l
 
 " kill a buffer
-  map <leader>Q :q<Return>
+  map <leader>QW :q!<Return>
+  " QW is easier to type than 'Q1'                              
 " Shortcutting split resizing, saving a keypress:
   map <leader>P :res<Space>+1<Return>
   map <leader>M :res<Space>-1<Return>
@@ -89,6 +90,9 @@ au BufWritePre * let &bex = '@' . strftime("%F.%H:%M")
   map <leader>O o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Return>8.<Return>9.<Return>10.<Return>11.<Return>12.<Return>13.<Return>14.<Return>15.<Return>16.<Return>17.<Return>18.<Esc>
   " 'O' for 'Outline'
   map <leader>I oa.<Return>b.<Return>c.<Return>d.<Return>e.<Return>f.<Return>g.<Return>h.<Return>i.<Return>j.<Return>k.<Return>l.<Return>m.<Return>n.<Return>o.<Return>p.<Return>q.<Return>r.<Return>s.<Return>t.<Return>u.<Return>v.<Return>w.<Return>x.<Return>y.<Return>z.<Esc>
+" I and O are right next to each other.  after 
+
+  map <leader>C a  - Nate Bendich, Fall 2022<Esc>
   map <leader>J apublic class Main {<Return> public static void main(String[] args) {<Return>}<Return>}
   " TODO:    make the comment actually mark today's date using `date` and format arguments to 
 
@@ -495,21 +499,24 @@ filetype on             " detect type of file
 
 " Insert and/ or       comment here.
 
-" Spell checking.  ( https://neovim.io/doc/user/spell.html )                        
-:setlocal spell spelllang=en_us
-
-
-
-
-
-
-
-
-
-
-
-
-
+" Spell checking.  ( https://neovim.io/doc/user/spell.html )            (How do I get autocorrect like in MS Word?      And  how can I see the options, too? )                                
+setlocal spell spelllang=en_us
+set spell spelllang=en_us
+"  	commands:   https://neovim.io/doc/user/vimindex.html		      
+"
+"
+"	Fixing spelling with a suggestion is 'Ctrl+x Ctrl+s' from insert  mode.
+"	:[count]spe[llgood] {word}      adds a word to the dictionary
+"
+"
+"
+"
+"
+"
+"
+"
+"
+"
 
 
 
