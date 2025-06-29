@@ -1,74 +1,8 @@
-#[user]
-	#name = neonb88
-	#email = nathanbendich@gmail.com
-	#signingkey = 2A5A248015F59A96
-#[alias]
-		#ad  = add
-		##############
-		#b   = branch
-		##############
-		#c   = commit
-		#cm  = commit -vm
-		#ca  = commit -vam
-		##############
-		#cl  = clone
-		##############
-		#d   = diff
-		##############
-		#f   = fetch
-		##############
-		#l   = log
-		#lo  = log --oneline --graph --decorate
-		##############
-		#mt  = mergetool
-		############## ^   mergetool is good for resolving merge conflicts; it pulls up a beyondCompare UI
-		#o   = checkout
-		##############
-		#pl  = pull
-		#ps  = push
-		##############
-		#res = reset --hard origin/master
-				## moves to the main head (throws away local commits)
-		##############
-		#s   = stash
-		#st  = status
-		##############
-		#u   = config --get remote.origin.url
-		#ur  = config --get remote.origin.url
-		#url = config --get remote.origin.url
-#
-##[diff]
-	##external = git-meld-diff
-#[core]
-	#editor=vim
-#[http]
-#proxy = http://ashproxy.kdc.capitalone.com:8099
-#[https]
-#proxy = http://ashproxy.kdc.capitalone.com:8099
-
-######################################
-######################################
-######################################
-######################################
-######################################
-#   ^ from Windows laptop
-######################################
-######################################
-######################################
-######################################
-######################################
-#  From Capital One macbook laptop:   
-######################################
-######################################
-######################################
-######################################
-######################################
-
 [user]
-	name = Nathan Bendich
-	#name = neonb88
+	#name = Nathan Bendich
+	name = neonb88
 	email = nathanbendich@gmail.com
-	signingkey = 2A5A248015F59A96
+	#signingkey = 2A5A248015F59A96
 [alias]
   ad  = add
   #############

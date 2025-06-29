@@ -43,6 +43,41 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 #
 PROMPT_DIRTRIM=5
 
+
+
+
+
+
+
+# added by Anaconda3 2018.12 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/n/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/home/n/anaconda3/etc/profile.d/conda.sh" ]; then
+# . "/home/n/anaconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/home/n/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+
+conda init
+conda init bash
+conda init zsh
+
+
+
+
+
+
+
+
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
@@ -81,11 +116,12 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 ###    PROMPT
+#PS1='===========================================\n    '
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]===========================================\n   \[\033[01;34m\]\[\033[00m\]'
-#          colors, working dir
+##          colors, working dir
     #PS1=' ' # just a slight indent
-else
+#else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
     #PS1=' ' # just a slight indent
 fi
@@ -179,13 +215,13 @@ alias up='c ..'
 alias down='c `ls -dt */ |head -n1`' # NOTE: doesn't go down .git dirs, just like we'd like.  Also doesn't go down other "hidden" dirs like `~/.vim`, however.
 
 alias spaces='echo "Bash version: ${BASH_VERSION}...";for i in {1..49..1}; do echo ""; done' # TODO: how to change "49" to any N we want?   also NOTE the second "1" in the "for i in {1..49..1}" is the step size (ie. for i in range(1,9,2) in python. 
-alias fewer_spaces='for i in {1..29..1}; do echo ""; done'
-alias fewer_fewer_spaces='for i in {1..15..1}; do echo ""; done'
-alias 20='for i in {1..20..1}; do echo ""; done'
-alias 10='for i in {1..10..1}; do echo ""; done'
-alias 9='for i in {1..9..1}; do echo ""; done'
-alias 5='for i in {1..5..1}; do echo ""; done'
-alias 2='for i in {1..2..1}; do echo ""; done'
+alias fewer_spaces='for i in {1..29}; do echo ""; done'
+alias fewer_fewer_spaces='for i in {1..15}; do echo ""; done'
+alias 20='for i in {1..20}; do echo ""; done'
+alias 10='for i in {1..10}; do echo ""; done'
+alias 9='for i in {1..9}; do echo ""; done'
+alias 5='for i in {1..5}; do echo ""; done'
+alias 2='for i in {1..2}; do echo ""; done'
 
 #    for i in {1..49}; do echo ""; done
 # some more ls aliases
@@ -486,24 +522,6 @@ export EDITOR=vim
 #export HISTTIMEFORMAT="%d/%m/%y %T "
 
 
-# added by Anaconda3 2018.12 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/n/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/home/n/anaconda3/etc/profile.d/conda.sh" ]; then
-# . "/home/n/anaconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/home/n/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
-
-
 #===================================================================================================
 #========================================= "Cat" stuff: ============================================
 #===================================================================================================
@@ -536,9 +554,9 @@ alias SMPLifyX='python3 smplifyx/main.py --config cfg_files/fit_smplx.yaml --dat
 
 #SMPL_LOCATION=~/Downloads/smpl
 SMPL_LOCATION=/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smpl # NOTE: under git
-export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION
+#export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION
 SMPL_LOCATION2=/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/smpl/smpl_webuser
-export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION2
+#export PYTHONPATH=$PYTHONPATH:$SMPL_LOCATION2
 
 # For more details, see https://github.com/vchoutas/smplx .
 SMPLX_LOC=/home/n/Downloads/smplx/models
@@ -572,13 +590,13 @@ alias web='conda activate web'
 export FLASK_APP=~/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/src/web/grinberg_mega_tutorial/The-Complete-Flask-Mega-Tutorial/CODE/microblog-0.4/microblog.py
 alias gb='conda activate flask_mgrinberg'
 # HMR
-export PYTHONPATH=$PYTHONPATH:/home/`whoami`/Documents/code/old/hmr
-export PYTHONPATH_HMR=$PYTHONPATH # because HMR has its own python2 chumpy
+#export PYTHONPATH=$PYTHONPATH:/home/`whoami`/Documents/code/old/hmr
+#export PYTHONPATH_HMR=$PYTHONPATH # because HMR has its own python2 chumpy
 
 # chumpy
-export PYTHONPATH=$PYTHONPATH:/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/conda_+/lib/python3.6/site-packages
+#export PYTHONPATH=$PYTHONPATH:/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018/conda_+/lib/python3.6/site-packages
 # measure.py, mesh.py, Go.py
-export PYTHONPATH=$PYTHONPATH:/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018
+#export PYTHONPATH=$PYTHONPATH:/home/n/x/p/fresh____as_of_Dec_12_2018/vr_mall____fresh___Dec_12_2018
 alias all='source /home/n/hmr___and_web/bin/activate' # TODO: figure out how to get `whoami` in there WITHIN a bash alias
 alias z='readlink -f'
 alias c='date && printf "=====================\n" && cd'
@@ -961,7 +979,25 @@ alias stripe="/c/Users/natha/Downloads/stripe_1.11.3_windows_x86_64/stripe.exe" 
 alias artisan='conda activate artisan'     #'conda activate Artisan_interviews_FastAPI_and_GPT___originally_September_13_2024'   
 alias art='artisan'
 
+alias edu='conda activate edu_ai_proj_liao'
 
 
+
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/heavenlybamboo/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/heavenlybamboo/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/heavenlybamboo/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/heavenlybamboo/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
 

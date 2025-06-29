@@ -89,7 +89,7 @@ au BufWritePre * let &bex = '@' . strftime("%F.%H:%M")
   map <leader>O o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Return>8.<Return>9.<Return>10.<Return>11.<Return>12.<Return>13.<Return>14.<Return>15.<Return>16.<Return>17.<Return>18.<Esc>
   " 'O' for 'Outline'
   map <leader>I oa.<Return>b.<Return>c.<Return>d.<Return>e.<Return>f.<Return>g.<Return>h.<Return>i.<Return>j.<Return>k.<Return>l.<Return>m.<Return>n.<Return>o.<Return>p.<Return>q.<Return>r.<Return>s.<Return>t.<Return>u.<Return>v.<Return>w.<Return>x.<Return>y.<Return>z.<Esc>
-  map <leader>J apublic class Main {<Return> public static void main(String[] args) {<Return>}<Return>}
+  map <leader>JJ apublic class Main {<Return> public static void main(String[] args) {<Return>}<Return>}
   " TODO:    make the comment actually mark today's date using `date` and format arguments to 
 
   " 'I' just because it's close to 'U.'
@@ -345,7 +345,7 @@ let mapleader="U"
 
 " NOTE:     detailed                  
 "   tabs vs spaces:      https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces                  
-set tabstop=8 "2    "4
+set tabstop=4 "2    "8
 set shiftwidth=2 "4
 "set expandtab    " should I use tabs instead of spaces?  See: Richard Hendricks of 'Silicon Valley' fame
 set noexpandtab
@@ -388,9 +388,12 @@ au BufWritePre * let &bex = '@' . strftime("%F.%H:%M")
   map <leader>R :vertical<Space>resize<Space>-1<Return>
 " I used leader instead of 'ctrl' b/c <C-o> is useful
   map <leader>O o1.<Return><Space><Space>a.<Return><Backspace><Backspace>2.<Return>3.<Return>4.<Return>5.<Return>6.<Return>7.<Return>8.<Return>9.<Return>10.<Return>11.<Return>12.<Return>13.<Return>14.<Return>15.<Return>16.<Return>17.<Return>18.<Esc>
+  map <leader>JO o1)<Return><Space><Space>a)<Return><Backspace><Backspace>2)<Return>3)<Return>4)<Return>5)<Return>6)<Return>7)<Return>8)<Return>9)<Return>10)<Return>11)<Return>12)<Return>13)<Return>14)<Return>15)<Return>16)<Return>17)<Return>18)<Esc>
   " 'O' for 'Outline'
   map <leader>I oa.<Return>b.<Return>c.<Return>d.<Return>e.<Return>f.<Return>g.<Return>h.<Return>i.<Return>j.<Return>k.<Return>l.<Return>m.<Return>n.<Return>o.<Return>p.<Return>q.<Return>r.<Return>s.<Return>t.<Return>u.<Return>v.<Return>w.<Return>x.<Return>y.<Return>z.<Esc>
-  " 'I' just because it's close to 'U.'
+  map <leader>JI oa)<Return>b)<Return>c)<Return>d)<Return>e)<Return>f)<Return>g)<Return>h)<Return>i)<Return>j)<Return>k)<Return>l)<Return>m)<Return>n)<Return>o)<Return>p)<Return>q)<Return>r)<Return>s)<Return>t)<Return>u)<Return>v)<Return>w)<Return>x)<Return>y)<Return>z)<Esc>
+  " I use 'I' just because it's close to 'U.'
+
 " above is the precursor to my fancier general outline-producer.  It oughta work well enough for my current purposes
 
 " Copy things from Ubuntu 16.04 system clipboard into vim with shift+insert   (or right click + 'paste')
