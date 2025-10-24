@@ -43,8 +43,8 @@ let mapleader="U"
 :map <Backspace> i<Backspace><Esc>l
 
 set number
-set tabstop=2    "4
-set shiftwidth=2 "4
+set tabstop=4    "4 in boosted.AI's codebase; 2 is my personal preference.     
+set shiftwidth=4 "4 in boosted.AI's codebase; 2 is my personal preference     
 "set expandtab    " should I use tabs instead of spaces?  See: Richard Hendricks of 'Silicon Valley' fame
 set ai "autoindent
 set ruler
@@ -123,7 +123,7 @@ map <F3> :source ~/.vim_session <cr>
   map <C-z> 0
 
 
-
+set wrap
 set scrolloff=5         " keep 5 lines when scrolling
 " TODO:  bp    (prev buffer)
 " TODO: python strings NOT IN PURPLE.  hard to read.
@@ -277,8 +277,8 @@ autocmd BufReadPost *
 "==================================================================================================                      
 "==================================================================================================                      
 " Start of Capital One's Vimrc:                                                                                        
-" 	Hopefully there isn't too much weirdness from having most commands twice.                                               
-"================================================================================================== 	                      
+"   Hopefully there isn't too much weirdness from having most commands twice.                                               
+"==================================================================================================                           
 "==================================================================================================                      
 "==================================================================================================                      
 "==================================================================================================                      
@@ -347,8 +347,9 @@ let mapleader="U"
 "   tabs vs spaces:      https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces                  
 set tabstop=4 "2    "8
 set shiftwidth=2 "4
-"set expandtab    " should I use tabs instead of spaces?  See: Richard Hendricks of 'Silicon Valley' fame
-set noexpandtab
+set expandtab     " just for boosted.AI
+"set expandtab    " should I use tabs instead of spaces?  No.  Tabs make more sense.     
+"set noexpandtab
 set ai "autoindent
 set ruler
 
@@ -509,10 +510,133 @@ filetype on             " detect type of file
 
 
 
+"" Create a directory for session files if it doesn't exist
+"let g:session_dir = $HOME . '/.vim/sessions'
+"
+"" Automatically saves a session with a timestamp
+"function! SaveSessionHourly(timer_id)
+"    " Don't try to save while Vim is exiting
+"    if v:dying
+"        return
+"    endif
+"    
+"    " Check and create the session directory
+"    if !isdirectory(g:session_dir)
+"        call mkdir(g:session_dir, 'p')
+"    endif
+"    
+"    " Create a timestamped session filename
+"    let l:timestamp = strftime("%Y-%m-%d__%H-%M-%S")
+"    let l:session_file = g:session_dir . '/' . l:timestamp . '.vim'
+"    
+"    " Save the session
+"    execute 'mksession! ' . l:session_file
+"    echom "Hourly session saved to " . l:session_file
+"endfunction
+"
+"" Start the timer on Vim startup to run the function every hour
+"augroup HourlySessionSaver
+"    autocmd!
+"    autocmd VimEnter * call timer_start(1000 * 60 * 60, function('SaveSessionHourly'), {'repeat': -1})
+"augroup END
+
+"   vimrc automatically create vim session with timestamp every hour
+"   You can automatically create a timestamped Vim session every hour by adding a function and an autocommand to your .vimrc file. This setup uses Vim's built-in timer functionality. 
+"
+"
+"
+"
+"
+" + random noise:
+
+" --- Configuration ---
+" Create a directory for session files if it doesn't exist
+let g:session_dir = $HOME . '/.vim/sessions'
+
+
+" --- Session Save Function ---
+" Automatically saves a session with a timestamp
+function! SaveSessionHourly(timer_id)
+    " Don't try to save while Vim is exiting
+    if v:dying
+        return
+    endif
+    
+    " Check and create the session directory
+    if !isdirectory(g:session_dir)
+        call mkdir(g:session_dir, 'p')
+    endif
+    
+    " Create a timestamped session filename (includes seconds to be safe)
+    let l:timestamp = strftime("%Y-%m-%d__%H-%M-%S")
+    let l:session_file = g:session_dir . '/' . l:timestamp . '.vim'
+    
+    " Save the session
+    execute 'mksession! ' . l:session_file
+    echom "Hourly session saved to " . l:session_file
+endfunction
+
+
+" --- Timer Starter Functions ---
+" This function is called once after the initial random delay.
+" It performs the first save and then starts the repeating hourly timer.
+function! s:StartSaveCycle(timer_id)
+    " 1. Perform the first save immediately.
+    call SaveSessionHourly(0)
+
+    " 2. Start the repeating timer for all subsequent hourly saves.
+    call timer_start(1000 * 60 * 60, 'SaveSessionHourly', {'repeat': -1})
+endfunction
+
+" This function sets up the initial randomized timer.
+function! s:SetupRandomTimer()
+    " Seed the random number generator for better randomness across instances.
+    call srand(reltime()[0])
+
+    " Calculate a random delay between 0 and 29999 milliseconds (0-29 seconds).
+    let l:random_delay_ms = rand() % 30000
+
+    " Start a one-time timer that will kick off the main save cycle.
+    call timer_start(l:random_delay_ms, 's:StartSaveCycle')
+endfunction
+
+
+" --- Autocommand on Vim Startup ---
+augroup HourlySessionSaver
+    autocmd!
+    " When Vim starts, call the setup function to begin the randomized timer.
+    autocmd VimEnter * call s:SetupRandomTimer()
+augroup END
 
 
 
 
+
+
+
+
+" This line is because:                                                                                    
+"   Boosted.AI uses spaces instead of tabs.  **__I__** personally like tabs better, but whatever.              
+ret
+
+" Generate ctags for easier searching:              
+"  Sources:https://stackoverflow.com/questions/155449/vim-auto-generate-ctags?rq=3
+"           https://stackoverflow.com/questions/635770/jump-to-function-definition   
+"au BufWritePost *.py,*.sh silent! !ctags -R   --exclude="/Users/n/Documents/code/agent-service-code/agent-service/.venv" --exclude=.git --exclude=node_modules   &          " this is good for showing you the errors,  but it automatically spams everything in the shell, (including  through Vim)  when I do it this way    .             
+autocmd BufWritePost *.py,*.sh,*.js silent! !/usr/bin/ctags -R --exclude=/Users/n/Documents/code/agent-service-code/agent-service/.venv --exclude=.git --exclude=node_modules  2> /dev/null &
+
+"   ^ This wasn't working, and I have actual work to finish instead of this.                      
+" TO FIX ERRORS, JUST REDO IT MANUALLY;    just run `ctags -R .` to regenerate the tags in the root directory                        
+" TO FIX ERRORS, JUST REDO IT MANUALLY;    just run `ctags -R .` to regenerate the tags in the root directory                        
+" TO FIX ERRORS, JUST REDO IT MANUALLY;    just run `ctags -R .` to regenerate the tags in the root directory                        
+" TO FIX ERRORS, JUST REDO IT MANUALLY;    just run `ctags -R .` to regenerate the tags in the root directory                        
+
+
+
+
+
+#   NOTE:   PUSH TO your personal (neonb88) GitHub.                     
+:tags /Users/n/Documents/code/agent-service-code/agent-service/tags
 
 
 
