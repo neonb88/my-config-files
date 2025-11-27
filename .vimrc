@@ -626,13 +626,11 @@ ret
 "           https://stackoverflow.com/questions/635770/jump-to-function-definition   
 "au BufWritePost *.py,*.sh silent! !ctags -R   --exclude="/Users/n/Documents/code/agent-service-code/agent-service/.venv" --exclude=.git --exclude=node_modules   &          " this is good for showing you the errors,  but it automatically spams everything in the shell, (including  through Vim)  when I do it this way    .             
 autocmd BufWritePost *.py,*.sh,*.js silent! !/usr/bin/ctags -R --exclude=/Users/n/Documents/code/agent-service-code/agent-service/.venv --exclude=.git --exclude=node_modules  2> /dev/null &
-
 "   ^ This wasn't working, and I have actual work to finish instead of this.                      
-" TO FIX ERRORS, JUST REDO IT MANUALLY;    just run `ctags -R .` to regenerate the tags in the root directory                        
-" TO FIX ERRORS, JUST REDO IT MANUALLY;    just run `ctags -R .` to regenerate the tags in the root directory                        
-" TO FIX ERRORS, JUST REDO IT MANUALLY;    just run `ctags -R .` to regenerate the tags in the root directory                        
-" TO FIX ERRORS, JUST REDO IT MANUALLY;    just run `ctags -R .` to regenerate the tags in the root directory                        
-
+" TO FIX ERRORS, JUST REDO IT MANUALLY;    just run `ctags -R --exclude=/Users/n/Documents/code/agent-service-code/agent-service/.venv --exclude=.git --exclude=node_modules  2> /dev/null & ` to regenerate the tags in the root directory                        
+" TO FIX ERRORS, JUST REDO IT MANUALLY;    just run `ctags -R --exclude=/Users/n/Documents/code/agent-service-code/agent-service/.venv --exclude=.git --exclude=node_modules  2> /dev/null & ` to regenerate the tags in the root directory                        
+" TO FIX ERRORS, JUST REDO IT MANUALLY;    just run `ctags -R --exclude=/Users/n/Documents/code/agent-service-code/agent-service/.venv --exclude=.git --exclude=node_modules  2> /dev/null & ` to regenerate the tags in the root directory                        
+" TO FIX ERRORS, JUST REDO IT MANUALLY;    just run `ctags -R --exclude=/Users/n/Documents/code/agent-service-code/agent-service/.venv --exclude=.git --exclude=node_modules  2> /dev/null & ` to regenerate the tags in the root directory                        
 
 
 
