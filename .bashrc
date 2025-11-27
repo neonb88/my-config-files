@@ -236,7 +236,7 @@ alias lold='ls -ltAh | tail'
 
 # dirs
 alias ldir='l -d */'  # ld is a different command (a "REAL" UNIX command) that I was overwriting
-alias ldi='l */ .*/'  # ld is a different command that I was overwriting
+alias ldi='ldir .*/'  # ld is a different command that I was overwriting
 
 alias lwc='l|wc'
 alias ltail='l | tail'
@@ -1107,6 +1107,9 @@ export NAMESPACE=insights-backend-prod
 
 
 
+# To get native VS Code's debugger working (https://search.brave.com/search?q=vs+code+debugger+ConnectionRefusedError%3A+%5BErrno+61%5D+Connection+refused&source=web&summary=1&conversation=27e55d09d37aacb16f7bd0):                  
+export DEBUGPY_PROCESS_SPAWN_TIMEOUT=500  # seconds         
+export PYTHONPATH=/Users/n/Documents/code/agent-service-code/agent-service/.venv/bin             # ${workspaceFolder}",     a     
 
 
 
