@@ -1,7 +1,7 @@
 [user]
 	#name = Nathan Bendich
-	name = neonb88
-	email = nathanbendich@gmail.com
+	name = neonb88         # neonb77
+	email = nathanbendich@gmail.com            # nathan.bendich@gradientboostedinvestments.com                 # nathan.bendich@boosted.ai              
 	#signingkey = 2A5A248015F59A96
 [alias]
   ad  = add
@@ -44,12 +44,27 @@
   ur  = config --get remote.origin.url
   url = config --get remote.origin.url
 
+
+
 [diff]
   #external = git-meld-diff
+  #external = meld       # <=====  THIS is what I wanted.  It's just kvetching at me because there are too many files at once.                     
+  #external = vimdiff
+  #difftool.meld.cmd /opt/homebrew/bin/meld
   tool = vimdiff
-[diff]
-  #external = git-meld-diff
-  tool = vimdiff
+  #tool = git-meld-diff
+[difftool]
+  path = /opt/homebrew/bin/meld
+[diffexternal]
+  path = /opt/homebrew/bin/meld
 [core]
   editor=vim
+
+
+[credential]
+	helper = store
+
+
+
+
 
