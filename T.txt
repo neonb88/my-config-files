@@ -6501,23 +6501,23 @@ TODO later (once I land):
 	You have always protected and looked after us, and once in awhile we just get silly and goofy as well, which is a nice break.
 	Love,
 	Nathan
-                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-                                                                                                                                                                                                                                                                                          
-                                                                                                                                                                                                            
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-
-
-
-
-
-
-
-		Inspiration Letter for cover letter (Einstein's dad Hermann wrote a very humble and begging letter to Professor for Albert to get a job, ) ), etc.  :             https://www.youtube.com/watch?v=_MXhYpmRlqQ&list=TLPQMjAxMjIwMjWLPqxzDroONg&index=15                       jjj            
-	Source:    https://rochemamabolo.wordpress.com/2020/08/01/the-jobless-einstein/
-_______________________________________________________
-
-Here is a letter written by Hermann Einstein, Albert Einstein’s Father to Professor Ostwald 
-_______________________________________________________
+    	Happy New Year's, dad!                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+        Here's hoping for a healthy, productive, and (still) tasty food-filled 2026.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    	Thanks for a great stay; it was good to have a few heart to hearts on the flight back from Greece.  Greece itself was also very beautiful and rich with history, especially including the Acropolis tour with Nike, and all the impressive technological, boat and steam engine innovations.  They really unearthed and recreated amazing quantities of the history, considering most of it was as far back as the 3rd century A.D. and some in BCE.  Pretty amazing.           
+    	It was especially meaningful that you have been so much on my side about the job hunt.  Boosted definitely were impatient with me.  I will keep walking through the COBOL code, and put in enough leg work to be useful.  Your suggestion to go through a more thorough tutorial was also very good.  The scattered questions and Google searches I've asked have been a little less helpful.  But it's all still a good way to make progress :)
+    	I'm sorry I'm not usually outwardly as warm as I am feeling right now, but I definitely feel the love, even when I come off as argumentative or demanding.  I'm sorry for that side of myself.  It's never how I intend when I'm thinking of you.  I will have to do better next time.
+    	And thanks to Michelle for all the cooking, as well.  She really is an excellent cook, and the chicken was especially a treat.  Y'all obviously put a lot of your souls into those birds.               
+    	Anyway, the main point of this was just to express some love and appreciation.  Again, I do appreciate you and all the years of support you've given us.  The example of your reaching graduate school, random hobbies that you just dive into and boldly go for, the various software successes, programming language changes, (good luck with Rust!), etc.  I get to flex that you went to Berkeley, and people are alternately very impressed and intimidated.  It certainly set a high standard for what June and I have shot for in our lives.  It helped me believe in myself, even when things get have been rockier, like lately.  There is plenty more to mention, but I'll leave it at this, besides the years of carpooling, career chats, etc.  I still think "what would dad do in this situation?" often, and it helps me.
+    
+    	Love,
+		Nathan                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  	Inspiration Letter for cover letter (Einstein's dad Hermann wrote a very humble and begging letter to Professor for Albert to get a job, ) ), etc.  :             https://www.youtube.com/watch?v=_MXhYpmRlqQ&list=TLPQMjAxMjIwMjWLPqxzDroONg&index=15                       jjj            
+	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Source:    https://rochemamabolo.wordpress.com/2020/08/01/the-jobless-einstein/
+____TODO later (once I land):				                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ___________________________________________________
+    	I should send you the Greece pictures as well.                  
+Here	I have sent you a few bucks; I know you would politely refuse, but I ought to at least do this much.               (edit out some more of the negative or self-blaming parts)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            is a letter written by Hermann Einstein, Albert Einstein’s Father to Professor Ostwald 
+____	Send this to Michelle, too.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ___________________________________________________
 
 Esteemed Herr Professor!
 
@@ -6625,33 +6625,95 @@ From the tutorial:    https://www.geeksforgeeks.org/cobol/linkage-section-in-cob
 
 	Talk through the code with dad
 	Charge phone, power banks, and laptop      
- =======================================================
+ =======================================================                        =======================================================
+	Happy New Year's, dad!                             (edited down a smidge)                     
+	
+    Here's hoping for a healthy, productive, and (still) tasty food-filled 2026.                                                  
+                        
+	Thanks for a great stay; it was good to have a few heart to hearts on the flight back from Greece.  Greece itself was also very beautiful and rich with history, especially including the Acropolis tour with Nike, and all the impressive technological, boat and steam engine innovations.  They really unearthed and recreated amazing quantities of the history, considering most of it was as far back as the 3rd century A.D. and some in BCE.  Pretty amazing.           
+	It was especially meaningful that you have been so much on my side about the job hunt.  Like you said, Boosted.AI definitely was impatient with me.  Re: the LZ's-successor-company, I will keep walking through the COBOL code, and put in enough leg work to be useful.  Your suggestion to go through a more thorough tutorial was better than the scattered questions and Google searches I've asked so far.  But it's all still a good way to make progress :)    
+	And thanks to Michelle for all the cooking, as well.  She really is an excellent cook, and the chicken was especially a treat.  Y'all obviously put a lot of your souls into those chickens.
+	Again, happy holidays, and I appreciate you and all the years of support you've given us.  Your career has been especially inspiring.  For instance, when it comes up that you went to Berkeley, and people are very impressed.  And you certainly set a high standard for what June and I have shot for in our lives.  It helped me believe in myself.  And besides the example of your doing your grad school at Berkeley, random hobbies that you just dive into and boldly go for, the various software successes, adapting to company and programming language changes, (good luck with Rust!), etc. have all been inspiring, and you were taking care of kids at the same time.  So many years of carpooling, career and life chats, etc.  I still think "what would dad do in this situation?" often, and it helps me.  I have always tried to live up to your example.  This is making me feel more passionate about the COBOL.           
+	Anyway, thanks for the trip, Merry belated Christmas, and Happy New Year's!             
 
+	Love,
+	Nathan
+  =======================================================                        =======================================================
+TODO later (once I land):				  
+	I should send you (dad) the Greece pictures as well.   
+	I have sent you a few bucks; I know you would politely refuse, but I ought to at least do this much.   
+	Send this to Michelle, too.                
+	Send grandma pictures of Eric, Jesse and James.        
+  =======================================================                        =======================================================
+Happy New Year's, Michelle!                           
 
+   (and the other people on the list I wrote out)                           
+	Here's hoping for a healthy, productive, and harmonious 2026.                                                  
+	And thanks for all the cooking, as well.  You obviously put in a lot of work, and are an excellent cook.  The chicken was especially a treat.  Y'all obviously put a lot of your souls into those chickens.  I appreciate your brain and how good you are for my dad, as well.            
 
+	Anyway, thanks for the trip, Merry belated Christmas, and Happy New Year's!             
+	Warmly,
+	Nathan
 
 
+  =======================================================                        =======================================================
 
+	Happy New Year's, Vishal!          
 
+	Merry belated Christmas!  Sorry it's been awhile since I called.  But I still think of you often, and talk to my mom about you.  The years of friendship and your example in your career have all been a great inspiration for me.  The last time we talked, I was glad to see your patent finally came through, and best of luck getting the next one.  Sorry if it's already happened; I haven't checked my social media for your posts lately.                     
+	On a more personal note, we have always been  close friends, and you have supported me through plenty of times in my life.  Vice versa, but                 
 
+	Anyway, thanks for all the good times, Merry belated Christmas, and Happy New Year's!             
+	 
+	Love, 
+	Nate
 
+  =======================================================                        =======================================================
 
+	Happy New Year's, grandpa!
 
+	Merry belated Christmas!  I think of y'all often, and have fond memories of Seattle.  You have been an excellent example of persisting through educational systems, and then persisting in successful career in biology, and I have always thought of your example repeatedly when working hard at my own career.  The use of nitrogen fixing genes to help reduce the need for fertilizers in corn to was particularly inspiring, and the many conversations we've had about junk DNA and chloroplasts have all been very interesting and inspiring.  Also the institutions and people in your personal journey, like George Miklos, your father, your postdocs, and the physicists you worked with at the Carnegie Institute, etc. have all been interesting and inspiring to hear about over the years.   
 
+	And on my side, thank you for pushing me to finish my Bachelor's; of course this was good advice.  I should have listened earlier, but at least in the end, I took your advice, and it was very very helpful.  I am grateful for all y'all have done over the years to help steer me in the right direction.  Your helping grandma while she was in law school is also a great example of how couples should cooperate, and dad, June, and myself also have worked hard to live up to that positive example y'all set in our own lives.                
 
+	On a less serious note, I have fun watching and listening to Richard Pryor, who you recommended, hiking with you, seeing your extensive photo albums, and all the games of Pente we've played over the years have been fun as well. 
 
+	Merry belated Christmas, and Happy New Year's!            
 
+	Love,
+	Nathan
+=======================================================                        =======================================================
 
+	Happy New Year's, grandma!
 
+	Merry belated Christmas!  I think of y'all often, and have fond memories of Seattle.  You have been an excellent example of persisting through educational systems and then a long and successful career in law, and I have thought of your example repeatedly when working hard at my own career.  The stories of your various clients, your cofounders, and your work at the ACLU have all been very interesting and inspiring.                
 
+	And thank you for helping so much financially during my undergrad years; this example has taught me to emphasize education, and be more generous and loving throughout my life.  I also remember you and the conversations you've had about raising Justin and everything you and grandpa did for him.  I hope to have children fairly soon, and I have been reflecting on the example you set, things dad did well, etc.  I am grateful for all y'all have done over the years to help steer me in the right direction.                             
+	On a less serious note, I have fond memories of your singing "You Are My Sunshine," throughout the house, your beautiful flowers and berries in the backyard, and that one time you were very warm to a girlfriend in undergrad, Anna Blech.  I'm sure there are countless other times I am not currently remembering, like your generosity with Michael Tellez and Dana Schwartz.                                                                                                                                                                     
 
+	I hope Daniel, Gabi, and her kids enjoy their stay, and hopefully you have met Jesse and James in person.  I can send you some more pictures if Gabi hasn't.           
 
+	Merry belated Christmas, and Happy New Year's!            
+	Hugs,
+	Nathan    ,
+=======================================================                        =======================================================
 
+There are plenty more, but I think this is enough for now.  I should get to relax a little on the plane, as well.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 
+                                                                                                                                                                                                                                                                                                             
 
+                                                           
 
+      
+       
 
+=======================================================                        =======================================================
 
+TODO later (once I land):				  
+	I should send you (dad) the Greece pictures as well.   
+	I have sent you a few bucks; I know you would politely refuse, but I ought to at least do this much.   
+	Send this to Michelle, too.                
+	Send grandma pictures of Eric, Jesse and James.        
 
 
 
@@ -6663,72 +6725,11 @@ From the tutorial:    https://www.geeksforgeeks.org/cobol/linkage-section-in-cob
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+TODO later (once I land):				  
+	I should send you (dad) the Greece pictures as well.   
+	I have sent you a few bucks; I know you would politely refuse, but I ought to at least do this much.   
+	Send this to Michelle, too.                
+	Send grandma pictures of Eric, Jesse and James.        
 
 
 
