@@ -2,7 +2,7 @@
 	#name = Nathan Bendich
 	name = neonb88
 	email = nathanbendich@gmail.com
-	#signingkey = 2A5A248015F59A96
+	signingkey = 2A5A248015F59A96
 [alias]
   ad  = add
   #############
@@ -32,6 +32,8 @@
   pl  = pull
   ps  = push
   psCO= push --set-upstream origin       #      new-branchname       decid-32425  # add remote when pushing from CapitalOne (CO)    
+  # push.autoSetupRemote                                 
+  # git config --global push.autoSetupRemote true
   #############
   r   = rebase
   res = reset --hard origin/master
@@ -53,3 +55,5 @@
 [core]
   editor=vim
 
+[push]
+	autoSetupRemote = true
