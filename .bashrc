@@ -1107,6 +1107,21 @@ export PATH=$PATH:/Users/n/Downloads/node-v20.9.0-darwin-arm64/bin  # node
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # To get native VS Code's debugger working (https://search.brave.com/search?q=vs+code+debugger+ConnectionRefusedError%3A+%5BErrno+61%5D+Connection+refused&source=web&summary=1&conversation=27e55d09d37aacb16f7bd0):                  
 #export DEBUGPY_PROCESS_SPAWN_TIMEOUT=500  # seconds         
 #export PYTHONPATH=/Users/n/Documents/code/agent-service-code/agent-service/.venv/bin             # ${workspaceFolder}",     a     
@@ -1115,6 +1130,14 @@ export PATH=$PATH:/Users/n/Downloads/node-v20.9.0-darwin-arm64/bin  # node
 alias ve313='i && source ~/Documents/code/transformers/transformers_huggingface_virtual_env__python3.13/bin/activate'   
 alias ve='i && source ~/Documents/code/transformers/transformers_huggingface_virtual_env/bin/activate'                       
 alias huggingface='ve313'  #'ve'                                              
+
+
+
+
+
+
+
+
 
 
 
