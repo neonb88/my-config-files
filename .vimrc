@@ -324,6 +324,8 @@ let mapleader="U"
 :cmap TAN tabnew                          
 " i map it this way so it's more flexible for     vertical resize+ AND     vertical resize-
 :cmap VR vertical resize
+":cmap BU buffers       "`:ls<Return>` is better.    
+" ^     NOTE on the above line: there are other useful things to do with buffers, but this is the most useful one I use most often.                  
 
 
 " Save and/or quit different types of files:
@@ -346,10 +348,14 @@ let mapleader="U"
 " NOTE:     detailed                  
 "   tabs vs spaces:      https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces                  
 set tabstop=4 "2    "8
-set shiftwidth=2 "4
+set shiftwidth=4 "4
+set softtabstop=4
+set noet    " keeps us from ':retab 'ing without thinking about it and turning all the tabs back into spaces            August 2, 2025                      
+
 "set expandtab    " should I use tabs instead of spaces?  See: Richard Hendricks of 'Silicon Valley' fame
 set noexpandtab
-set ai "autoindent
+"set ai "autoindent			This setting enables basic automatic indentation. When you press Enter, the new line will automatically be indented to the same level as the previous line.
+set smartindent			" Short explanation: better automatic indenting for python.             " This enhances autoindent by providing more intelligent indentation, especially useful for languages like Python. It will automatically indent after lines ending with a colon (like def, if, for, while statements) and dedent when appropriate.
 set ruler
 
 autocmd FileType make setlocal noexpandtab
