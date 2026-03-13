@@ -446,6 +446,8 @@ set ignorecase          " ignore case when searching
 
 set fileformat=unix " always causes issues when I push to Jenkins at CapitalOne.                  
 set mouse=a " can click with mouse to move cursor.  Hopefully supports highlighting too, like in GVim on Windows.  We will see shortly. :)      Feb 11, 2024                          
+" ^^^    For mouse use, you have to do 'alt click' on mac.    
+
 
 
 "set visualbell t_vb=    " turn off error beep/flash
@@ -453,8 +455,6 @@ set mouse=a " can click with mouse to move cursor.  Hopefully supports highlight
 
 syntax on               " turn syntax highlighting on by default
 filetype on             " detect type of file
-
-
 
 
 
