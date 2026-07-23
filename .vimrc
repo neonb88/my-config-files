@@ -43,8 +43,6 @@ let mapleader="U"
 :map <Backspace> i<Backspace><Esc>l
 
 set number
-set tabstop=2    "4
-set shiftwidth=2 "4
 "set expandtab    " should I use tabs instead of spaces?  See: Richard Hendricks of 'Silicon Valley' fame
 set ai "autoindent
 set ruler
@@ -347,9 +345,9 @@ let mapleader="U"
 
 " NOTE:     detailed                  
 "   tabs vs spaces:      https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces                  
-set tabstop=4 "2    "8
-set shiftwidth=4 "4
-set softtabstop=4
+set tabstop=2      "2   4  "8           
+set shiftwidth=2      "4            
+set softtabstop=2
 set noet    " keeps us from ':retab 'ing without thinking about it and turning all the tabs back into spaces            August 2, 2025                      
 
 "set expandtab    " should I use tabs instead of spaces?  See: Richard Hendricks of 'Silicon Valley' fame
